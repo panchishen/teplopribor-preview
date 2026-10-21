@@ -1,0 +1,1330 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Теплоприбор — Челябинский завод измерительных приборов с 1951 года</title>
+<meta name="description" content="Теплоприбор — завод КИПиА с 1951 года. Подобрать и заказать прибор у изготовителя.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@400;500;600&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Концепт B «Завод с 1951» — главная страница
+   Палитра: антрацит · бетон · кирпич · медь · сталь
+   ============================================================ */
+:root{
+  --ink:#1C1E22; --ink-2:#23262B; --ink-3:#2C3036; --ink-4:#141619;
+  --paper:#EDE8E0; --paper-2:#F6F3EE; --paper-3:#E2DCD1; --white:#FFFFFF;
+  --red:#DD2A1B; --red-2:#BF2215;
+  --copper:#C98A3E; --copper-2:#B57A33; --copper-ink:#8A5A1E; --copper-big:#A36A2A;
+  --steel:#8A9099;
+  --text:#1C1E22; --text-2:#5A5F68; --text-3:#5E646C;
+  --light:#F4EFE7; --light-2:rgba(244,239,231,.72); --light-3:rgba(244,239,231,.62);
+  --line:rgba(28,30,34,.14); --line-2:rgba(28,30,34,.08);
+  --line-d:rgba(244,239,231,.14); --line-d2:rgba(244,239,231,.26);
+
+  --head:"Oswald",Impact,sans-serif;
+  --body:"Golos Text",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+
+  --wrap:1280px; --gut:32px;
+  --r:2px;
+  --sec:120px;
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px; --s6:64px; --s7:96px;
+
+  --ph-light:linear-gradient(135deg,#DAD3C6 0%,#CBC3B4 100%);
+  --ph-dark:repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 2px,transparent 2px 16px),
+            radial-gradient(900px 500px at 70% 30%,rgba(201,138,62,.22),transparent 65%),
+            linear-gradient(160deg,#2E3138 0%,#1F2126 100%);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--paper-2);color:var(--text);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+p,h1,h2,h3,h4,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+img,svg{display:block}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0;padding:0}
+:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.ico{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ico-s{width:16px;height:16px}
+.ico-l{width:32px;height:32px;stroke-width:1.4}
+.mono{font-family:var(--mono)}
+
+/* ---------- типографика ---------- */
+.label{font:500 12px/1 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--copper)}
+h1,.h1{font:500 clamp(40px,5.2vw,76px)/1 var(--head);text-transform:uppercase;letter-spacing:.005em}
+h2,.h2{font:500 clamp(32px,3.4vw,48px)/1.05 var(--head);text-transform:uppercase;letter-spacing:.01em}
+h3,.h3{font:500 22px/1.2 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.lead{font-size:19px;line-height:1.5;color:var(--text-2)}
+.small{font-size:14px;line-height:1.5}
+.sec{padding:var(--sec) 0}
+.sec-head{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s4) var(--s6);align-items:end;margin-bottom:var(--s6)}
+.sec-head .label{margin-bottom:var(--s2)}
+.sec-head .lead{max-width:520px}
+.sec-head .aside{display:flex;flex-direction:column;gap:var(--s2);align-items:flex-start;justify-self:end;text-align:right}
+.sec-head .aside .lead{text-align:left}
+.dark{background:var(--ink);color:var(--light)}
+.dark .lead{color:var(--light-2)}
+.dark .label{color:var(--copper)}
+
+/* ---------- кнопки и ссылки ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border:1px solid transparent;border-radius:var(--r);font:500 15px/1 var(--body);white-space:nowrap;transition:background-color .18s,border-color .18s,color .18s,transform .18s}
+.btn:active{transform:translateY(1px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-2)}
+.btn-ghost{border-color:var(--line-d2);color:var(--light)}
+.btn-ghost:hover{border-color:var(--light);background:rgba(244,239,231,.06)}
+.btn-ghost-ink{border-color:rgba(28,30,34,.32);color:var(--ink)}
+.btn-ghost-ink:hover{border-color:var(--ink);background:rgba(28,30,34,.05)}
+.btn-sm{height:40px;padding:0 16px;font-size:14px}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:500;font-size:15px;border-bottom:1px solid transparent;transition:color .18s,border-color .18s}
+.link .ico{transition:transform .18s}
+.link:hover{color:var(--red)}
+.link:hover .ico{transform:translateX(3px)}
+.dark .link:hover{color:var(--copper)}
+.link-u{border-bottom-color:currentColor}
+.link-u:hover{border-bottom-color:transparent}
+
+/* ---------- шапка ---------- */
+.site-head{background:var(--ink);color:var(--light);position:relative;z-index:50}
+.topbar{border-bottom:1px solid var(--line-d);font-size:13px;color:var(--light-2)}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;height:40px;gap:var(--s3)}
+.city{position:relative}
+.city summary{list-style:none;display:inline-flex;align-items:center;gap:6px;cursor:pointer;color:var(--light);height:40px}
+.city summary::-webkit-details-marker{display:none}
+.city summary .ico{width:16px;height:16px;color:var(--copper)}
+.city summary .chev{color:var(--light-3)}
+.city[open] summary .chev{transform:rotate(180deg)}
+.city-list{position:absolute;left:-12px;top:100%;min-width:220px;background:var(--ink-3);border:1px solid var(--line-d);padding:8px 0;box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.city-list a{display:block;padding:8px 16px;color:var(--light)}
+.city-list a:hover{background:rgba(244,239,231,.06);color:var(--copper)}
+.city-list a.current{color:var(--copper)}
+.topbar-right{display:flex;align-items:center;gap:var(--s4)}
+.topbar-right .phone{color:var(--light);font-weight:500;font-size:14px}
+.topbar-right .phone:hover{color:var(--copper)}
+.topbar-right .mail:hover{color:var(--light)}
+.head-in{display:flex;align-items:center;gap:var(--s3);height:84px}
+.logo{display:flex;align-items:center;gap:12px;flex:none;margin-right:var(--s2)}
+.logo-img{display:block;height:42px;width:auto}
+.logo-sub{max-width:150px;padding-left:12px;border-left:1px solid var(--line-d2);font-size:12px;line-height:1.35;color:var(--light-3);letter-spacing:.02em}
+
+@media (max-width:479px){.logo-img{height:36px}}
+.nav{display:flex;align-items:center;gap:22px;flex:1;min-width:0;font-size:14px;font-weight:500;white-space:nowrap}
+.nav a{position:relative;padding:8px 0;color:var(--light-2);transition:color .18s}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--copper);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.nav a:hover{color:var(--light)}
+.nav a:hover::after{transform:scaleX(1)}
+.nav a.has-sub{display:inline-flex;align-items:center;gap:4px}
+.nav a.has-sub .ico{width:14px;height:14px;color:var(--light-3)}
+.search{display:flex;align-items:center;gap:8px;height:44px;width:200px;padding:0 12px;border:1px solid var(--line-d2);border-radius:var(--r);color:var(--light-3);flex:none;transition:border-color .18s}
+.search:focus-within{border-color:var(--copper)}
+.search input{flex:1;min-width:0;background:none;border:0;outline:none;color:var(--light);font-size:14px}
+.search input::placeholder{color:var(--light-3)}
+.order{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 16px;border:1px solid var(--line-d2);border-radius:var(--r);font-size:14px;font-weight:500;color:var(--light);flex:none;transition:border-color .18s,background-color .18s}
+.order:hover{border-color:var(--light);background:rgba(244,239,231,.06)}
+.order b{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 6px;background:var(--red);color:#fff;border-radius:11px;font:500 12px/1 var(--mono)}
+.icon-btn{display:none;width:44px;height:44px;place-items:center;border:1px solid var(--line-d2);border-radius:var(--r);color:var(--light)}
+.icon-btn .x{display:none}
+.site-head.is-open .burger .bars{display:none}
+.site-head.is-open .burger .x{display:block}
+.drawer{display:none;border-top:1px solid var(--line-d);background:var(--ink-2)}
+.site-head.is-open .drawer{display:block}
+.drawer-in{padding:var(--s3) var(--gut) var(--s4);display:grid;gap:var(--s3)}
+.drawer .search{width:100%}
+.drawer-nav{display:grid}
+.drawer-nav a{padding:14px 0;border-bottom:1px solid var(--line-d);font:500 18px/1.2 var(--head);text-transform:uppercase;letter-spacing:.03em}
+.drawer-meta{display:grid;gap:10px;font-size:14px;color:var(--light-2)}
+.drawer-meta a{color:var(--light);font-weight:500}
+.drawer-meta .cities{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--light-3)}
+
+/* ---------- первый экран ---------- */
+.hero{position:relative;background:var(--ink);color:var(--light);overflow:hidden}
+.hero-photo{position:absolute;top:0;right:0;bottom:0;width:58%;background-color:#2A2D33;background-image:url(img/b-hero.jpg),var(--ph-dark);background-size:cover;background-position:center}
+.hero-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0%,rgba(28,30,34,.94) 20%,rgba(28,30,34,.6) 48%,rgba(28,30,34,.2) 76%,rgba(28,30,34,.1) 100%)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,30,34,.35) 0%,rgba(28,30,34,0) 30%,rgba(28,30,34,0) 70%,rgba(28,30,34,.55) 100%)}
+.hero-in{position:relative;padding-top:104px;padding-bottom:112px;min-height:720px;display:flex;flex-direction:column;justify-content:center}
+.hero-text{max-width:680px}
+.hero h1{margin:var(--s3) 0 var(--s4);text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--copper)}
+.hero .lead{max-width:560px;color:var(--light-2);font-size:19px}
+.entries{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--s5)}
+.entry{display:flex;align-items:center;gap:18px;min-height:68px;padding:12px 20px 12px 22px;border:1px solid var(--line-d2);border-radius:var(--r);color:var(--light);transition:border-color .18s,background-color .18s,transform .18s}
+.entry:hover{border-color:var(--light);background:rgba(244,239,231,.06)}
+.entry:hover .ico{transform:translateX(3px)}
+.entry .ico{color:var(--light-3);transition:transform .18s}
+.entry b{display:block;font-weight:500;font-size:16px;line-height:1.2}
+.entry small{display:block;margin-top:4px;font-size:13px;color:var(--light-3)}
+.entry.is-red{background:var(--red);border-color:var(--red);color:#fff}
+.entry.is-red:hover{background:var(--red-2);border-color:var(--red-2)}
+.entry.is-red small,.entry.is-red .ico{color:rgba(255,255,255,.7)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 0;margin-top:var(--s6);font:400 13px/1.4 var(--mono);color:var(--light-3);letter-spacing:.01em}
+.facts li{display:flex;align-items:center}
+.facts li + li::before{content:"";width:3px;height:3px;border-radius:50%;background:var(--copper);margin:0 14px}
+
+/* ---------- полоса цифр ---------- */
+.digits{background:var(--paper);border-bottom:1px solid var(--line)}
+.digits-in{display:grid;grid-template-columns:minmax(0,1.25fr) repeat(4,minmax(0,1fr))}
+.digits-in > div{padding:40px 32px 40px 0;border-right:1px solid var(--line)}
+.digits-in > div + div{padding-left:32px}
+.digits-in > div:last-child{border-right:0;padding-right:0}
+.digits-title{font:500 24px/1.1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.digits-docs{display:flex;flex-wrap:wrap;gap:6px 0;margin-top:14px;font-size:13px;color:var(--text-2)}
+.digits-docs li + li::before{content:"·";margin:0 8px;color:var(--copper)}
+.digit b{display:block;font:500 56px/1 var(--head);color:var(--copper-big);letter-spacing:.01em}
+.digit b small{font-size:28px;margin-left:4px}
+.digit p{margin-top:12px;font-size:14px;line-height:1.45;color:var(--text-2)}
+
+/* ---------- каталог ---------- */
+.catalog{background:var(--paper-2)}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.tile{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s}
+.tile:hover{transform:translateY(-4px);box-shadow:0 24px 48px -20px rgba(28,30,34,.3);border-color:rgba(28,30,34,.3)}
+.tile-img{aspect-ratio:4/3;background-color:#D6CFC2;background-image:var(--ph-light);background-size:cover;background-position:center;position:relative;overflow:hidden}
+.tile-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,30,34,0) 60%,rgba(28,30,34,.12) 100%)}
+.tile-img.temp{background-image:url(img/cat-temp.jpg),var(--ph-light)}
+.tile-img.pressure{background-image:url(img/cat-pressure.jpg),var(--ph-light)}
+.tile-img.level{background-image:url(img/cat-level.jpg),var(--ph-light)}
+.tile-img.secondary{background-image:url(img/cat-secondary.jpg),var(--ph-light)}
+.tile-img.functional{background-image:url(img/cat-functional.jpg),var(--ph-light)}
+.tile-img.express{background-image:url(img/cat-express.jpg),var(--ph-light)}
+.tile-img .num{position:absolute;left:20px;top:18px;font:500 12px/1 var(--mono);letter-spacing:.1em;color:var(--ink);background:rgba(246,243,238,.9);padding:6px 8px;z-index:1}
+.tile-body{display:flex;flex-direction:column;flex:1;padding:26px 28px 28px}
+.tile h3{margin-bottom:14px}
+.tile-list{display:grid;gap:0;flex:1}
+.tile-list li{padding:8px 0;border-top:1px solid var(--line-2);font-size:14.5px;line-height:1.4;color:var(--text-2)}
+.tile-list li:first-child{border-top:0;padding-top:0}
+.tile-more{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:14px;font-weight:500;color:var(--red)}
+.tile-more .ico{transition:transform .18s}
+.tile:hover .tile-more .ico{transform:translateX(4px)}
+.cat-foot{display:flex;flex-wrap:wrap;gap:16px 40px;margin-top:var(--s5);padding-top:var(--s4);border-top:1px solid var(--line)}
+
+/* ---------- фотополоса навылет ---------- */
+.band{position:relative;height:clamp(260px,34vw,520px);background-color:#2A2D33;background-image:url(img/b-shop.jpg),var(--ph-dark);background-size:cover;background-position:center;color:var(--light)}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,30,34,.15) 0%,rgba(28,30,34,0) 40%,rgba(28,30,34,.6) 100%)}
+.band .wrap{position:relative;z-index:1;height:100%;display:flex;align-items:flex-end;padding-bottom:40px}
+.band .cap{display:flex;gap:14px;align-items:center;font:400 13px/1.3 var(--mono);color:var(--light-2);background:rgba(28,30,34,.72);padding:12px 16px;border-left:2px solid var(--copper)}
+.band .cap b{font:500 13px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--copper)}
+
+/* ---------- подбор ---------- */
+.picker{background:var(--ink-2);color:var(--light);position:relative;overflow:hidden}
+.picker::before{content:"";position:absolute;right:-120px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(201,138,62,.16),transparent 65%);pointer-events:none}
+.picker-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:var(--s6);align-items:start;position:relative}
+.picker-grid h2{margin-top:var(--s2)}
+.picker-grid .lead{margin-top:var(--s3)}
+.picker-note{margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--line-d);font-size:14px;color:var(--light-2)}
+.picker-note a{color:var(--copper);border-bottom:1px solid rgba(201,138,62,.5)}
+.picker-note a:hover{border-bottom-color:transparent}
+.form{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px 20px}
+.f{display:grid;gap:8px;min-width:0}
+.f-3{grid-column:span 3}
+.f-2{grid-column:span 2}
+.f-6{grid-column:span 6}
+.lbl{font:500 12px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--light-3)}
+.ctl{display:flex;align-items:center;height:52px;padding:0 16px;background:rgba(244,239,231,.04);border:1px solid var(--line-d2);border-radius:var(--r);color:var(--light);font-size:15px;transition:border-color .18s}
+.ctl:hover{border-color:rgba(244,239,231,.45)}
+.ctl:focus-within{border-color:var(--copper)}
+.ctl input,.ctl select{width:100%;min-width:0;background:none;border:0;outline:none;color:var(--light);appearance:none;-webkit-appearance:none}
+.ctl input::placeholder{color:var(--light-3)}
+.ctl select option{color:var(--ink)}
+.ctl .unit{font-family:var(--mono);font-size:13px;color:var(--light-3);margin-left:8px}
+.ctl .chev{color:var(--light-3);margin-left:auto}
+.range{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;border:1px solid var(--line-d2);border-radius:var(--r);overflow:hidden;height:52px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:grid;place-items:center;padding:0 12px;font-size:14px;color:var(--light-2);cursor:pointer;text-align:center;line-height:1.2;transition:background-color .18s,color .18s;border-left:1px solid var(--line-d2)}
+.seg label:first-child span{border-left:0}
+.seg label{display:contents}
+.seg input:checked + span{background:var(--light);color:var(--ink)}
+.seg input:focus-visible + span{outline:2px solid var(--copper);outline-offset:-2px}
+.seg span:hover{color:var(--light)}
+.seg input:checked + span:hover{color:var(--ink)}
+.form-actions{grid-column:span 6;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-top:8px}
+.form-actions .hint{font-size:14px;color:var(--light-2)}
+
+/* ---------- склад ---------- */
+.stock{background:var(--paper)}
+.stock-table{border-top:1px solid var(--ink)}
+.row{display:grid;grid-template-columns:minmax(0,2.1fr) minmax(0,2.4fr) minmax(0,.9fr) minmax(0,1.1fr) minmax(0,.9fr);gap:0 24px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line);transition:background-color .18s}
+.row:hover{background:rgba(255,255,255,.55)}
+.row-head{padding:12px 0;font:500 12px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--text-3)}
+.row-head:hover{background:none}
+.row .code{font:500 15px/1.35 var(--mono);letter-spacing:-.01em;word-break:break-word}
+.row .name{font-size:15px;color:var(--text-2)}
+.row .qty{font-family:var(--mono);font-size:15px;white-space:nowrap}
+.row .qty i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3C8A4E;margin-right:10px;vertical-align:1px}
+.row .price{font:500 20px/1 var(--head);letter-spacing:.01em;white-space:nowrap}
+.row .price.req{font:400 14px/1.3 var(--body);color:var(--text-2);white-space:normal}
+.row .act{justify-self:end}
+.row-label{display:none;font:500 10px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--text-3);margin-bottom:4px}
+.stock-foot{display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;margin-top:var(--s4)}
+
+/* ---------- метрология и сервис ---------- */
+.service{background:var(--ink);color:var(--light);position:relative;overflow:hidden}
+.service-photo{position:absolute;left:0;top:0;bottom:0;width:46%;background-color:#2A2D33;background-image:url(img/b-lab-chamber.jpg),var(--ph-dark);background-size:cover;background-position:center}
+.service-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,30,34,.1) 0%,rgba(28,30,34,.1) 70%,var(--ink) 100%)}
+.service-photo .cap{position:absolute;left:32px;bottom:32px;display:flex;gap:12px;align-items:center;font:400 12px/1.3 var(--mono);color:var(--light-2);background:rgba(28,30,34,.72);padding:10px 14px;border-left:2px solid var(--copper)}
+.service-grid{display:grid;grid-template-columns:minmax(0,46fr) minmax(0,54fr);gap:0 var(--s7);position:relative}
+.service-body{padding:var(--sec) 0}
+.service-body h2{margin:var(--s2) 0 var(--s3)}
+.service-body .lead{max-width:560px}
+.srv-list{margin-top:var(--s5);border-top:1px solid var(--line-d)}
+.srv{display:grid;grid-template-columns:48px minmax(0,1fr);gap:0 24px;padding:28px 0;border-bottom:1px solid var(--line-d);transition:padding-left .2s}
+.srv:hover{padding-left:6px}
+.srv .ico-l{color:var(--copper);margin-top:2px}
+.srv h3{font-size:20px;margin-bottom:8px}
+.srv p{color:var(--light-2);font-size:15.5px}
+.srv-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:var(--s5)}
+.srv-cta .mail{font-family:var(--mono);font-size:14px;color:var(--light-2)}
+.srv-cta .mail:hover{color:var(--copper)}
+
+/* ---------- история ---------- */
+.history{background:var(--paper)}
+.history-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s4) var(--s7);align-items:end;margin-bottom:var(--s7)}
+.history-head h2{margin:var(--s2) 0 var(--s3)}
+.history-head .lead{max-width:440px}
+.history-head .link{margin-top:var(--s4)}
+.archive{position:relative;aspect-ratio:16/9;background-color:#B9B1A3;background-image:url(img/b-history.jpg),linear-gradient(135deg,#C9C1B2 0%,#A9A194 100%);background-size:cover;background-position:center;filter:grayscale(1) contrast(1.05) sepia(.22);border:1px solid var(--line)}
+.archive-wrap{position:relative}
+.archive-cap{position:absolute;left:0;bottom:-14px;transform:translateX(24px);background:var(--ink);color:var(--light-2);font:400 12px/1.3 var(--mono);padding:10px 14px;border-left:2px solid var(--copper)}
+.timeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0 32px;position:relative}
+.timeline::before{content:"";position:absolute;left:0;right:0;top:7px;height:1px;background:rgba(28,30,34,.3)}
+.tl{position:relative;padding-top:40px}
+.tl::before{content:"";position:absolute;left:0;top:0;width:15px;height:15px;border-radius:50%;background:var(--paper);border:1px solid var(--ink);box-shadow:inset 0 0 0 3px var(--paper),inset 0 0 0 15px var(--copper)}
+.tl.now::before{background:var(--red);border-color:var(--red);box-shadow:none}
+.tl b{display:block;font:500 56px/1 var(--head);color:var(--ink);letter-spacing:.01em}
+.tl.now b{color:var(--red)}
+.tl p{margin-top:14px;font-size:15px;line-height:1.45;color:var(--text-2);max-width:220px}
+
+/* ---------- клиенты ---------- */
+.clients{background:var(--paper-2)}
+.logos{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.logos li{display:grid;place-items:center;min-height:112px;padding:16px;background:var(--paper-2);text-align:center;font:500 18px/1.15 var(--head);text-transform:uppercase;letter-spacing:.06em;color:var(--steel);transition:color .18s,background-color .18s}
+.logos li:hover{color:var(--ink);background:var(--white)}
+.reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:var(--s5)}
+.review{display:grid;grid-template-columns:120px minmax(0,1fr);gap:28px;padding:28px;background:var(--white);border:1px solid var(--line);border-radius:var(--r);transition:border-color .18s,box-shadow .18s}
+.review:hover{border-color:rgba(28,30,34,.3);box-shadow:0 20px 40px -24px rgba(28,30,34,.3)}
+.sheet{position:relative;aspect-ratio:3/4;background:var(--paper-2);border:1px solid var(--line);padding:16px 12px;display:grid;align-content:start;gap:7px;overflow:hidden}
+.sheet::before{content:"";width:34%;height:6px;background:var(--copper);margin-bottom:6px;opacity:.9}
+.sheet i{display:block;height:3px;background:rgba(28,30,34,.14)}
+.sheet i:nth-child(3){width:85%}.sheet i:nth-child(5){width:70%}.sheet i:nth-child(8){width:55%}
+.sheet::after{content:"";position:absolute;right:12px;bottom:12px;width:28px;height:28px;border-radius:50%;border:2px solid rgba(221,42,27,.5)}
+.review .co{font:500 22px/1.15 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.review .meta{margin-top:10px;font-size:14px;color:var(--text-2);display:grid;gap:4px}
+.review .meta span{color:var(--text-3)}
+.review .link{margin-top:18px;font-size:14px}
+.clients-foot{margin-top:var(--s4)}
+
+/* ---------- новости ---------- */
+.news{background:var(--paper)}
+.news-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.card{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 48px -20px rgba(28,30,34,.3);border-color:rgba(28,30,34,.3)}
+.card-img{aspect-ratio:4/3;background:var(--ph-light);background-color:#D6CFC2;position:relative}
+.card-img.n1{background-image:url(img/news-01.jpg),var(--ph-light);background-size:cover}
+.card-img.n2{background-image:url(img/news-02.jpg),var(--ph-light);background-size:cover}
+.card-img.n3{background-image:url(img/news-03.jpg),var(--ph-light);background-size:cover}
+.card-body{display:flex;flex-direction:column;flex:1;padding:22px 24px 24px}
+.card-meta{display:flex;align-items:center;gap:10px;font:500 12px/1 var(--mono);letter-spacing:.04em;color:var(--text-3);margin-bottom:14px}
+.card-meta .tag{color:var(--copper-ink);font-family:var(--head);letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+.card h3{font-size:19px;line-height:1.25;text-transform:none;font-family:var(--body);font-weight:500;letter-spacing:0}
+.card .link{margin-top:auto;padding-top:20px;font-size:14px}
+.card.webinar{background:var(--ink);color:var(--light);border-color:var(--ink)}
+.card.webinar .card-img{background:var(--ph-dark);background-color:#2A2D33;display:grid;place-items:center}
+.card.webinar .card-img.w{background-image:url(img/webinar.jpg),var(--ph-dark);background-size:cover}
+.play{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--red);color:#fff;box-shadow:0 12px 32px rgba(221,42,27,.45);transition:transform .2s}
+.card.webinar:hover .play{transform:scale(1.06)}
+.play svg{width:22px;height:22px;fill:currentColor;stroke:none;margin-left:3px}
+.card.webinar .card-meta{color:var(--light-3)}
+.card.webinar h3{color:var(--light)}
+.card.webinar h3{margin-bottom:22px}
+.card.webinar .btn{margin-top:auto;align-self:flex-start}
+.news-foot{margin-top:var(--s4)}
+
+/* ---------- финальный CTA ---------- */
+.cta{background:var(--ink);color:var(--light);position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;left:-200px;bottom:-260px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(201,138,62,.14),transparent 65%);pointer-events:none}
+.cta-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:var(--s6) var(--s7);position:relative;align-items:start}
+.cta h2{margin:var(--s2) 0 var(--s3)}
+.cta .lead{max-width:560px;margin-bottom:var(--s5)}
+.cta .form{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cta .f-6,.cta .form-actions{grid-column:span 2}
+.cta textarea.ctl{height:auto;min-height:120px;padding:14px 16px;resize:vertical;display:block;width:100%;line-height:1.5}
+.file{display:flex;align-items:center;gap:12px;height:52px;padding:0 16px;border:1px dashed var(--line-d2);border-radius:var(--r);color:var(--light-2);font-size:14px;cursor:pointer;transition:border-color .18s,color .18s}
+.file:hover{border-color:var(--copper);color:var(--light)}
+.file input{position:absolute;opacity:0;width:0;height:0}
+.file .ico{color:var(--copper)}
+.consent{display:flex;align-items:flex-start;gap:12px;font-size:13.5px;line-height:1.45;color:var(--light-2);cursor:pointer;max-width:420px}
+.consent input{appearance:none;-webkit-appearance:none;width:18px;height:18px;flex:none;margin-top:1px;border:1px solid var(--line-d2);border-radius:var(--r);display:grid;place-items:center;background:none;cursor:pointer}
+.consent input:checked{background:var(--copper) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231C1E22' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6 9 17l-5-5'/></svg>") center/12px 12px no-repeat;border-color:var(--copper)}
+.consent a{color:var(--light);border-bottom:1px solid var(--line-d2)}
+.consent a:hover{color:var(--copper);border-color:transparent}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0;overflow:hidden}
+.person{background:var(--paper);color:var(--ink);padding:36px;border-radius:var(--r);margin-top:52px}
+.person-top{display:flex;align-items:center;gap:20px}
+.avatar{display:grid;place-items:center;width:72px;height:72px;border-radius:50%;background:var(--ink);color:var(--copper);font:500 24px/1 var(--head);letter-spacing:.04em;flex:none}
+.person .name{font:500 24px/1.1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.person .role{font-size:14px;color:var(--text-2);margin-top:6px}
+.person-contacts{display:grid;gap:12px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
+.person-contacts a{display:flex;align-items:center;gap:12px;font-weight:500;font-size:17px}
+.person-contacts a .ico{color:var(--copper)}
+.person-contacts a:hover{color:var(--red)}
+.person-contacts .note{font-size:13.5px;color:var(--text-2)}
+
+/* ---------- футер ---------- */
+.footer{background:var(--ink-4);color:var(--light-2);font-size:14px}
+.footer-top{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr)) minmax(0,1.4fr);gap:var(--s5) var(--s4);padding:var(--s7) 0 var(--s6);border-bottom:1px solid var(--line-d)}
+.footer-brand p{margin-top:var(--s3);max-width:280px;line-height:1.55}
+.footer h3{font:500 12px/1 var(--head);letter-spacing:.18em;text-transform:uppercase;color:var(--copper);margin-bottom:18px}
+.footer-col ul{display:grid;gap:10px}
+.footer-col a{color:var(--light-2);transition:color .18s}
+.footer-col a:hover{color:var(--light)}
+.footer-contacts address{font-style:normal;display:grid;gap:10px}
+.footer-contacts a{color:var(--light);font-weight:500}
+.footer-contacts a:hover{color:var(--copper)}
+.footer-contacts .reps{margin-top:18px;color:var(--light-3);line-height:1.6}
+.footer-contacts .reps b{display:block;color:var(--light-2);font-weight:500;margin-bottom:2px}
+.vk{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:var(--light)}
+.vk i{display:grid;place-items:center;width:32px;height:32px;border:1px solid var(--line-d2);border-radius:var(--r);font:600 11px/1 var(--body);font-style:normal;letter-spacing:.04em}
+.vk:hover i{border-color:var(--copper);color:var(--copper)}
+.footer-bottom{display:flex;flex-wrap:wrap;gap:12px 40px;justify-content:space-between;padding:28px 0 40px;font-size:13px;color:var(--light-3)}
+.footer-bottom a:hover{color:var(--light)}
+
+/* ---------- cookie ---------- */
+.cookie{position:fixed;left:24px;bottom:24px;z-index:60;display:flex;align-items:center;gap:20px;max-width:calc(100% - 48px);padding:14px 16px 14px 20px;background:var(--ink-3);color:var(--light);border:1px solid var(--line-d);box-shadow:0 20px 50px rgba(0,0,0,.35);font-size:14px}
+.cookie.is-hidden{display:none}
+
+/* ============================================================
+   Адаптив
+   ============================================================ */
+@media all{
+  .head-in .search{width:44px;padding:0;justify-content:center}
+  .head-in .search input{display:none}
+  .nav{gap:16px}
+}
+@media (max-width:1279px){
+  .nav{gap:18px;font-size:13.5px}
+}
+@media (max-width:1100px){
+  :root{--sec:96px}
+  .hero h1{font-size:clamp(40px,6.2vw,64px)}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .logos{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .digits-in{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .digits-in > div{padding:32px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .digits-in > div:nth-child(even){border-right:1px solid var(--line);padding-right:24px}
+  .digits-in > div:nth-child(odd){padding-left:24px}
+  .digits-in > div:first-child{grid-column:span 2;border-right:0;padding:32px 0 28px}
+  .digits-in > div:nth-child(4),.digits-in > div:nth-child(5){border-bottom:0}
+  .picker-grid,.cta-grid,.history-head{grid-template-columns:1fr}
+  .history-head .archive-wrap{order:-1}
+  .timeline{grid-template-columns:repeat(5,minmax(0,1fr));gap:0 20px}
+  .tl b{font-size:44px}
+  .service-photo{position:static;width:auto;aspect-ratio:16/9}
+  .service-photo::after{background:linear-gradient(180deg,rgba(28,30,34,0) 60%,var(--ink) 100%)}
+  .service-grid{grid-template-columns:1fr;gap:0}
+  .service-body{padding:var(--s6) 0 var(--sec)}
+  .person{margin-top:0}
+}
+@media (max-width:1023px){
+  .nav,.topbar,.head-in .search{display:none}
+  .head-in{height:72px;gap:12px}
+  .logo{flex:1;margin-right:0}
+  .order span{display:none}
+  .order{padding:0 12px}
+  .icon-btn{display:grid}
+  .hero-photo{width:70%}
+  .hero-photo::before{background:linear-gradient(90deg,var(--ink) 0%,rgba(28,30,34,.9) 30%,rgba(28,30,34,.55) 65%,rgba(28,30,34,.35) 100%)}
+  .sec-head{grid-template-columns:1fr;gap:var(--s3)}
+  .sec-head .aside{justify-self:start;text-align:left}
+  .form{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .f-3,.f-2{grid-column:span 1}
+  .f-6,.form-actions{grid-column:span 2}
+}
+@media (max-width:767px){
+  :root{--sec:72px;--gut:20px}
+  body{font-size:16px}
+  .hero-in{padding-top:64px;padding-bottom:72px;min-height:0}
+  .hero-photo{position:absolute;width:100%;opacity:.55}
+  .hero-photo::before{background:linear-gradient(180deg,var(--ink) 0%,rgba(28,30,34,.7) 50%,rgba(28,30,34,.85) 100%)}
+  .hero .lead{font-size:17px}
+  .entries{flex-direction:column;align-items:stretch}
+  .entry{justify-content:space-between}
+  .facts{margin-top:var(--s4)}
+  .facts li + li::before{margin:0 10px}
+  .digits-in{grid-template-columns:1fr}
+  .digits-in > div,.digits-in > div:nth-child(odd),.digits-in > div:nth-child(even){border-right:0;padding:24px 0;border-bottom:1px solid var(--line)}
+  .digits-in > div:first-child{grid-column:auto}
+  .digits-in > div:nth-child(4){border-bottom:1px solid var(--line)}
+  .digits-in > div:last-child{border-bottom:0}
+  .digit b{font-size:44px}
+  .digit b small{font-size:22px}
+  .tiles{grid-template-columns:1fr;gap:16px}
+  .tile-body{padding:22px 20px 24px}
+  .form,.range{grid-template-columns:1fr}
+  .f-6,.form-actions{grid-column:span 1}
+  .cta .form{grid-template-columns:1fr}
+  .cta .f-6,.cta .form-actions{grid-column:span 1}
+  .row{grid-template-columns:1fr 1fr;gap:12px 16px;padding:18px 0}
+  .row-head{display:none}
+  .row-label{display:block}
+  .row .code{grid-column:span 2}
+  .row .name{grid-column:span 2}
+  .row .act{grid-column:span 2;justify-self:stretch}
+  .row .act .btn{width:100%}
+  .timeline{grid-template-columns:1fr;gap:0}
+  .timeline::before{left:7px;right:auto;top:0;bottom:0;width:1px;height:auto}
+  .tl{padding:0 0 36px 40px}
+  .tl:last-child{padding-bottom:0}
+  .tl::before{left:0;top:10px}
+  .tl b{font-size:40px}
+  .tl p{max-width:none}
+  .archive-cap{transform:translateX(12px)}
+  .logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .logos li{min-height:84px;font-size:15px}
+  .reviews{grid-template-columns:1fr}
+  .review{grid-template-columns:88px minmax(0,1fr);gap:20px;padding:20px}
+  .news-grid{grid-template-columns:1fr;gap:16px}
+  .person{padding:24px}
+  .footer-top{grid-template-columns:1fr 1fr;padding:var(--s6) 0 var(--s5)}
+  .footer-brand,.footer-contacts{grid-column:span 2}
+  .footer-bottom{flex-direction:column;gap:10px}
+  .cookie{left:12px;right:12px;bottom:12px;max-width:none;gap:12px;flex-wrap:wrap}
+}
+@media (max-width:479px){
+  .hero h1{font-size:38px}
+  .footer-top{grid-template-columns:1fr}
+  .footer-brand,.footer-contacts{grid-column:auto}
+  .review{grid-template-columns:1fr}
+  .sheet{max-width:120px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important}
+  html{scroll-behavior:auto}
+}
+  .logo-footer{flex-direction:column;align-items:flex-start;gap:10px}.logo-footer .logo-sub{display:block;border-left:0;padding-left:0;max-width:none}
+  .skip{position:absolute;left:16px;top:-80px;z-index:1000;padding:12px 18px;background:#fff;color:#15181D;border:2px solid #15181D;border-radius:8px;font-weight:600;text-decoration:none}.skip:focus{top:12px}
+  @media (max-width:767px){.btn{min-height:44px}.link{min-height:44px}.city,.phone,.mail{min-height:44px;display:inline-flex;align-items:center}}
+  .catalog .label,.stock .label,.history .label,.clients .label,.news .label{color:var(--copper-ink)}.service .lead,.cta .lead{color:var(--light-2)}.entry.is-red small{color:#fff}.logos li{color:#5E646C}.ctl input,.ctl select{align-self:stretch;height:100%}
+  .card.webinar .card-meta .tag{color:var(--copper)}@media (max-width:767px){footer li a{display:inline-flex;align-items:center;min-height:40px}}
+  @media (max-width:767px){.row-label{font-size:12px!important;color:var(--text-3)}.digit b{color:var(--copper-ink)}}
+  .head-in .logo-sub{display:none}
+  .hint-link{color:var(--copper);border-bottom:1px solid rgba(201,138,62,.5)}
+  @media (max-width:1199px){.nav,.head-in .search{display:none}.logo{flex:1;margin-right:0}.icon-btn{display:grid}}
+  @media (max-width:1100px){.service-photo{position:relative}}
+  @media (min-width:768px) and (max-width:1100px){.footer-top{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-brand{grid-column:1/-1}}
+  .facts{gap:8px 22px}.facts li::before,.facts li+li::before{margin:0;content:"";width:4px;height:4px;border-radius:50%;background:var(--copper);margin-right:10px;flex:none}
+  .service-photo .cap{z-index:2}
+  .search-toggle{background:none;color:var(--light-3);cursor:pointer}.search-toggle:hover{border-color:var(--copper);color:var(--light)}.site-head.by-search .drawer-nav,.site-head.by-search .drawer-meta{display:none}
+  .forms{background:var(--paper-2);border-bottom:1px solid var(--line)}.forms-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s6);align-items:start}.forms-steps{display:grid;gap:var(--s3);margin-bottom:var(--s5)}.forms-steps li{display:grid;grid-template-columns:56px minmax(0,1fr);align-items:baseline;font-size:17px;line-height:1.45}.forms-steps li span{font:500 32px/1 var(--head);color:var(--copper-big)}.forms-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--s4);border-top:1px solid var(--ink)}.fdoc{display:flex;align-items:center;gap:var(--s2);min-height:76px;padding:var(--s2) 0;border-bottom:1px solid var(--line);transition:color .18s}.fdoc-n{flex:none;width:28px;font:500 12px/1 var(--mono);color:var(--text-3)}.fdoc-t{flex:1;min-width:0}.fdoc-t b{display:block;font-weight:500;font-size:16px;line-height:1.3}.fdoc-t small{display:block;margin-top:4px;font:500 12px/1 var(--mono);letter-spacing:.06em;color:var(--copper-ink)}.fdoc .dl{color:var(--text-3);transition:transform .18s,color .18s}.fdoc:hover{color:var(--copper-ink)}.fdoc:hover .dl{color:var(--copper-ink);transform:translateY(2px)}@media (max-width:1100px){.forms-grid{grid-template-columns:1fr;gap:var(--s5)}}@media (max-width:640px){.forms-list{grid-template-columns:1fr}.forms-side .btn{width:100%;white-space:normal;text-align:center}}
+  .forms .label{color:var(--copper-ink)}.forms-grid{grid-template-areas:'side list' 'cta list';grid-template-rows:auto 1fr}.forms-side{grid-area:side}.forms-list{grid-area:list}.forms-cta{grid-area:cta}.forms-steps{margin-bottom:0}.forms-cta{margin-top:var(--s5)}@media (max-width:1100px){.forms-grid{grid-template-areas:'side' 'list' 'cta';grid-template-rows:none}.forms-cta{margin-top:0}}@media (max-width:640px){.forms-cta .btn{width:100%;white-space:normal;text-align:center}}
+  .forms-grid{row-gap:0}@media (max-width:1100px){.forms-grid{row-gap:var(--s5)}}
+  .row .code{display:flex;align-items:center;gap:16px}.row .thumb{flex:none;width:64px;height:48px;background:var(--paper-3) center/cover no-repeat;border:1px solid var(--line)}img.avatar{object-fit:cover}@media (max-width:640px){.row .thumb{width:48px;height:36px}}
+  .logos img{display:block;width:auto;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.72;transition:filter .2s,opacity .2s}.logos li:hover img{filter:none;opacity:1}.logos li img{height:var(--h)}
+</style>
+</head>
+<!-- Icons: Lucide v0.469.0 (https://lucide.dev), ISC License -->
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<!-- ===================== ШАПКА ===================== -->
+<header class="site-head" id="top">
+  <div class="topbar">
+    <div class="wrap topbar-in">
+      <details class="city">
+        <summary>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Челябинск</span>
+          <svg class="ico ico-s chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="city-list">
+          <a class="current" href="#top">Челябинск</a>
+          <a href="#top">Москва</a>
+          <a href="#top">Санкт-Петербург</a>
+          <a href="#top">Пермь</a>
+          <a href="#top">Самара</a>
+        </div>
+      </details>
+      <div class="topbar-right">
+        <span>454047, ул.&nbsp;2-я&nbsp;Павелецкая,&nbsp;36</span>
+        <a class="mail" href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a>
+        <a class="phone" href="tel:+73517258978">+7&nbsp;(351)&nbsp;725-89-78</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap head-in">
+    <a class="logo" href="#top" aria-label="Челябинский завод «Теплоприбор» — на главную">
+      <img class="logo-img" src="img/logo-tp-dark.svg" width="210" height="63" alt="Теплоприбор, ЧТП, Челябинск">
+      <span class="logo-sub">Завод измерительных приборов с&nbsp;1951&nbsp;года</span>
+    </a>
+
+    <nav class="nav" aria-label="Основное меню">
+      <a class="has-sub" href="#catalog">Каталог <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+      <a href="#picker">Подбор</a>
+      <a href="#stock">Со&nbsp;склада</a>
+      <a href="#service">Метрология и&nbsp;поверка</a>
+      <a href="#service">Сервис</a>
+      <a href="#history">О&nbsp;заводе</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <button class="search search-toggle" type="button" aria-label="Поиск по каталогу" aria-controls="drawer" aria-expanded="false">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    </button>
+
+    <a class="order" href="#stock" aria-label="Ваш заказ, 3 позиции">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span>Ваш заказ</span>
+      <b>3</b>
+    </a>
+
+    <button class="icon-btn burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="drawer">
+      <svg class="ico bars" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      <svg class="ico x" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+  </div>
+
+  <div class="drawer" id="drawer">
+    <div class="drawer-in">
+      <form class="search" role="search" action="#catalog" onsubmit="return false">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" placeholder="Поиск по&nbsp;каталогу: ТСМ-0193, КРОКУС" aria-label="Поиск по каталогу">
+      </form>
+      <nav class="drawer-nav" aria-label="Мобильное меню">
+        <a href="#catalog">Каталог</a>
+        <a href="#picker">Подбор</a>
+        <a href="#stock">Со&nbsp;склада</a>
+        <a href="#service">Метрология и&nbsp;поверка</a>
+        <a href="#service">Сервис</a>
+        <a href="#history">О&nbsp;заводе</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="drawer-meta">
+        <a href="tel:+73517258978">+7&nbsp;(351)&nbsp;725-89-78</a>
+        <a href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a>
+        <span>Челябинск, 454047, ул.&nbsp;2-я&nbsp;Павелецкая,&nbsp;36</span>
+        <div class="cities"><span>Челябинск</span><span>Москва</span><span>Санкт-Петербург</span><span>Пермь</span><span>Самара</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== 1. ПЕРВЫЙ ЭКРАН ===================== -->
+<section class="hero">
+  <div class="hero-photo" role="img" aria-label="Метрологическая лаборатория завода"></div>
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="label">Завод полного цикла</p>
+      <h1>Челябинский завод измерительных приборов. <em>С&nbsp;1951&nbsp;года</em></h1>
+      <p class="lead">Датчики температуры, давления и&nbsp;уровня от&nbsp;завода-изготовителя. Подбор по&nbsp;параметрам, готовая продукция со&nbsp;склада, собственная аккредитованная поверка.</p>
+
+      <div class="entries">
+        <a class="entry is-red" href="#catalog">
+          <span><b>Каталог продукции</b><small>6&nbsp;категорий, 150+&nbsp;серий</small></span>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a class="entry" href="#picker">
+          <span><b>Подбор по&nbsp;параметрам</b><small>датчики температуры</small></span>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a class="entry" href="#stock">
+          <span><b>Со&nbsp;склада</b><small>~50&nbsp;позиций с&nbsp;ценами, отгрузка без&nbsp;очереди</small></span>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <ul class="facts">
+        <li>аккредитованная метрология</li>
+        <li>ISO&nbsp;9001</li>
+        <li>отгрузка по&nbsp;России и&nbsp;в&nbsp;Казахстан</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 6. ПОЛОСА ЦИФР ===================== -->
+<section class="digits" aria-label="Завод, а не поставщик">
+  <div class="wrap digits-in">
+    <div>
+      <p class="digits-title">Завод, а&nbsp;не&nbsp;поставщик</p>
+      <ul class="digits-docs">
+        <li>ISO&nbsp;9001:2015</li>
+        <li>реестр Минпромторга</li>
+        <li>взрывозащита Exd</li>
+        <li>ФГИС «Аршин»</li>
+      </ul>
+    </div>
+    <div class="digit">
+      <b>75 <small>лет</small></b>
+      <p>разработки и&nbsp;производства КИПиА в&nbsp;Челябинске</p>
+    </div>
+    <div class="digit">
+      <b>5 <small>лет</small></b>
+      <p>аккредитация на&nbsp;поверку, подтверждена в&nbsp;октябре 2025</p>
+    </div>
+    <div class="digit">
+      <b>70+</b>
+      <p>предприятий в&nbsp;отзывах</p>
+    </div>
+    <div class="digit">
+      <b>9 <small>баллов</small></b>
+      <p>сейсмостойкость датчиков температуры по&nbsp;MSK-64, сертификат 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3. КАТАЛОГ ===================== -->
+<section class="sec catalog" id="catalog">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="label">Каталог</p>
+        <h2>Каталог продукции</h2>
+      </div>
+      <div class="aside">
+        <p class="lead">Разработка, производство, испытания и&nbsp;поверка на&nbsp;одной площадке в&nbsp;Челябинске.</p>
+      </div>
+    </div>
+
+    <div class="tiles">
+      <a class="tile" href="#catalog">
+        <div class="tile-img temp"><span class="num">01</span></div>
+        <div class="tile-body">
+          <h3>Датчики температуры</h3>
+          <ul class="tile-list">
+            <li>Термометры сопротивления ТСМ/ТСП</li>
+            <li>Термопары ТХА/ТХК/ТПП</li>
+            <li>Серия «Эволюшн» 4–20&nbsp;мА + HART</li>
+            <li>Преобразователи ТТ, защитные гильзы</li>
+          </ul>
+          <span class="tile-more">Открыть категорию <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a class="tile" href="#catalog">
+        <div class="tile-img pressure"><span class="num">02</span></div>
+        <div class="tile-body">
+          <h3>Датчики давления</h3>
+          <ul class="tile-list">
+            <li>КРОКУС: избыточное, абсолютное, дифференциальное</li>
+            <li>0,1&nbsp;кПа…60&nbsp;МПа</li>
+            <li>Взрывозащита, кислородное исполнение</li>
+            <li>Поверка раз в&nbsp;5&nbsp;лет</li>
+          </ul>
+          <span class="tile-more">Открыть категорию <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a class="tile" href="#catalog">
+        <div class="tile-img level"><span class="num">03</span></div>
+        <div class="tile-body">
+          <h3>Уровнемеры и&nbsp;сигнализаторы</h3>
+          <ul class="tile-list">
+            <li>Левелтач&nbsp;М (микроволновые)</li>
+            <li>Вибротач&nbsp;L (жидкости)</li>
+            <li>Вибротач&nbsp;S (сыпучие)</li>
+          </ul>
+          <span class="tile-more">Открыть категорию <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a class="tile" href="#catalog">
+        <div class="tile-img secondary"><span class="num">04</span></div>
+        <div class="tile-body">
+          <h3>Вторичная аппаратура</h3>
+          <ul class="tile-list">
+            <li>Регистраторы</li>
+            <li>Калибраторы (КИСС-03)</li>
+            <li>Показывающие и&nbsp;регулирующие приборы</li>
+            <li>Многоканальная сигнализация</li>
+          </ul>
+          <span class="tile-more">Открыть категорию <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a class="tile" href="#catalog">
+        <div class="tile-img functional"><span class="num">05</span></div>
+        <div class="tile-body">
+          <h3>Функциональная аппаратура</h3>
+          <ul class="tile-list">
+            <li>Барьеры искрозащиты</li>
+            <li>Размножители сигналов</li>
+            <li>Нормирующие преобразователи</li>
+            <li>Блоки питания</li>
+          </ul>
+          <span class="tile-more">Открыть категорию <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a class="tile" href="#catalog">
+        <div class="tile-img express"><span class="num">06</span></div>
+        <div class="tile-body">
+          <h3>«Экспресс-анализ»</h3>
+          <ul class="tile-list">
+            <li>Измерение температуры и&nbsp;окисленности расплава</li>
+            <li>Жезлы</li>
+            <li>Преобразователи ПТП</li>
+            <li>Зонды</li>
+          </ul>
+          <span class="tile-more">Открыть категорию <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+    </div>
+
+    <div class="cat-foot">
+      <a class="link" href="#catalog"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Скачать каталог в&nbsp;PDF</a>
+      <a class="link" href="#forms"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>Все опросные листы</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ФОТОПОЛОСА: ПРОИЗВОДСТВО ===================== -->
+<div class="band">
+  <div class="wrap">
+    <p class="cap"><b>Производство</b><span>Челябинск, ул.&nbsp;2-я&nbsp;Павелецкая,&nbsp;36 &middot; полный цикл на&nbsp;одной площадке</span></p>
+  </div>
+</div>
+
+<!-- ===================== 4. ПОДБОР ПО ПАРАМЕТРАМ ===================== -->
+<section class="sec picker dark" id="picker">
+  <div class="wrap">
+    <div class="picker-grid">
+      <div>
+        <p class="label">Подбор</p>
+        <h2>Подобрать датчик температуры по&nbsp;параметрам</h2>
+      </div>
+
+      <form class="form" action="#picker" onsubmit="return false">
+        <div class="f f-3">
+          <span class="lbl">Тип</span>
+          <div class="seg" role="radiogroup" aria-label="Тип датчика">
+            <label><input type="radio" name="type" value="ts" checked><span>Термометр сопротивления</span></label>
+            <label><input type="radio" name="type" value="tp"><span>Термопара</span></label>
+          </div>
+        </div>
+        <div class="f f-3">
+          <span class="lbl">Диапазон температур</span>
+          <div class="range">
+            <label class="ctl"><input type="text" inputmode="numeric" placeholder="от −50" aria-label="Нижняя граница диапазона"><span class="unit">°C</span></label>
+            <label class="ctl"><input type="text" inputmode="numeric" placeholder="до +600" aria-label="Верхняя граница диапазона"><span class="unit">°C</span></label>
+          </div>
+        </div>
+        <div class="f f-2">
+          <label class="lbl" for="out">Выходной сигнал</label>
+          <div class="ctl">
+            <select id="out">
+              <option>НСХ</option>
+              <option>4–20 мА</option>
+              <option>HART</option>
+              <option>Profibus</option>
+            </select>
+            <svg class="ico ico-s chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+        <div class="f f-2">
+          <span class="lbl">Взрывозащита</span>
+          <div class="seg" role="radiogroup" aria-label="Взрывозащита">
+            <label><input type="radio" name="ex" value="no" checked><span>Нет</span></label>
+            <label><input type="radio" name="ex" value="yes"><span>Да</span></label>
+          </div>
+        </div>
+        <div class="f f-2">
+          <label class="lbl" for="mount">Монтаж</label>
+          <div class="ctl">
+            <select id="mount">
+              <option>Погружной</option>
+              <option>Поверхностный</option>
+              <option>В тройник</option>
+            </select>
+            <svg class="ico ico-s chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-red" type="submit">Показать подходящие</button>
+          <span class="hint">Не&nbsp;нашли&nbsp;&mdash; <a class="hint-link" href="#forms">заполните опросный лист</a>, подберём за&nbsp;вас.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 4а. ОПРОСНЫЕ ЛИСТЫ ===================== -->
+<section class="sec forms" id="forms">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="label">Подбор под&nbsp;задачу</p>
+        <h2>Опросные листы</h2>
+      </div>
+      <div class="aside">
+        <p class="lead">Не&nbsp;нашли нужное исполнение&nbsp;— опишите задачу в&nbsp;опросном листе. Инженер завода подберёт прибор и&nbsp;подготовит коммерческое предложение.</p>
+      </div>
+    </div>
+    <div class="forms-grid">
+      <div class="forms-side">
+        <ol class="forms-steps">
+          <li><span>01</span>Скачайте лист для&nbsp;своего типа прибора</li>
+          <li><span>02</span>Заполните параметры и&nbsp;условия эксплуатации</li>
+          <li><span>03</span>Отправьте нам&nbsp;— ответим в&nbsp;течение рабочего дня</li>
+        </ol>
+      </div>
+      <ul class="forms-list">
+        <li><a class="fdoc" href="#"><span class="fdoc-t"><b>Датчики температуры</b><small>DOCX</small></span><svg class="ico dl" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg></a></li>
+        <li><a class="fdoc" href="#"><span class="fdoc-t"><b>Датчики давления</b><small>DOCX</small></span><svg class="ico dl" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg></a></li>
+        <li><a class="fdoc" href="#"><span class="fdoc-t"><b>Уровнемеры и&nbsp;сигнализаторы</b><small>DOCX</small></span><svg class="ico dl" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg></a></li>
+        <li><a class="fdoc" href="#"><span class="fdoc-t"><b>Вторичная аппаратура</b><small>DOCX</small></span><svg class="ico dl" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg></a></li>
+        <li><a class="fdoc" href="#"><span class="fdoc-t"><b>Функциональная аппаратура</b><small>DOCX</small></span><svg class="ico dl" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg></a></li>
+        <li><a class="fdoc" href="#"><span class="fdoc-t"><b>«Экспресс-анализ»</b><small>DOCX</small></span><svg class="ico dl" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg></a></li>
+      </ul>
+      <div class="forms-cta"><a class="btn btn-red" href="#contacts">Отправить заполненный лист<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5. НА СКЛАДЕ СЕЙЧАС ===================== -->
+<section class="sec stock" id="stock">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="label">Со&nbsp;склада</p>
+        <h2>На&nbsp;складе сейчас</h2>
+      </div>
+      <div class="aside">
+        <p class="lead">Цены без&nbsp;НДС, обновлено 18.09.2025</p>
+      </div>
+    </div>
+
+    <div class="stock-table">
+      <div class="row row-head">
+        <span>Обозначение</span><span>Расшифровка</span><span>Количество</span><span>Цена</span><span></span>
+      </div>
+
+      <div class="row">
+        <span class="code"><span class="thumb" style="background-image:url(img/stock-01.jpg)"></span><span>ТСМ-0193-01-80 50М</span></span>
+        <span class="name">Термометр сопротивления ТСМ</span>
+        <span class="qty"><span class="row-label">Количество</span><i></i>4&nbsp;шт.</span>
+        <span class="price"><span class="row-label">Цена</span>800&nbsp;₽</span>
+        <span class="act"><a class="btn btn-ghost-ink btn-sm" href="#stock">В&nbsp;заказ</a></span>
+      </div>
+
+      <div class="row">
+        <span class="code"><span class="thumb" style="background-image:url(img/stock-02.jpg)"></span><span>TT-0-3-0-1-A4-5</span></span>
+        <span class="name">Преобразователь ТТ</span>
+        <span class="qty"><span class="row-label">Количество</span><i></i>6&nbsp;шт.</span>
+        <span class="price"><span class="row-label">Цена</span>6&nbsp;461&nbsp;₽</span>
+        <span class="act"><a class="btn btn-ghost-ink btn-sm" href="#stock">В&nbsp;заказ</a></span>
+      </div>
+
+      <div class="row">
+        <span class="code"><span class="thumb" style="background-image:url(img/stock-03.jpg)"></span><span>Бобышка Б1-12X18H10T-M20x1,5-60</span></span>
+        <span class="name">Бобышка под защитную гильзу</span>
+        <span class="qty"><span class="row-label">Количество</span><i></i>21&nbsp;шт.</span>
+        <span class="price"><span class="row-label">Цена</span>250&nbsp;₽</span>
+        <span class="act"><a class="btn btn-ghost-ink btn-sm" href="#stock">В&nbsp;заказ</a></span>
+      </div>
+
+      <div class="row">
+        <span class="code"><span class="thumb" style="background-image:url(img/stock-04.jpg)"></span><span>КТХА-0299-03-80/440</span></span>
+        <span class="name">Термопара ТХА</span>
+        <span class="qty"><span class="row-label">Количество</span><i></i>100&nbsp;шт.</span>
+        <span class="price"><span class="row-label">Цена</span>2&nbsp;056&nbsp;₽</span>
+        <span class="act"><a class="btn btn-ghost-ink btn-sm" href="#stock">В&nbsp;заказ</a></span>
+      </div>
+
+      <div class="row">
+        <span class="code"><span class="thumb" style="background-image:url(img/stock-05.jpg)"></span><span>Левелтач-M L=3200&nbsp;мм</span></span>
+        <span class="name">Уровнемер микроволновый Левелтач&nbsp;М</span>
+        <span class="qty"><span class="row-label">Количество</span><i></i>1&nbsp;шт.</span>
+        <span class="price"><span class="row-label">Цена</span>150&nbsp;577&nbsp;₽</span>
+        <span class="act"><a class="btn btn-ghost-ink btn-sm" href="#stock">В&nbsp;заказ</a></span>
+      </div>
+
+      <div class="row">
+        <span class="code"><span class="thumb" style="background-image:url(img/news-02.jpg)"></span><span>КИСС-03</span></span>
+        <span class="name">Калибратор</span>
+        <span class="qty"><span class="row-label">Количество</span><i></i>в&nbsp;наличии</span>
+        <span class="price req"><span class="row-label">Цена</span>цена по&nbsp;запросу</span>
+        <span class="act"><a class="btn btn-ghost-ink btn-sm" href="#stock">В&nbsp;заказ</a></span>
+      </div>
+
+      <div class="row">
+        <span class="code"><span class="thumb" style="background-image:url(img/stock-07.jpg)"></span><span>Вибротач&nbsp;L</span></span>
+        <span class="name">Вибрационный сигнализатор уровня, жидкости</span>
+        <span class="qty"><span class="row-label">Количество</span><i></i>в&nbsp;наличии</span>
+        <span class="price req"><span class="row-label">Цена</span>цена по&nbsp;запросу</span>
+        <span class="act"><a class="btn btn-ghost-ink btn-sm" href="#stock">В&nbsp;заказ</a></span>
+      </div>
+    </div>
+
+    <div class="stock-foot">
+      <a class="btn btn-red" href="#stock">Все позиции (~50)</a>
+      <a class="link" href="#stock"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Скачать список XLS</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 7. МЕТРОЛОГИЯ И СЕРВИС ===================== -->
+<section class="service" id="service">
+  <div class="service-photo" role="img" aria-label="Климатическая камера испытательной лаборатории">
+    <div class="cap"><span>Климатическая камера &middot; −60…+100&nbsp;°C</span></div>
+  </div>
+  <div class="wrap">
+    <div class="service-grid">
+      <div aria-hidden="true"></div>
+      <div class="service-body">
+        <p class="label">Метрология и&nbsp;сервис</p>
+        <h2>Поверка, испытания и&nbsp;сервис на&nbsp;заводе</h2>
+        <p class="lead">Аккредитованная метрологическая служба завода. Аккредитация подтверждена в&nbsp;октябре 2025 на&nbsp;5&nbsp;лет, реестр RA.RU.311369.</p>
+
+        <div class="srv-list">
+          <article class="srv">
+            <svg class="ico ico-l" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div>
+              <h3>Поверка и&nbsp;калибровка</h3>
+              <p>Температура, давление, электрические, геометрические величины; свидетельство и&nbsp;запись в&nbsp;«Аршине».</p>
+            </div>
+          </article>
+          <article class="srv">
+            <svg class="ico ico-l" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></svg>
+            <div>
+              <h3>Испытания</h3>
+              <p>Климат −60…+100&nbsp;°C, вибрация до&nbsp;2,7&nbsp;кН, удар, электропрочность до&nbsp;2500&nbsp;В.</p>
+            </div>
+          </article>
+          <article class="srv">
+            <svg class="ico ico-l" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <div>
+              <h3>Шеф-монтаж и&nbsp;аудит объекта</h3>
+              <p>Настройка под техпроцесс, интеграция с&nbsp;АСУ&nbsp;ТП, обучение персонала, увеличенная гарантия.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="srv-cta">
+          <a class="btn btn-red" href="#contacts">Заявка на&nbsp;поверку</a>
+          <a class="mail" href="mailto:eastenus@tpchel.ru">eastenus@tpchel.ru</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ИСТОРИЯ ЗАВОДА ===================== -->
+<section class="sec history" id="history">
+  <div class="wrap">
+    <div class="history-head">
+      <div>
+        <p class="label">История</p>
+        <h2>История завода</h2>
+        <p class="lead">Разрабатываем и&nbsp;выпускаем средства измерения с&nbsp;1951&nbsp;года. Полный цикл: конструкторское бюро, производство, испытательная лаборатория, аккредитованная метрологическая служба.</p>
+        <a class="link link-u" href="#history">О&nbsp;заводе</a>
+      </div>
+      <div class="archive-wrap">
+        <div class="archive" role="img" aria-label="Архивное фото завода"></div>
+        <span class="archive-cap">Челябинск &middot; архив завода</span>
+      </div>
+    </div>
+
+    <ol class="timeline">
+      <li class="tl">
+        <b>1946</b>
+        <p>Начало строительства</p>
+      </li>
+      <li class="tl">
+        <b>1951</b>
+        <p>Название и&nbsp;серийный выпуск КИПиА</p>
+      </li>
+      <li class="tl">
+        <b>1983</b>
+        <p>Орден «Знак Почёта»</p>
+      </li>
+      <li class="tl">
+        <b>2025</b>
+        <p>Аккредитация на&nbsp;поверку подтверждена на&nbsp;5&nbsp;лет</p>
+      </li>
+      <li class="tl now">
+        <b>2026</b>
+        <p>75&nbsp;лет, кислородное исполнение датчиков давления</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== 9. КЛИЕНТЫ И ОТЗЫВЫ ===================== -->
+<section class="sec clients" id="clients">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="label">Клиенты и&nbsp;отзывы</p>
+        <h2>Нам доверяют 70+&nbsp;предприятий</h2>
+      </div>
+      <div class="aside">
+        <a class="link link-u" href="#clients">Все отзывы</a>
+      </div>
+    </div>
+
+    <ul class="logos" aria-label="Заказчики">
+      <li><img src="img/clients/gazprom-neft.svg" width="87" height="44" style="--h:44px" alt="Газпром нефть" loading="lazy"></li>
+      <li><img src="img/clients/rosenergoatom.svg" width="124" height="50" style="--h:50px" alt="Росэнергоатом" loading="lazy"></li>
+      <li><img src="img/clients/nlmk.svg" width="71" height="38" style="--h:38px" alt="НЛМК" loading="lazy"></li>
+      <li><img src="img/clients/mechel.png" width="137" height="36" style="--h:36px" alt="Мечел" loading="lazy"></li>
+      <li><img src="img/clients/severstal.svg" width="109" height="34" style="--h:34px" alt="Северсталь" loading="lazy"></li>
+      <li><img src="img/clients/surgutneftegas.png" width="71" height="40" style="--h:40px" alt="Сургутнефтегаз" loading="lazy"></li>
+      <li><img src="img/clients/lukoil.svg" width="118" height="30" style="--h:30px" alt="ЛУКОЙЛ" loading="lazy"></li>
+      <li><img src="img/clients/phosagro.svg" width="165" height="26" style="--h:26px" alt="ФосАгро" loading="lazy"></li>
+      <li><img src="img/clients/uralkali.png" width="144" height="26" style="--h:26px" alt="Уралкалий" loading="lazy"></li>
+      <li><img src="img/clients/power-machines.svg" width="54" height="52" style="--h:52px" alt="Силовые машины" loading="lazy"></li>
+      <li><img src="img/clients/t-plus.png" width="109" height="44" style="--h:44px" alt="Т Плюс" loading="lazy"></li>
+      <li class="more">и&nbsp;ещё 50+ предприятий</li>
+    </ul>
+
+    <div class="reviews">
+      <article class="review">
+        <div class="sheet" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div>
+          <p class="co">Росэнергоатом</p>
+          <div class="meta">
+            <div><span>Прибор:</span> датчики температуры</div>
+            <div><span>Отзыв заказчика</span></div>
+          </div>
+          <a class="link" href="#clients">Открыть письмо <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="review">
+        <div class="sheet" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div>
+          <p class="co">Газпром нефть</p>
+          <div class="meta">
+            <div><span>Прибор:</span> датчики давления КРОКУС</div>
+            <div><span>Отзыв заказчика</span></div>
+          </div>
+          <a class="link" href="#clients">Открыть письмо <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 10. НОВОЕ НА ЗАВОДЕ ===================== -->
+<section class="sec news" id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="label">Новости</p>
+        <h2>Новое на&nbsp;заводе</h2>
+      </div>
+      <div class="aside">
+        <a class="link link-u" href="#news">Все новости</a>
+      </div>
+    </div>
+
+    <div class="news-grid">
+      <a class="card" href="#news">
+        <div class="card-img n1"></div>
+        <div class="card-body">
+          <div class="card-meta"><span class="tag">Продукция</span><span>07.2026</span></div>
+          <h3>Датчики давления в&nbsp;кислородном исполнении</h3>
+          <span class="link">Подробнее <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a class="card" href="#news">
+        <div class="card-img n2"></div>
+        <div class="card-body">
+          <div class="card-meta"><span class="tag">Продукция</span><span>05.2026</span></div>
+          <h3>КИСС-03 в&nbsp;эталонном исполнении</h3>
+          <span class="link">Подробнее <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a class="card" href="#news">
+        <div class="card-img n3"></div>
+        <div class="card-body">
+          <div class="card-meta"><span class="tag">Сертификаты</span><span>05.2026</span></div>
+          <h3>Датчики температуры&nbsp;&mdash; сертификат сейсмостойкости</h3>
+          <span class="link">Подробнее <svg class="ico ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <article class="card webinar">
+        <div class="card-img w">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="tag">Вебинары</span></div>
+          <h3>Запись вебинара: датчики температуры серии «Эволюшн», многозонные датчики и&nbsp;преобразователи ТТ</h3>
+          <a class="btn btn-ghost btn-sm" href="#news">Смотреть запись</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 11. ФИНАЛЬНЫЙ CTA ===================== -->
+<section class="sec cta" id="contacts">
+  <div class="wrap">
+    <div class="cta-grid">
+      <div>
+        <p class="label">Консультация</p>
+        <h2>Не&nbsp;нашли нужный прибор?</h2>
+        <p class="lead">Инженеры отдела поддержки подберут исполнение под ваш техпроцесс и&nbsp;подготовят КП.</p>
+
+        <form class="form" action="#contacts" onsubmit="return false">
+          <div class="f">
+            <label class="lbl" for="c-name">Имя</label>
+            <div class="ctl"><input id="c-name" type="text" autocomplete="name"></div>
+          </div>
+          <div class="f">
+            <label class="lbl" for="c-co">Компания</label>
+            <div class="ctl"><input id="c-co" type="text" autocomplete="organization"></div>
+          </div>
+          <div class="f f-6">
+            <label class="lbl" for="c-tel">Телефон или e-mail</label>
+            <div class="ctl"><input id="c-tel" type="text" autocomplete="tel"></div>
+          </div>
+          <div class="f f-6">
+            <label class="lbl" for="c-q">Вопрос</label>
+            <textarea class="ctl" id="c-q" rows="4"></textarea>
+          </div>
+          <div class="f f-6">
+            <span class="lbl">Файл</span>
+            <label class="file">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.234 20.252 21 12.3"/><path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486"/></svg>
+              <span>Прикрепить опросный лист</span>
+              <input type="file">
+            </label>
+          </div>
+          <div class="hp" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+          <div class="form-actions">
+            <button class="btn btn-red" type="submit">Отправить запрос</button>
+            <label class="consent"><input type="checkbox" checked><span>Согласие на&nbsp;обработку персональных данных&nbsp;&mdash; <a href="#contacts">политика конфиденциальности</a></span></label>
+          </div>
+        </form>
+      </div>
+
+      <aside class="person">
+        <div class="person-top">
+          <img class="avatar" src="img/staff-01.jpg" width="72" height="72" alt="">
+          <div>
+            <p class="name">Николай Воронин</p>
+            <p class="role">Руководитель отдела поддержки клиентов</p>
+          </div>
+        </div>
+        <div class="person-contacts">
+          <a href="tel:+73517258926"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+7&nbsp;(351)&nbsp;725-89-26</a>
+          <p class="note">Подбор исполнения, расшифровка обозначения, подготовка КП.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== 12. ФУТЕР ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo logo-footer" href="#top" aria-label="Челябинский завод «Теплоприбор» — на главную">
+      <img class="logo-img" src="img/logo-tp-dark.svg" width="210" height="63" alt="Теплоприбор, ЧТП, Челябинск">
+      <span class="logo-sub">Завод измерительных приборов с&nbsp;1951&nbsp;года</span>
+    </a>
+        <p>Датчики температуры, давления и&nbsp;уровня от&nbsp;челябинского завода-изготовителя: подбор по&nbsp;параметрам, готовая продукция со&nbsp;склада, собственная аккредитованная поверка.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Каталог</h3>
+        <ul>
+          <li><a href="#catalog">Датчики температуры</a></li>
+          <li><a href="#catalog">Датчики давления</a></li>
+          <li><a href="#catalog">Уровнемеры и&nbsp;сигнализаторы</a></li>
+          <li><a href="#catalog">Вторичная аппаратура</a></li>
+          <li><a href="#catalog">Функциональная аппаратура</a></li>
+          <li><a href="#catalog">«Экспресс-анализ»</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Сервисы</h3>
+        <ul>
+          <li><a href="#picker">Подбор</a></li>
+          <li><a href="#stock">Со&nbsp;склада</a></li>
+          <li><a href="#forms">Опросные листы</a></li>
+          <li><a href="#service">Поверка</a></li>
+          <li><a href="#service">Ремонт</a></li>
+          <li><a href="#contacts">Консультация</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>О&nbsp;заводе</h3>
+        <ul>
+          <li><a href="#history">О&nbsp;компании</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#news">Статьи</a></li>
+          <li><a href="#clients">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contacts">
+        <h3>Контакты</h3>
+        <address>
+          <span>Челябинск, 454047, ул.&nbsp;2-я&nbsp;Павелецкая,&nbsp;36</span>
+          <a href="tel:+73517258978">+7&nbsp;(351)&nbsp;725-89-78</a>
+          <a href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a>
+        </address>
+        <p class="reps"><b>Представительства</b>Москва &middot; Санкт-Петербург &middot; Пермь &middot; Самара &middot; Костанай</p>
+        <a class="vk" href="#top" aria-label="ВКонтакте"><i>VK</i><span>ВКонтакте</span></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2008–2026 ООО «Челябинский завод „Теплоприбор“»</span>
+      <a href="#contacts">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie" id="cookie" role="status">
+  <span>Используем cookie для&nbsp;работы сайта</span>
+  <button class="btn btn-ghost btn-sm" type="button" id="cookie-ok">Понятно</button>
+</div>
+
+<script>
+(function(){
+  var head=document.querySelector('.site-head');
+  var burger=document.querySelector('.burger');
+  if(burger){
+    burger.addEventListener('click',function(){
+      var open=head.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded',open?'true':'false');
+    });
+    head.querySelectorAll('.drawer-nav a').forEach(function(a){
+      a.addEventListener('click',function(){head.classList.remove('is-open');burger.setAttribute('aria-expanded','false');});
+    });
+  }
+  var st=document.querySelector('.search-toggle');
+  if(st){
+    st.addEventListener('click',function(){
+      var open=!head.classList.contains('is-open')||!head.classList.contains('by-search');
+      head.classList.toggle('is-open',open); head.classList.toggle('by-search',open);
+      st.setAttribute('aria-expanded',open?'true':'false');
+      if(open){var i=head.querySelector('.drawer input');if(i)i.focus();}
+    });
+    if(burger){burger.addEventListener('click',function(){head.classList.remove('by-search');st.setAttribute('aria-expanded','false');});}
+  }
+  var ok=document.getElementById('cookie-ok');
+  if(ok){ok.addEventListener('click',function(){document.getElementById('cookie').classList.add('is-hidden');});}
+})();
+</script>
+</body>
+</html>

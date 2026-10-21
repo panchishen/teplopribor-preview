@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Теплоприбор — датчики температуры, давления и уровня. Сделано и поверено на заводе</title>
+<meta name="description" content="Теплоприбор — завод КИПиА с 1951 года. Подобрать и заказать прибор у изготовителя.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Onest:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ---------- tokens ---------- */
+  :root{
+    --white:#FFFFFF;
+    --bg:#F2F4F7;
+    --blue:#004373;
+    --blue-dark:#00314F;
+    --blue-soft:#E6EEF4;
+    --ink:#0F172A;
+    --mid:#566273;
+    --line:#E2E8F0;
+    --line-strong:#CBD5E1;
+    --red:#DD2A1B;
+    --f-head:"Onest",system-ui,sans-serif;
+    --f-text:"Inter",system-ui,sans-serif;
+    --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+    --r-sm:10px; --r-md:16px; --r-lg:24px;
+    --sh-1:0 1px 2px rgba(15,23,42,.04),0 8px 24px -12px rgba(15,23,42,.08);
+    --sh-2:0 2px 4px rgba(15,23,42,.04),0 24px 48px -16px rgba(15,23,42,.16);
+    --wrap:1280px;
+    --gutter:32px;
+    --sec:128px;
+    --t:.2s ease;
+  }
+
+  /* ---------- base ---------- */
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden}
+  body{margin:0;background:var(--white);color:var(--ink);font:16px/1.55 var(--f-text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+  ::selection{background:var(--blue);color:#fff}
+  a{color:inherit;text-decoration:none}
+  p,ul,ol,dl,figure{margin:0}
+  ul,ol{padding:0;list-style:none}
+  img,svg{display:block}
+  button,input,select,textarea{font:inherit;color:inherit}
+  button{cursor:pointer;background:none;border:0;padding:0}
+  h1,h2,h3,h4{margin:0;font-family:var(--f-head);font-weight:600;line-height:1.1;letter-spacing:-.03em}
+  h3,h4{letter-spacing:-.02em}
+  .wrap{max-width:calc(var(--wrap) + var(--gutter)*2);margin:0 auto;padding:0 var(--gutter)}
+  .mono{font-family:var(--f-mono)}
+  .mid{color:var(--mid)}
+  .ico{width:24px;height:24px;flex:none;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+  .ico.sm{width:18px;height:18px}
+  .ico.xs{width:16px;height:16px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 24px;border-radius:12px;font-weight:500;font-size:15px;line-height:1;white-space:nowrap;transition:background var(--t),border-color var(--t),box-shadow var(--t),transform var(--t),color var(--t);border:1px solid transparent}
+  .btn-primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+  .btn-primary:hover{background:var(--blue-dark);border-color:var(--blue-dark);transform:translateY(-1px);box-shadow:0 12px 24px -10px rgba(0,67,115,.5)}
+  .btn-secondary{background:#fff;color:var(--ink);border-color:var(--line-strong)}
+  .btn-secondary:hover{border-color:var(--ink);transform:translateY(-1px);box-shadow:var(--sh-1)}
+  .btn-ghost{background:transparent;color:var(--blue);padding:0 8px;border-radius:8px}
+  .btn-ghost:hover{background:var(--blue-soft)}
+  .btn-sm{height:40px;padding:0 16px;font-size:14px;border-radius:10px}
+  .btn-white{background:#fff;color:var(--blue);border-color:#fff}
+  .btn-white:hover{background:var(--blue-soft);border-color:var(--blue-soft);transform:translateY(-1px)}
+  .link{color:var(--blue);font-weight:500;display:inline-flex;align-items:center;gap:6px;transition:gap var(--t)}
+  .link:hover{gap:10px}
+  .link .ico{width:18px;height:18px}
+
+  /* ---------- section rhythm ---------- */
+  .sec{padding:var(--sec) 0}
+  .sec.tight{padding-top:96px}
+  .sec.gray{background:var(--bg)}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:48px;margin-bottom:64px}
+  .sec-head h2{font-size:clamp(32px,3.2vw,46px);max-width:14em}
+  .sec-head .lead{font-size:18px;color:var(--mid);margin-top:16px;max-width:36em}
+  .sec-head .aside{display:flex;gap:28px;flex:none;padding-bottom:6px}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--mid);margin-bottom:20px}
+  .eyebrow::before{content:"";width:24px;height:1px;background:var(--blue)}
+
+  /* ---------- cards ---------- */
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+  a.card:hover,.card.hov:hover{transform:translateY(-4px);box-shadow:var(--sh-2);border-color:transparent}
+  .ph{position:relative;background:var(--bg);overflow:hidden;display:grid;place-items:center;color:var(--line-strong)}
+  .ph::after{content:"";position:absolute;inset:0;background:var(--img) center/contain no-repeat}
+  .ph.cover::after{background-size:cover}
+  .ph .ico{width:56px;height:56px;stroke-width:1}
+  .tag{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:#fff;font-family:var(--f-mono);font-size:12.5px;color:var(--ink);white-space:nowrap}
+  .tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue)}
+
+  /* ---------- topbar ---------- */
+  .topbar{border-bottom:1px solid var(--line);font-size:13px;color:var(--mid);background:#fff}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:40px;gap:24px}
+  .topbar .left,.topbar .right{display:flex;align-items:center;gap:24px;min-width:0}
+  .topbar a:hover{color:var(--ink)}
+  .city{position:relative;display:flex;align-items:center;gap:6px;color:var(--ink);cursor:pointer}
+  .city .ico{width:14px;height:14px}
+  .city .menu{position:absolute;top:100%;left:-12px;z-index:30;display:none;min-width:200px;padding:8px 0;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh-2)}
+  .city:hover .menu,.city:focus-within .menu{display:block}
+  .city .menu a{display:block;padding:8px 16px;color:var(--ink)}
+  .city .menu a:hover{background:var(--bg)}
+  .city .menu a.cur{color:var(--blue);font-weight:500}
+  .topbar .phone{color:var(--ink);font-weight:500;display:inline-flex;gap:6px;align-items:center;white-space:nowrap}
+  .staff .tel,.f-contact a.big{white-space:nowrap}
+  .topbar .phone .ico{width:14px;height:14px}
+
+  /* ---------- header ---------- */
+  .header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+  .header .wrap{display:flex;align-items:center;gap:32px;height:80px}
+  .logo{display:flex;align-items:center;gap:12px;flex:none}
+  .logo-img{display:block;height:46px;width:auto}
+  .logo-sub{max-width:150px;padding-left:12px;border-left:1px solid var(--line);font-size:12px;line-height:1.35;color:var(--mid)}
+  header .logo-sub,.header .logo-sub{display:none}
+  @media (max-width:640px){.logo-img{height:38px}}
+  .tools{display:flex;align-items:center;gap:8px;flex:none}
+  .search-btn{display:grid;width:44px;height:44px;place-items:center;border:0;border-radius:12px;background:none;color:var(--ink);cursor:pointer;transition:background var(--t)}
+  .search-btn:hover{background:var(--bg)}
+  .hsearch{display:none;flex:1 1 auto;min-width:0;align-items:center;gap:10px;height:48px;padding:0 2px 0 16px;border:1px solid var(--line-strong);border-radius:12px;background:#fff;transition:border-color var(--t),box-shadow var(--t)}
+  .hsearch:focus-within{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,67,115,.12)}
+  .hsearch > .ico{color:var(--mid)}
+  .hsearch input{flex:1;min-width:0;height:100%;border:0;background:none;font-size:15px;outline:0}
+  .hsearch input::placeholder{color:var(--mid)}
+  .hsearch input::-webkit-search-cancel-button{display:none}
+  .hsearch-close{display:grid;width:44px;height:44px;place-items:center;flex:none;border:0;border-radius:10px;background:none;color:var(--mid);cursor:pointer;transition:background var(--t),color var(--t)}
+  .hsearch-close:hover{background:var(--bg);color:var(--ink)}
+  .header.is-search .nav,.header.is-search .search-btn{display:none}
+  .header.is-search .hsearch{display:flex;animation:hs-in .18s ease-out}
+  @keyframes hs-in{from{opacity:0;transform:translateY(-4px)}}
+  @media (max-width:1279px){.order{padding:0 12px}.order .txt{display:none}}
+  .nav{display:flex;align-items:center;gap:4px;margin-left:auto}
+  .nav a{display:inline-flex;align-items:center;gap:4px;height:40px;padding:0 11px;border-radius:10px;font-size:14.5px;font-weight:500;white-space:nowrap;transition:background var(--t)}
+  .nav a:hover{background:var(--bg)}
+  .nav a .ico{width:16px;height:16px;color:var(--mid)}
+  .order{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 16px 0 14px;border:1px solid var(--line-strong);border-radius:12px;font-size:15px;font-weight:500;transition:border-color var(--t),box-shadow var(--t);flex:none}
+  .order:hover{border-color:var(--ink);box-shadow:var(--sh-1)}
+  .order .count{display:grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--red);color:#fff;font-size:12px;font-weight:600}
+  .nav-toggle{position:absolute;opacity:0;pointer-events:none}
+  .burger{display:none;width:44px;height:44px;place-items:center;border:1px solid var(--line-strong);border-radius:12px;flex:none}
+  .burger .ico.close{display:none}
+  .mnav{display:none}
+
+  /* ---------- hero ---------- */
+  .hero{padding:72px 0 0}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:64px;align-items:center}
+  .hero h1{font-size:clamp(38px,4vw,56px);line-height:1.04}
+  .hero h1 em{font-style:normal;color:var(--blue)}
+  .hero .sub{font-size:19px;line-height:1.5;color:var(--mid);margin-top:28px;max-width:30em}
+  .hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+  .facts{display:flex;flex-wrap:wrap;gap:8px 0;margin-top:48px;font-size:14px;color:var(--mid)}
+  .facts li{display:inline-flex;align-items:center}
+  .facts li+li::before{content:"";width:3px;height:3px;border-radius:50%;background:var(--line-strong);margin:0 14px}
+  .hero-visual{position:relative;aspect-ratio:1/1;border-radius:var(--r-lg);background:var(--bg);overflow:hidden}
+  .hero-visual .img{position:absolute;inset:0;background:url(img/c-hero-device.png) center/contain no-repeat;z-index:2}
+  .dev{position:absolute;left:50%;top:50%;transform:translate(-50%,-52%);display:flex;flex-direction:column;align-items:center;z-index:1;filter:drop-shadow(0 48px 48px rgba(0,67,115,.22))}
+  .dev .head{position:relative;width:168px;height:196px;border-radius:44px 44px 22px 22px;background:linear-gradient(160deg,#1F6696 0%,#004373 48%,#002B4A 100%)}
+  .dev .head::before{content:"";position:absolute;left:50%;top:26px;width:104px;height:104px;margin-left:-52px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#FFFFFF 0%,#E9EEF6 55%,#C9D3E2 100%);box-shadow:inset 0 2px 6px rgba(15,23,42,.25),0 1px 0 rgba(255,255,255,.4)}
+  .dev .head::after{content:"";position:absolute;left:50%;top:60px;width:36px;height:36px;margin-left:-18px;border-radius:50%;border:1.5px solid rgba(0,67,115,.35);background:radial-gradient(circle at 50% 50%,#004373 0 4px,transparent 5px)}
+  .dev .gland{position:absolute;right:-26px;top:120px;width:34px;height:26px;border-radius:0 8px 8px 0;background:linear-gradient(180deg,#B9C3D1,#8794A6)}
+  .dev .neck{width:52px;height:38px;background:linear-gradient(90deg,#8E9AAC,#DDE3EB 50%,#8E9AAC);margin-top:-2px}
+  .dev .nut{width:96px;height:30px;background:linear-gradient(90deg,#7F8B9E,#D6DDE6 35%,#F1F4F8 50%,#D6DDE6 65%,#7F8B9E);clip-path:polygon(8% 0,92% 0,100% 50%,92% 100%,8% 100%,0 50%)}
+  .dev .stem{width:16px;height:228px;background:linear-gradient(90deg,#8E9AAC,#E6EAF0 45%,#9AA6B7);border-radius:0 0 6px 6px}
+  .spec{position:absolute;z-index:3;display:inline-flex;align-items:center;gap:10px;height:40px;padding:0 16px 0 14px;background:#fff;border:1px solid var(--line);border-radius:999px;font-family:var(--f-mono);font-size:13.5px;color:var(--ink);box-shadow:var(--sh-1);white-space:nowrap}
+  .spec::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px rgba(0,67,115,.12)}
+  .spec.s1{left:6%;top:12%}
+  .spec.s2{right:8%;top:38%}
+  .spec.s3{left:10%;bottom:16%}
+  .hero-visual .cap{position:absolute;right:24px;bottom:20px;z-index:3;font-size:12px;color:var(--mid)}
+
+  /* entries */
+  .entries{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:72px}
+  .entry{display:grid;grid-template-columns:48px 1fr 24px;gap:20px;align-items:center;padding:24px 28px}
+  .entry .ic{width:48px;height:48px;border-radius:12px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center}
+  .entry b{display:block;font-family:var(--f-head);font-weight:600;font-size:18px;letter-spacing:-.02em}
+  .entry span{display:block;font-size:14px;color:var(--mid);margin-top:4px}
+  .entry .arr{color:var(--line-strong);transition:color var(--t),transform var(--t)}
+  .entry:hover .arr{color:var(--blue);transform:translateX(4px)}
+
+  /* ---------- news ---------- */
+  .news{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+  .news .card{display:flex;flex-direction:column;overflow:hidden}
+  .news .ph{aspect-ratio:4/3;border-bottom:1px solid var(--line)}
+  .news .body{padding:24px 24px 28px;display:flex;flex-direction:column;flex:1}
+  .news .date{font-family:var(--f-mono);font-size:12.5px;color:var(--mid)}
+  .news h3{font-size:19px;margin-top:10px;line-height:1.3}
+  .news .more{margin-top:auto;padding-top:20px}
+  .news .kind{position:absolute;left:16px;top:16px;z-index:2;height:28px;padding:0 10px;display:inline-flex;align-items:center;border-radius:999px;background:#fff;font-size:12px;font-weight:500;color:var(--blue);border:1px solid var(--line)}
+  .webinar{background:var(--blue);color:#fff;border-color:var(--blue);padding:28px;display:flex;flex-direction:column}
+  .webinar .play{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;border:1px solid rgba(255,255,255,.25)}
+  .webinar .play .ico{fill:#fff;stroke:none;width:20px;height:20px;margin-left:3px}
+  .webinar .label{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;opacity:.75;margin-top:28px;font-weight:500}
+  .webinar h3{font-size:19px;margin-top:10px;line-height:1.3;color:#fff}
+  .webinar .btn-wrap{margin-top:auto;padding-top:28px}
+  .webinar.card:hover{transform:translateY(-4px);box-shadow:0 24px 48px -16px rgba(0,67,115,.5)}
+
+  /* ---------- catalog ---------- */
+  .cats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  .cat{display:flex;flex-direction:column;overflow:hidden}
+  .cat .ph{aspect-ratio:4/3}
+  .cat .body{padding:28px 28px 32px}
+  .cat h3{font-size:22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .cat h3 .ico{color:var(--line-strong);transition:color var(--t),transform var(--t)}
+  .cat:hover h3 .ico{color:var(--blue);transform:translateX(4px)}
+  .cat p{font-size:15px;color:var(--mid);margin-top:12px;line-height:1.5}
+  .cat-links{display:flex;flex-wrap:wrap;gap:16px 40px;margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}
+
+  /* ---------- picker ---------- */
+  .picker{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:80px;align-items:start}
+  .picker h2{font-size:clamp(32px,3.2vw,46px)}
+  .picker .lead{font-size:18px;color:var(--mid);margin-top:24px;max-width:28em}
+  .picker .steps{margin-top:40px;display:grid;gap:16px}
+  .picker .steps li{display:flex;gap:16px;align-items:flex-start;font-size:15px;color:var(--mid)}
+  .picker .steps li i{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid var(--line-strong);display:grid;place-items:center;font-family:var(--f-mono);font-size:12px;font-style:normal;color:var(--ink);background:#fff}
+  .form-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:40px;box-shadow:var(--sh-1)}
+  .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px}
+  .field{display:flex;flex-direction:column;gap:8px;min-width:0}
+  .field.full{grid-column:1/-1}
+  .field label{font-size:13.5px;font-weight:500;color:var(--ink)}
+  .control{position:relative;display:flex;align-items:center}
+  .control input,.control select,.control textarea{width:100%;height:48px;padding:0 14px;border:1px solid var(--line-strong);border-radius:10px;background:#fff;outline:0;font-size:15px;transition:border-color var(--t),box-shadow var(--t);appearance:none;-webkit-appearance:none}
+  .control textarea{height:auto;min-height:112px;padding:12px 14px;resize:vertical}
+  .control input:focus,.control select:focus,.control textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,67,115,.12)}
+  .control input::placeholder{color:var(--mid)}
+  .control.sel::after{content:"";position:absolute;right:16px;top:50%;width:8px;height:8px;border-right:1.5px solid var(--mid);border-bottom:1.5px solid var(--mid);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+  .control.unit input{padding-right:44px}
+  .control.unit span{position:absolute;right:14px;color:var(--mid);font-size:14px;pointer-events:none}
+  .range{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .seg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line-strong);border-radius:10px;overflow:hidden;height:48px}
+  .seg input{position:absolute;opacity:0;pointer-events:none}
+  .seg label{display:grid;place-items:center;font-size:15px;cursor:pointer;color:var(--mid);transition:background var(--t),color var(--t)}
+  .seg label+input+label{border-left:1px solid var(--line-strong)}
+  .seg input:checked+label{background:var(--blue-soft);color:var(--blue);font-weight:500}
+  .form-foot{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:28px}
+  .form-foot .note{font-size:14px;color:var(--mid)}
+  .form-foot .note a{color:var(--blue);font-weight:500}
+
+  /* ---------- stock ---------- */
+  .stock{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  .sku{padding:28px;display:flex;flex-direction:column;gap:20px}
+  .sku .top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+  .sku .name{font-family:var(--f-mono);font-size:16px;font-weight:500;line-height:1.35;overflow-wrap:anywhere}
+  .sku .desc{font-size:14px;color:var(--mid);margin-top:6px}
+  .sku .qty{flex:none;display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 10px;border-radius:999px;background:var(--bg);font-size:12.5px;font-weight:500;color:var(--ink);white-space:nowrap}
+  .sku .qty::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue)}
+  .sku .qty.na::before{background:var(--line-strong)}
+  .sku .bot{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:auto;padding-top:20px;border-top:1px solid var(--line)}
+  .sku .price{font-family:var(--f-head);font-weight:600;font-size:24px;letter-spacing:-.02em;white-space:nowrap}
+  .sku .price small{display:block;font-family:var(--f-text);font-weight:400;font-size:12.5px;color:var(--mid);letter-spacing:0;margin-top:2px}
+  .sku .price.rq{font-size:17px}
+
+  /* ---------- proof ---------- */
+  .nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+  .num{padding-top:28px;border-top:1px solid var(--line-strong)}
+  .num b{display:block;font-family:var(--f-head);font-weight:600;font-size:clamp(44px,4.6vw,64px);letter-spacing:-.04em;line-height:1;color:var(--blue)}
+  .num b small{font-size:.55em;letter-spacing:-.02em;vertical-align:baseline}
+  .num p{font-size:15px;color:var(--mid);margin-top:18px;max-width:18em}
+  .num p strong{display:block;color:var(--ink);font-weight:500;margin-bottom:4px}
+  .docs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:80px;padding:40px;background:var(--bg);border-radius:var(--r-lg)}
+  .doc{display:flex;align-items:center;gap:18px}
+  .doc .badge{flex:none;width:64px;height:64px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;color:var(--blue);box-shadow:var(--sh-1)}
+  .doc b{display:block;font-weight:600;font-size:15px}
+  .doc span{display:block;font-size:13px;color:var(--mid);margin-top:2px}
+
+  /* ---------- industries ---------- */
+  .inds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  .ind{position:relative;display:block;aspect-ratio:3/2;border-radius:var(--r-md);overflow:hidden;background:var(--bg);border:1px solid var(--line);transition:transform var(--t),box-shadow var(--t)}
+  .ind .bg{position:absolute;inset:0;background:var(--img) center/cover no-repeat;transition:transform .5s ease}
+  .ind:hover{transform:translateY(-4px);box-shadow:var(--sh-2)}
+  .ind:hover .bg{transform:scale(1.04)}
+  .ind .txt{position:absolute;left:0;right:0;bottom:0;padding:88px 28px 28px;background:linear-gradient(180deg,rgba(242,244,247,0) 0%,rgba(242,244,247,.92) 55%,rgba(242,244,247,1) 100%)}
+  .ind h3{font-size:22px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .ind h3 .ico{color:var(--mid);transition:color var(--t),transform var(--t)}
+  .ind:hover h3 .ico{color:var(--blue);transform:translateX(4px)}
+  .ind p{font-size:14.5px;color:var(--mid);margin-top:6px}
+  .ind .ic{position:absolute;left:28px;top:28px;width:48px;height:48px;border-radius:12px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;color:var(--blue)}
+
+  /* ---------- metrology ---------- */
+  .srv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  .srv .card{padding:36px 32px 40px;display:flex;flex-direction:column}
+  .srv .ic{width:56px;height:56px;border-radius:14px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center}
+  .srv h3{font-size:22px;margin-top:28px}
+  .srv p{font-size:15px;color:var(--mid);margin-top:12px;line-height:1.55}
+  .srv .spec-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .srv-cta{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:56px;padding:32px 36px;border:1px solid var(--line);border-radius:var(--r-md);background:#fff}
+  .srv-cta p{font-size:15px;color:var(--mid)}
+  .srv-cta p a{color:var(--ink);font-weight:500}
+  .srv-cta .btn{margin-left:auto}
+
+  /* ---------- clients ---------- */
+  .logos{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden}
+  .logos div{display:grid;place-items:center;height:96px;padding:0 16px;text-align:center;font-family:var(--f-head);font-weight:600;font-size:17px;letter-spacing:-.02em;color:var(--mid);border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:color var(--t),background var(--t)}
+  .logos div:nth-child(6n){border-right:0}
+  .logos div:nth-child(n+7){border-bottom:0}
+  .logos div:hover{color:var(--ink);background:var(--bg)}
+  .reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:64px}
+  .review{padding:32px 36px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+  .review .kind{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mid);font-weight:500}
+  .review h3{font-size:24px;margin-top:10px}
+  .review p{font-size:15px;color:var(--mid);margin-top:8px}
+  .review .scan{width:88px;height:116px;border-radius:8px;background:var(--bg);border:1px solid var(--line);display:grid;place-items:center;color:var(--line-strong);position:relative}
+  .review .scan::before{content:"";position:absolute;left:14px;right:14px;top:18px;height:1px;background:var(--line-strong);box-shadow:0 10px 0 var(--line-strong),0 20px 0 var(--line-strong),0 30px 0 var(--line-strong)}
+  .review .scan .ico{position:absolute;right:10px;bottom:10px;width:20px;height:20px;color:var(--blue)}
+  .reviews-more{margin-top:32px}
+
+  /* ---------- final cta ---------- */
+  .cta-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:start}
+  .cta-grid h2{font-size:clamp(32px,3.2vw,46px)}
+  .cta-grid .lead{font-size:18px;color:var(--mid);margin-top:20px;max-width:30em}
+  .cta-grid .form-card{margin-top:40px}
+  .field .file{display:flex;align-items:center;gap:12px;height:48px;padding:0 14px;border:1px dashed var(--line-strong);border-radius:10px;color:var(--mid);font-size:14.5px;font-weight:400;cursor:pointer;transition:border-color var(--t),color var(--t)}
+  .field .file:hover{border-color:var(--blue);color:var(--blue)}
+  .file input{position:absolute;opacity:0;pointer-events:none}
+  .field .consent{display:flex;gap:12px;align-items:flex-start;font-size:13.5px;font-weight:400;color:var(--mid);line-height:1.45}
+  .consent input{width:18px;height:18px;margin:1px 0 0;flex:none;accent-color:var(--blue)}
+  .consent a{color:var(--blue)}
+  .staff{position:sticky;top:112px;padding:36px;display:flex;flex-direction:column;gap:24px}
+  .staff .who{display:flex;gap:20px;align-items:center}
+  .staff .ava{flex:none;width:80px;height:80px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;font-family:var(--f-head);font-weight:600;font-size:24px;letter-spacing:-.02em}
+  .staff h3{font-size:22px}
+  .staff .role{font-size:14.5px;color:var(--mid);margin-top:4px}
+  .staff .tel{font-family:var(--f-head);font-weight:600;font-size:24px;letter-spacing:-.02em;display:inline-flex;align-items:center;gap:12px}
+  .staff .tel .ico{color:var(--blue)}
+  .staff .hint{font-size:14px;color:var(--mid)}
+  .staff .quick{display:grid;gap:10px;padding-top:24px;border-top:1px solid var(--line)}
+  .staff .quick a{display:flex;align-items:center;gap:12px;font-size:15px;font-weight:500}
+  .staff .quick a .ico{color:var(--blue);width:20px;height:20px}
+  .staff .quick a:hover{color:var(--blue)}
+
+  /* ---------- footer ---------- */
+  .footer{border-top:1px solid var(--line);padding:80px 0 0;font-size:14.5px}
+  .f-top{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr)) minmax(0,1.3fr);gap:48px}
+  .f-top h3{font-family:var(--f-text);font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--mid);margin-bottom:20px}
+  .f-top li+li{margin-top:12px}
+  .f-top a:hover{color:var(--blue)}
+  .f-brand p{color:var(--mid);margin-top:20px;max-width:22em;line-height:1.55}
+  .f-contact address{font-style:normal;line-height:1.6}
+  .f-contact a.big{display:block;font-family:var(--f-head);font-weight:600;font-size:20px;letter-spacing:-.02em;margin-top:12px}
+  .f-contact .mail{display:block;color:var(--blue);margin-top:4px}
+  .f-reps{margin-top:24px;color:var(--mid)}
+  .f-reps b{color:var(--ink);font-weight:500}
+  .f-social{display:inline-flex;align-items:center;gap:10px;margin-top:24px;height:40px;padding:0 14px;border:1px solid var(--line);border-radius:10px;font-weight:500}
+  .f-social:hover{border-color:var(--ink)}
+  .f-bot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:64px;padding:28px 0 32px;border-top:1px solid var(--line);color:var(--mid);font-size:13.5px}
+  .f-bot a:hover{color:var(--ink)}
+
+  /* ---------- cookie ---------- */
+  .ck-toggle{position:absolute;opacity:0;pointer-events:none}
+  .cookie{position:fixed;left:24px;bottom:24px;z-index:60;display:flex;align-items:center;gap:20px;max-width:420px;padding:16px 16px 16px 20px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh-2);font-size:14px}
+  .cookie p{color:var(--mid)}
+  .cookie label{flex:none}
+  .ck-toggle:checked ~ .cookie{display:none}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:1280px){
+    .news{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .logos{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .logos div:nth-child(6n){border-right:1px solid var(--line)}
+    .logos div:nth-child(4n){border-right:0}
+    .logos div:nth-child(n+7){border-bottom:1px solid var(--line)}
+    .logos div:nth-child(n+9){border-bottom:0}
+    .f-top{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .f-brand{grid-column:1/-1}
+  }
+  @media all{
+    .mnav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--sh-2)}
+    .header:has(.nav-toggle:checked) .mnav{display:block}
+    .nav-toggle:checked ~ .burger .ico.open{display:none}
+    .nav-toggle:checked ~ .burger .ico.close{display:block}
+    .mnav .wrap{display:block;height:auto;padding-top:16px;padding-bottom:24px}
+    .mnav ul li a{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-size:17px;font-weight:500}
+    .mnav .svc-list{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:20px;font-size:14px;color:var(--mid)}
+  }
+  @media (max-width:1180px){
+    :root{--sec:96px}
+    .topbar .right .svc{display:none}
+    .nav{display:none}
+    .burger{display:grid}
+    .tools{margin-left:auto}
+    .order{padding:0 12px}
+    .order .txt{display:none}
+    .hero-grid{gap:40px}
+    .nums{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 32px}
+    .docs{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .picker{grid-template-columns:1fr;gap:48px}
+    .cta-grid{grid-template-columns:1fr}
+    .staff{position:static}
+    .cats,.inds,.srv,.stock{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .entries{grid-template-columns:1fr}
+  }
+  @media (max-width:860px){
+    :root{--gutter:24px}
+    .hero{padding-top:48px}
+    .hero-grid{grid-template-columns:1fr}
+    .hero-visual{max-width:560px}
+    .sec-head{flex-direction:column;align-items:flex-start;gap:20px;margin-bottom:40px}
+    .sec-head .aside{flex-wrap:wrap;gap:12px 24px}
+    .reviews{grid-template-columns:1fr}
+    .f-top{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .cookie{left:16px;right:16px;max-width:none}
+  }
+  @media (max-width:640px){
+    :root{--sec:72px;--gutter:16px}
+    .topbar .left .city-wrap{display:none}
+    .topbar .wrap{gap:12px}
+    .header .wrap{height:68px;gap:12px}
+    .header.is-search .logo,.header.is-search .tools{display:none}
+    .hero h1{font-size:34px}
+    .hero .sub{font-size:17px}
+    .hero .cta .btn{width:100%}
+    .spec{font-size:12px;height:34px;padding:0 12px}
+    .spec.s2{right:4%}
+    .dev{transform:translate(-50%,-52%) scale(.8)}
+    .entries{margin-top:48px}
+    .entry{padding:20px}
+    .news,.cats,.inds,.srv,.stock{grid-template-columns:1fr}
+    .fgrid{grid-template-columns:1fr}
+    .form-card{padding:24px}
+    .nums{grid-template-columns:1fr}
+    .docs{grid-template-columns:1fr;padding:24px}
+    .logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .logos div{height:72px;font-size:15px;border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+    .logos div:nth-child(2n){border-right:0!important}
+    .logos div:nth-child(n+11){border-bottom:0!important}
+    .review{grid-template-columns:1fr;padding:24px}
+    .review .scan{display:none}
+    .srv-cta{padding:24px}
+    .srv-cta .btn{margin-left:0;width:100%}
+    .f-top{grid-template-columns:1fr;gap:32px}
+    .staff{padding:24px}
+    .cookie{flex-direction:column;align-items:stretch;gap:12px}
+  }
+  .logo-footer{flex-direction:column;align-items:flex-start;gap:10px}.logo-footer .logo-sub{display:block;border-left:0;padding-left:0;max-width:none}
+  .skip{position:absolute;left:16px;top:-80px;z-index:1000;padding:12px 18px;background:#fff;color:#15181D;border:2px solid #15181D;border-radius:8px;font-weight:600;text-decoration:none}.skip:focus{top:12px}
+  @media (max-width:767px){.btn{min-height:44px}.link{min-height:44px}.city,.phone,.mail{min-height:44px;display:inline-flex;align-items:center}}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}label.burger,.file,label.check{cursor:pointer}
+  @media (max-width:767px){footer li a{display:inline-flex;align-items:center;min-height:40px}}@media (max-width:767px){.quick a{min-height:44px}}
+  @media (max-width:980px){.hero-grid{grid-template-columns:minmax(0,1fr)}}.hero h1{overflow-wrap:break-word;hyphens:auto}
+  .news .ph::after{background-size:cover}
+  label.file{position:relative;overflow:hidden}
+  .facts{gap:8px 22px}.facts li::before,.facts li+li::before{margin:0;content:"";width:4px;height:4px;border-radius:50%;background:var(--line-strong);margin-right:10px;flex:none}
+  .file input{left:0;top:0;width:1px;height:1px}
+  .forms-sec + .sec{padding-top:0}.forms{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px;padding:64px;border-radius:var(--r-lg);background:var(--blue);color:#fff}.forms .eyebrow{color:rgba(255,255,255,.72)}.forms h2{font-size:clamp(32px,3.2vw,46px);color:#fff}.forms .lead{margin-top:16px;font-size:17px;color:rgba(255,255,255,.8);max-width:30em}.forms-steps{display:grid;gap:14px;margin:32px 0 36px}.forms-steps li{display:flex;gap:14px;align-items:baseline;font-size:15px;line-height:1.45;color:rgba(255,255,255,.92)}.forms-steps li span{flex:none;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.14);font:500 13px/1 var(--f-mono)}.btn-light{background:#fff;color:var(--blue);border-color:#fff}.btn-light:hover{transform:translateY(-1px);box-shadow:0 12px 24px -10px rgba(0,0,0,.35)}.forms-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-content:start}.fdoc{display:flex;align-items:center;gap:14px;height:100%;padding:20px;border-radius:var(--r-md);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);transition:background var(--t),border-color var(--t)}.fdoc:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3)}.fdoc span{flex:1;min-width:0}.fdoc b{display:block;font-weight:500;font-size:15px;line-height:1.3}.fdoc small{display:block;margin-top:4px;font:500 12px/1 var(--f-mono);letter-spacing:.04em;color:rgba(255,255,255,.66)}.fdoc .dl{color:rgba(255,255,255,.66);transition:transform var(--t),color var(--t)}.fdoc:hover .dl{color:#fff;transform:translateY(2px)}@media (max-width:1180px){.forms{grid-template-columns:1fr;gap:40px;padding:48px}}@media (max-width:640px){.forms{padding:32px 20px;border-radius:var(--r-md)}.forms-list{grid-template-columns:1fr}.forms .btn{width:100%;white-space:normal;text-align:center}}
+  .forms .eyebrow::before{background:rgba(255,255,255,.5)}.forms{grid-template-areas:'intro list' 'cta list';grid-template-rows:auto 1fr}.forms-intro{grid-area:intro}.forms-list{grid-area:list}.forms-cta{grid-area:cta}.forms-steps{margin-bottom:0}.forms-cta{margin-top:36px}@media (max-width:1180px){.forms{grid-template-areas:'intro' 'list' 'cta';grid-template-rows:none}.forms-cta{margin-top:0}}@media (max-width:640px){.forms-cta .btn{width:100%;white-space:normal;text-align:center}}
+  .forms{row-gap:0}@media (max-width:1180px){.forms{row-gap:40px}}
+  .sku-img{aspect-ratio:16/10;margin:-28px -28px 0;border-bottom:1px solid var(--line);border-radius:var(--r-md) var(--r-md) 0 0;background:var(--bg) var(--img) center/cover no-repeat}.webinar{background:linear-gradient(180deg,rgba(0,49,79,.78),rgba(0,49,79,.94)),url(img/webinar.jpg) center/cover}img.ava{object-fit:cover}.wide-photo{aspect-ratio:21/8;margin-bottom:64px;border-radius:var(--r-lg);background:var(--bg) var(--img) center/cover no-repeat}@media (max-width:980px){.wide-photo{aspect-ratio:16/9;margin-bottom:40px}}@media (max-width:640px){.wide-photo{border-radius:var(--r-md)}}
+  .logos img{display:block;width:auto;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.72;transition:filter .2s,opacity .2s}.logos div:hover img{filter:none;opacity:1}.logos div img{height:var(--h)}
+</style>
+</head>
+<!-- Icons: Lucide v0.469.0 (https://lucide.dev), ISC License -->
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<!-- ======== SVG sprite ======== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></symbol>
+    <symbol id="i-temp" viewBox="0 0 24 24"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+    <symbol id="i-level" viewBox="0 0 24 24"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"/><path d="M6.453 15h11.094"/><path d="M8.5 2h7"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-clip" viewBox="0 0 24 24"><path d="M13.234 20.252 21 12.3"/><path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486"/></symbol>
+    <symbol id="i-cert" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol>
+    <symbol id="i-factory" viewBox="0 0 24 24"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></symbol>
+    <symbol id="i-ex" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/><path d="M12 2v2"/><path d="M12 22v-2"/><path d="m17 20.66-1-1.73"/><path d="M11 10.27 7 3.34"/><path d="m20.66 17-1.73-1"/><path d="m3.34 7 1.73 1"/><path d="M14 12h8"/><path d="M2 12h2"/><path d="m20.66 7-1.73 1"/><path d="m3.34 17 1.73-1"/><path d="m17 3.34-1 1.73"/><path d="m11 13.73-4 6.93"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+    <symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-vk" viewBox="0 0 24 24"><path d="M3 7c.3 6.5 3.8 10.5 9.5 10.5h.5v-3.7c2 .2 3.5 1.7 4.2 3.7H20c-.8-2.8-2.7-4.3-3.9-4.9 1.2-.7 2.9-2.5 3.3-5.6h-2.6c-.5 2.5-2.1 4.4-3.8 4.6V7H10v8.2C8.3 14.8 6.1 12.7 6 7H3Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ======== Topbar ======== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="left">
+      <div class="city-wrap">
+        <div class="city" tabindex="0">
+          <svg class="ico"><use href="#i-pin"/></svg>
+          <span>Челябинск</span>
+          <svg class="ico"><use href="#i-chev"/></svg>
+          <div class="menu">
+            <a href="#" class="cur">Челябинск</a>
+            <a href="#">Москва</a>
+            <a href="#">Санкт-Петербург</a>
+            <a href="#">Пермь</a>
+            <a href="#">Самара</a>
+          </div>
+        </div>
+      </div>
+      <a class="phone" href="tel:+73517258978"><svg class="ico"><use href="#i-phone"/></svg>+7 (351) 725-89-78</a>
+    </div>
+    <div class="right">
+      <a class="svc" href="#forms">Опросные листы</a>
+      <a class="svc" href="#">Консультация специалиста</a>
+      <a class="svc" href="#metrology">Поверка и&nbsp;калибровка</a>
+      <a class="svc" href="#">Отправка в&nbsp;ремонт</a>
+    </div>
+  </div>
+</div>
+
+<!-- ======== Header ======== -->
+<header class="header" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Челябинский завод «Теплоприбор» — на главную">
+      <img class="logo-img" src="img/logo-tp.svg" width="210" height="63" alt="Теплоприбор, ЧТП, Челябинск">
+      <span class="logo-sub">Завод измерительных приборов с&nbsp;1951&nbsp;года</span>
+    </a>
+
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#catalog">Каталог<svg class="ico"><use href="#i-chev"/></svg></a>
+      <a href="#picker">Подбор</a>
+      <a href="#stock">Со&nbsp;склада</a>
+      <a href="#metrology">Метрология и&nbsp;поверка</a>
+      <a href="#metrology">Сервис</a>
+      <a href="#proof">О&nbsp;заводе</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <form class="hsearch" id="hsearch" role="search" action="#">
+      <svg class="ico sm"><use href="#i-search"/></svg>
+      <input type="search" placeholder="Поиск по&nbsp;каталогу: ТСМ-0193, КРОКУС" aria-label="Поиск по каталогу">
+      <button class="hsearch-close" type="button" aria-label="Закрыть поиск"><svg class="ico sm"><use href="#i-close"/></svg></button>
+    </form>
+
+    <div class="tools">
+      <button class="search-btn" type="button" aria-label="Поиск по каталогу" aria-controls="hsearch" aria-expanded="false"><svg class="ico sm"><use href="#i-search"/></svg></button>
+      <a class="order" href="#">
+        <svg class="ico sm"><use href="#i-bag"/></svg>
+        <span class="txt">Ваш заказ</span>
+        <span class="count">3</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Открыть меню">
+      <label class="burger" for="nav-toggle">
+        <svg class="ico open"><use href="#i-menu"/></svg>
+        <svg class="ico close"><use href="#i-close"/></svg>
+      </label>
+    </div>
+
+    <div class="mnav">
+      <div class="wrap">
+        <ul>
+          <li><a href="#catalog">Каталог<svg class="ico sm"><use href="#i-chev"/></svg></a></li>
+          <li><a href="#picker">Подбор</a></li>
+          <li><a href="#stock">Со&nbsp;склада</a></li>
+          <li><a href="#metrology">Метрология и&nbsp;поверка</a></li>
+          <li><a href="#metrology">Сервис</a></li>
+          <li><a href="#proof">О&nbsp;заводе</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="svc-list">
+          <a href="#forms">Опросные листы</a>
+          <a href="#">Консультация специалиста</a>
+          <a href="#metrology">Поверка и&nbsp;калибровка</a>
+          <a href="#">Отправка в&nbsp;ремонт</a>
+          <a href="#">Москва · Санкт-Петербург · Пермь · Самара</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ======== 1. Hero ======== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Завод КИПиА с&nbsp;1951&nbsp;года</p>
+        <h1>Датчики температуры, давления и&nbsp;уровня. <em>Сделано и&nbsp;поверено на&nbsp;заводе</em></h1>
+        <p class="sub">Подбор по&nbsp;параметрам, готовая продукция со&nbsp;склада, собственная аккредитованная поверка.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#picker">Подобрать датчик по&nbsp;параметрам<svg class="ico sm"><use href="#i-arrow"/></svg></a>
+        </div>
+        <ul class="facts">
+          <li>аккредитованная метрология</li>
+          <li>ISO&nbsp;9001</li>
+          <li>отгрузка по&nbsp;России и&nbsp;в&nbsp;Казахстан</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="dev">
+          <div class="head"><span class="gland"></span></div>
+          <div class="neck"></div>
+          <div class="nut"></div>
+          <div class="stem"></div>
+        </div>
+        <div class="img"></div>
+        <span class="spec s1">4–20&nbsp;мА + HART</span>
+        <span class="spec s2">МПИ 5&nbsp;лет</span>
+        <span class="spec s3">Exd · реестр СИ</span>
+        <span class="cap">Серия «Эволюшн»</span>
+      </div>
+    </div>
+
+    <div class="entries">
+      <a class="card entry" href="#catalog">
+        <span class="ic"><svg class="ico"><use href="#i-grid"/></svg></span>
+        <span><b>Каталог продукции</b><span>6&nbsp;категорий, 150+&nbsp;серий</span></span>
+        <svg class="ico arr"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="card entry" href="#stock">
+        <span class="ic"><svg class="ico"><use href="#i-box"/></svg></span>
+        <span><b>Со&nbsp;склада</b><span>~50&nbsp;позиций с&nbsp;ценами, отгрузка без&nbsp;очереди</span></span>
+        <svg class="ico arr"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="card entry" href="#forms">
+        <span class="ic"><svg class="ico"><use href="#i-doc"/></svg></span>
+        <span><b>Опросные листы</b><span>скачать и&nbsp;отправить</span></span>
+        <svg class="ico arr"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 2. Новое на заводе ======== -->
+<section class="sec" id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Новинки и&nbsp;сертификаты</p>
+        <h2>Новое на&nbsp;заводе</h2>
+      </div>
+      <div class="aside"><a class="link" href="#">Все новости<svg class="ico"><use href="#i-arrow"/></svg></a></div>
+    </div>
+
+    <div class="news">
+      <a class="card" href="#">
+        <div class="ph" style="--img:url(img/news-01.jpg)">
+          <span class="kind">Новинка</span>
+          <svg class="ico"><use href="#i-gauge"/></svg>
+        </div>
+        <div class="body">
+          <span class="date">07.2026</span>
+          <h3>Датчики давления в&nbsp;кислородном исполнении</h3>
+          <span class="more link">Подробнее<svg class="ico"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <div class="ph" style="--img:url(img/news-02.jpg)">
+          <span class="kind">Эталон</span>
+          <svg class="ico"><use href="#i-chip"/></svg>
+        </div>
+        <div class="body">
+          <span class="date">05.2026</span>
+          <h3>КИСС-03 в&nbsp;эталонном исполнении</h3>
+          <span class="more link">Подробнее<svg class="ico"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <div class="ph" style="--img:url(img/news-03.jpg)">
+          <span class="kind">Сертификат</span>
+          <svg class="ico"><use href="#i-cert"/></svg>
+        </div>
+        <div class="body">
+          <span class="date">05.2026</span>
+          <h3>Датчики температуры&nbsp;&mdash; сертификат сейсмостойкости</h3>
+          <span class="more link">Подробнее<svg class="ico"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <div class="card webinar">
+        <span class="play"><svg class="ico"><use href="#i-play"/></svg></span>
+        <span class="label">Запись вебинара</span>
+        <h3>Датчики температуры серии «Эволюшн», многозонные датчики и&nbsp;преобразователи ТТ</h3>
+        <div class="btn-wrap"><a class="btn btn-white btn-sm" href="#">Смотреть запись</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 3. Каталог ======== -->
+<section class="sec gray" id="catalog">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Продукция</p>
+        <h2>Каталог продукции</h2>
+      </div>
+    </div>
+
+    <div class="cats">
+      <a class="card cat" href="#">
+        <div class="ph" style="--img:url(img/cat-temp.jpg)"><svg class="ico"><use href="#i-temp"/></svg></div>
+        <div class="body">
+          <h3>Датчики температуры<svg class="ico"><use href="#i-arrow"/></svg></h3>
+          <p>Термометры сопротивления ТСМ/ТСП, термопары ТХА/ТХК/ТПП, серия «Эволюшн» 4–20&nbsp;мА + HART, преобразователи ТТ, защитные гильзы.</p>
+        </div>
+      </a>
+      <a class="card cat" href="#">
+        <div class="ph" style="--img:url(img/cat-pressure.jpg)"><svg class="ico"><use href="#i-gauge"/></svg></div>
+        <div class="body">
+          <h3>Датчики давления<svg class="ico"><use href="#i-arrow"/></svg></h3>
+          <p>КРОКУС: избыточное, абсолютное, дифференциальное, 0,1&nbsp;кПа…60&nbsp;МПа, взрывозащита, кислородное исполнение, поверка раз в&nbsp;5&nbsp;лет.</p>
+        </div>
+      </a>
+      <a class="card cat" href="#">
+        <div class="ph" style="--img:url(img/cat-level.jpg)"><svg class="ico"><use href="#i-level"/></svg></div>
+        <div class="body">
+          <h3>Уровнемеры и&nbsp;сигнализаторы<svg class="ico"><use href="#i-arrow"/></svg></h3>
+          <p>Левелтач&nbsp;М (микроволновые), Вибротач&nbsp;L (жидкости), Вибротач&nbsp;S (сыпучие).</p>
+        </div>
+      </a>
+      <a class="card cat" href="#">
+        <div class="ph" style="--img:url(img/cat-secondary.jpg)"><svg class="ico"><use href="#i-chip"/></svg></div>
+        <div class="body">
+          <h3>Вторичная аппаратура<svg class="ico"><use href="#i-arrow"/></svg></h3>
+          <p>Регистраторы, калибраторы (КИСС-03), показывающие и&nbsp;регулирующие приборы, многоканальная сигнализация.</p>
+        </div>
+      </a>
+      <a class="card cat" href="#">
+        <div class="ph" style="--img:url(img/cat-functional.jpg)"><svg class="ico"><use href="#i-bolt"/></svg></div>
+        <div class="body">
+          <h3>Функциональная аппаратура<svg class="ico"><use href="#i-arrow"/></svg></h3>
+          <p>Барьеры искрозащиты, размножители сигналов, нормирующие преобразователи, блоки питания.</p>
+        </div>
+      </a>
+      <a class="card cat" href="#">
+        <div class="ph" style="--img:url(img/cat-express.jpg)"><svg class="ico"><use href="#i-flame"/></svg></div>
+        <div class="body">
+          <h3>«Экспресс-анализ»<svg class="ico"><use href="#i-arrow"/></svg></h3>
+          <p>Измерение температуры и&nbsp;окисленности расплава: жезлы, преобразователи ПТП, зонды.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="cat-links">
+      <a class="link" href="#"><svg class="ico"><use href="#i-download"/></svg>Скачать каталог в&nbsp;PDF</a>
+      <a class="link" href="#forms"><svg class="ico"><use href="#i-doc"/></svg>Все опросные листы</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 4. Подбор по параметрам ======== -->
+<section class="sec" id="picker">
+  <div class="wrap">
+    <div class="picker">
+      <div>
+        <p class="eyebrow">Подбор</p>
+        <h2>Подобрать датчик температуры по&nbsp;параметрам</h2>
+      </div>
+
+      <form class="form-card" action="#">
+        <div class="fgrid">
+          <div class="field">
+            <label for="p-type">Тип</label>
+            <div class="control sel">
+              <select id="p-type">
+                <option>Термометр сопротивления</option>
+                <option>Термопара</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="p-out">Выходной сигнал</label>
+            <div class="control sel">
+              <select id="p-out">
+                <option>НСХ</option>
+                <option>4–20 мА</option>
+                <option>HART</option>
+                <option>Profibus</option>
+              </select>
+            </div>
+          </div>
+          <div class="field full">
+            <label for="p-from">Диапазон температур</label>
+            <div class="range">
+              <div class="control unit"><input id="p-from" type="text" inputmode="numeric" placeholder="от"><span>°C</span></div>
+              <div class="control unit"><input id="p-to" type="text" inputmode="numeric" placeholder="до" aria-label="до"><span>°C</span></div>
+            </div>
+          </div>
+          <div class="field">
+            <label>Взрывозащита</label>
+            <div class="seg">
+              <input type="radio" name="ex" id="ex-yes"><label for="ex-yes">Да</label>
+              <input type="radio" name="ex" id="ex-no" checked><label for="ex-no">Нет</label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="p-mount">Монтаж</label>
+            <div class="control sel">
+              <select id="p-mount">
+                <option>Погружной</option>
+                <option>Поверхностный</option>
+                <option>В тройник</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit">Показать подходящие<svg class="ico sm"><use href="#i-arrow"/></svg></button>
+          <p class="note">Не&nbsp;нашли&nbsp;&mdash; <a href="#forms">заполните опросный лист</a>, подберём за&nbsp;вас</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 5. На складе сейчас ======== -->
+<section class="sec gray" id="stock">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Готовая продукция</p>
+        <h2>На&nbsp;складе сейчас</h2>
+        <p class="lead">Цены без НДС, обновлено 18.09.2025</p>
+      </div>
+      <div class="aside">
+        <a class="link" href="#">Все позиции (~50)<svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="link" href="#"><svg class="ico"><use href="#i-download"/></svg>Скачать список XLS</a>
+      </div>
+    </div>
+
+    <div class="stock">
+      <div class="card hov sku">
+        <div class="sku-img" style="--img:url(img/stock-01.jpg)"></div>
+        <div class="top">
+          <div><div class="name">ТСМ-0193-01-80 50М</div><p class="desc">Термометр сопротивления, НСХ 50М</p></div>
+          <span class="qty">4&nbsp;шт.</span>
+        </div>
+        <div class="bot">
+          <div class="price">800&nbsp;₽<small>без НДС</small></div>
+          <a class="btn btn-secondary btn-sm" href="#">В&nbsp;заказ</a>
+        </div>
+      </div>
+      <div class="card hov sku">
+        <div class="sku-img" style="--img:url(img/stock-02.jpg)"></div>
+        <div class="top">
+          <div><div class="name">TT-0-3-0-1-A4-5</div><p class="desc">Преобразователь ТТ</p></div>
+          <span class="qty">6&nbsp;шт.</span>
+        </div>
+        <div class="bot">
+          <div class="price">6&nbsp;461&nbsp;₽<small>без НДС</small></div>
+          <a class="btn btn-secondary btn-sm" href="#">В&nbsp;заказ</a>
+        </div>
+      </div>
+      <div class="card hov sku">
+        <div class="sku-img" style="--img:url(img/stock-03.jpg)"></div>
+        <div class="top">
+          <div><div class="name">Бобышка Б1-12X18H10T-M20x1,5-60</div><p class="desc">Бобышка, сталь 12Х18Н10Т</p></div>
+          <span class="qty">21&nbsp;шт.</span>
+        </div>
+        <div class="bot">
+          <div class="price">250&nbsp;₽<small>без НДС</small></div>
+          <a class="btn btn-secondary btn-sm" href="#">В&nbsp;заказ</a>
+        </div>
+      </div>
+      <div class="card hov sku">
+        <div class="sku-img" style="--img:url(img/stock-04.jpg)"></div>
+        <div class="top">
+          <div><div class="name">КТХА-0299-03-80/440</div><p class="desc">Термопара ТХА</p></div>
+          <span class="qty">100&nbsp;шт.</span>
+        </div>
+        <div class="bot">
+          <div class="price">2&nbsp;056&nbsp;₽<small>без НДС</small></div>
+          <a class="btn btn-secondary btn-sm" href="#">В&nbsp;заказ</a>
+        </div>
+      </div>
+      <div class="card hov sku">
+        <div class="sku-img" style="--img:url(img/stock-05.jpg)"></div>
+        <div class="top">
+          <div><div class="name">Левелтач-M L=3200&nbsp;мм</div><p class="desc">Уровнемер микроволновый</p></div>
+          <span class="qty">1&nbsp;шт.</span>
+        </div>
+        <div class="bot">
+          <div class="price">150&nbsp;577&nbsp;₽<small>без НДС</small></div>
+          <a class="btn btn-secondary btn-sm" href="#">В&nbsp;заказ</a>
+        </div>
+      </div>
+      <div class="card hov sku">
+        <div class="sku-img" style="--img:url(img/stock-07.jpg)"></div>
+        <div class="top">
+          <div><div class="name">Вибротач L</div><p class="desc">Вибрационный сигнализатор уровня жидкостей</p></div>
+          <span class="qty na">по&nbsp;запросу</span>
+        </div>
+        <div class="bot">
+          <div class="price rq">Цена по&nbsp;запросу</div>
+          <a class="btn btn-secondary btn-sm" href="#">В&nbsp;заказ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 5а. Опросные листы ======== -->
+<section class="sec forms-sec" id="forms">
+  <div class="wrap">
+    <div class="forms">
+      <div class="forms-intro">
+        <p class="eyebrow">Подбор под&nbsp;задачу</p>
+        <h2>Опросные листы</h2>
+        <p class="lead">Не&nbsp;нашли нужное исполнение&nbsp;— опишите задачу в&nbsp;опросном листе. Инженер завода подберёт прибор и&nbsp;подготовит коммерческое предложение.</p>
+        <ol class="forms-steps">
+          <li><span>1</span>Скачайте лист для&nbsp;своего типа прибора</li>
+          <li><span>2</span>Заполните параметры и&nbsp;условия эксплуатации</li>
+          <li><span>3</span>Отправьте нам&nbsp;— ответим в&nbsp;течение рабочего дня</li>
+        </ol>
+      </div>
+      <ul class="forms-list">
+        <li><a class="fdoc" href="#"><svg class="ico"><use href="#i-doc"/></svg><span><b>Датчики температуры</b><small>DOCX</small></span><svg class="ico sm dl"><use href="#i-download"/></svg></a></li>
+        <li><a class="fdoc" href="#"><svg class="ico"><use href="#i-doc"/></svg><span><b>Датчики давления</b><small>DOCX</small></span><svg class="ico sm dl"><use href="#i-download"/></svg></a></li>
+        <li><a class="fdoc" href="#"><svg class="ico"><use href="#i-doc"/></svg><span><b>Уровнемеры и&nbsp;сигнализаторы</b><small>DOCX</small></span><svg class="ico sm dl"><use href="#i-download"/></svg></a></li>
+        <li><a class="fdoc" href="#"><svg class="ico"><use href="#i-doc"/></svg><span><b>Вторичная аппаратура</b><small>DOCX</small></span><svg class="ico sm dl"><use href="#i-download"/></svg></a></li>
+        <li><a class="fdoc" href="#"><svg class="ico"><use href="#i-doc"/></svg><span><b>Функциональная аппаратура</b><small>DOCX</small></span><svg class="ico sm dl"><use href="#i-download"/></svg></a></li>
+        <li><a class="fdoc" href="#"><svg class="ico"><use href="#i-doc"/></svg><span><b>«Экспресс-анализ»</b><small>DOCX</small></span><svg class="ico sm dl"><use href="#i-download"/></svg></a></li>
+      </ul>
+      <div class="forms-cta"><a class="btn btn-light" href="#contacts">Отправить заполненный лист<svg class="ico sm"><use href="#i-arrow"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 6. Завод, а не поставщик ======== -->
+<section class="sec" id="proof">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">О&nbsp;заводе</p>
+        <h2>Завод, а&nbsp;не&nbsp;поставщик</h2>
+        <p class="lead">Разработка, производство, испытания и&nbsp;поверка на&nbsp;одной площадке в&nbsp;Челябинске.</p>
+      </div>
+      <div class="aside"><a class="link" href="#">О&nbsp;компании<svg class="ico"><use href="#i-arrow"/></svg></a></div>
+    </div>
+    <div class="wide-photo" role="img" aria-label="Сборочный участок завода" style="--img:url(img/c-factory.jpg)"></div>
+
+    <div class="nums">
+      <div class="num">
+        <b>1951</b>
+        <p><strong>Год основания</strong>75&nbsp;лет разработки и&nbsp;производства КИПиА в&nbsp;Челябинске.</p>
+      </div>
+      <div class="num">
+        <b>5 <small>лет</small></b>
+        <p><strong>Аккредитация на&nbsp;поверку</strong>Подтверждена в&nbsp;октябре 2025.</p>
+      </div>
+      <div class="num">
+        <b><small>до</small> 5 <small>лет</small></b>
+        <p><strong>Межповерочный интервал</strong>Серии «Эволюшн» и&nbsp;КРОКУС.</p>
+      </div>
+      <div class="num">
+        <b>9 <small>баллов</small></b>
+        <p><strong>Сейсмостойкость</strong>Датчики температуры по&nbsp;MSK-64, сертификат 2026.</p>
+      </div>
+    </div>
+
+    <div class="docs">
+      <div class="doc">
+        <span class="badge"><svg class="ico"><use href="#i-cert"/></svg></span>
+        <div><b>ISO 9001:2015</b><span>ГОСТ Р ИСО 9001-2015</span></div>
+      </div>
+      <div class="doc">
+        <span class="badge"><svg class="ico"><use href="#i-factory"/></svg></span>
+        <div><b>Реестр Минпромторга</b><span>датчики температуры, 05.2026</span></div>
+      </div>
+      <div class="doc">
+        <span class="badge"><svg class="ico"><use href="#i-ex"/></svg></span>
+        <div><b>Взрывозащита Exd</b><span>взрывозащищённое исполнение</span></div>
+      </div>
+      <div class="doc">
+        <span class="badge"><svg class="ico"><use href="#i-db"/></svg></span>
+        <div><b>ФГИС «Аршин»</b><span>запись о&nbsp;поверке</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 7. Отрасли ======== -->
+<section class="sec gray" id="industries">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Отрасли</p>
+        <h2>Работаем с&nbsp;отраслями</h2>
+      </div>
+    </div>
+
+    <div class="inds">
+      <a class="ind" href="#" style="--img:url(img/ind-energy.jpg)">
+        <span class="bg"></span>
+        <span class="ic"><svg class="ico"><use href="#i-bolt"/></svg></span>
+        <div class="txt"><h3>Энергетика<svg class="ico"><use href="#i-arrow"/></svg></h3><p>ТЭЦ, ГРЭС, АЭС</p></div>
+      </a>
+      <a class="ind" href="#" style="--img:url(img/ind-metal.jpg)">
+        <span class="bg"></span>
+        <span class="ic"><svg class="ico"><use href="#i-flame"/></svg></span>
+        <div class="txt"><h3>Металлургия<svg class="ico"><use href="#i-arrow"/></svg></h3><p>Расплавы, печи, прокат</p></div>
+      </a>
+      <a class="ind" href="#" style="--img:url(img/ind-oil.jpg)">
+        <span class="bg"></span>
+        <span class="ic"><svg class="ico"><use href="#i-drop"/></svg></span>
+        <div class="txt"><h3>Нефтегаз и&nbsp;нефтехимия<svg class="ico"><use href="#i-arrow"/></svg></h3><p>Взрывозащита, HART</p></div>
+      </a>
+      <a class="ind" href="#" style="--img:url(img/ind-chem.jpg)">
+        <span class="bg"></span>
+        <span class="ic"><svg class="ico"><use href="#i-flask"/></svg></span>
+        <div class="txt"><h3>Химия<svg class="ico"><use href="#i-arrow"/></svg></h3><p>Агрессивные среды, кислородное исполнение</p></div>
+      </a>
+      <a class="ind" href="#" style="--img:url(img/ind-machine.jpg)">
+        <span class="bg"></span>
+        <span class="ic"><svg class="ico"><use href="#i-gear"/></svg></span>
+        <div class="txt"><h3>Машиностроение<svg class="ico"><use href="#i-arrow"/></svg></h3><p>Термопластавтоматы, пресс-формы</p></div>
+      </a>
+      <a class="ind" href="#" style="--img:url(img/ind-food.jpg)">
+        <span class="bg"></span>
+        <span class="ic"><svg class="ico"><use href="#i-leaf"/></svg></span>
+        <div class="txt"><h3>Пищевая<svg class="ico"><use href="#i-arrow"/></svg></h3><p>ТСМ-0395, пастеризация</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 8. Метрология и сервис ======== -->
+<section class="sec" id="metrology">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Метрология и&nbsp;сервис</p>
+        <h2>Поверка, испытания и&nbsp;сервис на&nbsp;заводе</h2>
+        <p class="lead">Аккредитация на&nbsp;поверку подтверждена до&nbsp;2030&nbsp;года.</p>
+      </div>
+      <div class="aside"><a class="link" href="#">Метрология и&nbsp;поверка<svg class="ico"><use href="#i-arrow"/></svg></a></div>
+    </div>
+    <div class="wide-photo" role="img" aria-label="Метрологическая лаборатория завода" style="--img:url(img/c-lab.jpg)"></div>
+
+    <div class="srv">
+      <div class="card hov">
+        <span class="ic"><svg class="ico"><use href="#i-shield"/></svg></span>
+        <h3>Поверка и&nbsp;калибровка</h3>
+        <p>Температура, давление, электрические, геометрические величины; свидетельство и&nbsp;запись в&nbsp;«Аршине».</p>
+        <div class="spec-row"><span class="tag">RA.RU.311369</span><span class="tag">до&nbsp;2030</span></div>
+      </div>
+      <div class="card hov">
+        <span class="ic"><svg class="ico"><use href="#i-flask"/></svg></span>
+        <h3>Испытания</h3>
+        <p>Климат −60…+100&nbsp;°C, вибрация до&nbsp;2,7&nbsp;кН, удар, электропрочность до&nbsp;2500&nbsp;В.</p>
+        <div class="spec-row"><span class="tag">−60…+100&nbsp;°C</span><span class="tag">2,7&nbsp;кН</span><span class="tag">2500&nbsp;В</span></div>
+      </div>
+      <div class="card hov">
+        <span class="ic"><svg class="ico"><use href="#i-wrench"/></svg></span>
+        <h3>Шеф-монтаж и&nbsp;аудит объекта</h3>
+        <p>Настройка под техпроцесс, интеграция с&nbsp;АСУ&nbsp;ТП, обучение персонала, увеличенная гарантия.</p>
+        <div class="spec-row"><span class="tag">АСУ ТП</span><span class="tag">шеф-монтаж</span></div>
+      </div>
+    </div>
+
+    <div class="srv-cta">
+      <p>Заявка на&nbsp;поверку&nbsp;&mdash; письмом на&nbsp;<a href="mailto:eastenus@tpchel.ru">eastenus@tpchel.ru</a> или через форму.</p>
+      <a class="btn btn-primary" href="#">Заявка на&nbsp;поверку<svg class="ico sm"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 9. Клиенты и отзывы ======== -->
+<section class="sec gray" id="clients">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Клиенты</p>
+        <h2>Нам доверяют 70+&nbsp;предприятий</h2>
+      </div>
+      <div class="aside"><a class="link" href="#">Все отзывы<svg class="ico"><use href="#i-arrow"/></svg></a></div>
+    </div>
+
+    <div class="logos" aria-label="Клиенты">
+      <div><img src="img/clients/gazprom-neft.svg" width="87" height="44" style="--h:44px" alt="Газпром нефть" loading="lazy"></div>
+      <div><img src="img/clients/rosenergoatom.svg" width="124" height="50" style="--h:50px" alt="Росэнергоатом" loading="lazy"></div>
+      <div><img src="img/clients/nlmk.svg" width="71" height="38" style="--h:38px" alt="НЛМК" loading="lazy"></div>
+      <div><img src="img/clients/mechel.png" width="137" height="36" style="--h:36px" alt="Мечел" loading="lazy"></div>
+      <div><img src="img/clients/severstal.svg" width="109" height="34" style="--h:34px" alt="Северсталь" loading="lazy"></div>
+      <div><img src="img/clients/surgutneftegas.png" width="71" height="40" style="--h:40px" alt="Сургутнефтегаз" loading="lazy"></div>
+      <div><img src="img/clients/lukoil.svg" width="118" height="30" style="--h:30px" alt="ЛУКОЙЛ" loading="lazy"></div>
+      <div><img src="img/clients/phosagro.svg" width="165" height="26" style="--h:26px" alt="ФосАгро" loading="lazy"></div>
+      <div><img src="img/clients/uralkali.png" width="144" height="26" style="--h:26px" alt="Уралкалий" loading="lazy"></div>
+      <div><img src="img/clients/power-machines.svg" width="54" height="52" style="--h:52px" alt="Силовые машины" loading="lazy"></div>
+      <div><img src="img/clients/t-plus.png" width="109" height="44" style="--h:44px" alt="Т Плюс" loading="lazy"></div>
+      <div class="more">и&nbsp;ещё 50+ предприятий</div>
+    </div>
+
+    <div class="reviews">
+      <a class="card review" href="#">
+        <div>
+          <span class="kind">Отзыв заказчика</span>
+          <h3>Росэнергоатом</h3>
+          <p>Датчики температуры</p>
+          <span class="link" style="margin-top:16px">Открыть письмо<svg class="ico"><use href="#i-arrow"/></svg></span>
+        </div>
+        <span class="scan"><svg class="ico"><use href="#i-doc"/></svg></span>
+      </a>
+      <a class="card review" href="#">
+        <div>
+          <span class="kind">Отзыв заказчика</span>
+          <h3>НЛМК</h3>
+          <p>«Экспресс-анализ»&nbsp;&mdash; измерение температуры расплава</p>
+          <span class="link" style="margin-top:16px">Открыть письмо<svg class="ico"><use href="#i-arrow"/></svg></span>
+        </div>
+        <span class="scan"><svg class="ico"><use href="#i-doc"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 10. Финальный CTA ======== -->
+<section class="sec" id="contacts">
+  <div class="wrap">
+    <div class="cta-grid">
+      <div>
+        <p class="eyebrow">Поддержка клиентов</p>
+        <h2>Не&nbsp;нашли нужный прибор?</h2>
+        <p class="lead">Инженеры отдела поддержки подберут исполнение под ваш техпроцесс и&nbsp;подготовят КП.</p>
+
+        <form class="form-card" action="#">
+          <div class="fgrid">
+            <div class="field">
+              <label for="c-name">Имя</label>
+              <div class="control"><input id="c-name" type="text"></div>
+            </div>
+            <div class="field">
+              <label for="c-company">Компания</label>
+              <div class="control"><input id="c-company" type="text"></div>
+            </div>
+            <div class="field full">
+              <label for="c-contact">Телефон или e-mail</label>
+              <div class="control"><input id="c-contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru"></div>
+            </div>
+            <div class="field full">
+              <label for="c-q">Вопрос</label>
+              <div class="control"><textarea id="c-q"></textarea></div>
+            </div>
+            <div class="field full">
+              <label for="c-file">Файл</label>
+              <label class="file" for="c-file"><svg class="ico sm"><use href="#i-clip"/></svg>Прикрепить опросный лист<input id="c-file" type="file"></label>
+            </div>
+            <div class="field full">
+              <label class="consent"><input type="checkbox" checked><span>Согласен на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="#">политикой конфиденциальности</a></span></label>
+            </div>
+          </div>
+          <div class="form-foot">
+            <button class="btn btn-primary" type="submit">Отправить запрос<svg class="ico sm"><use href="#i-arrow"/></svg></button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="card staff">
+        <div class="who">
+          <img class="ava" src="img/staff-01.jpg" width="64" height="64" alt="">
+          <div>
+            <h3>Николай Воронин</h3>
+            <p class="role">Руководитель отдела поддержки клиентов</p>
+          </div>
+        </div>
+        <a class="tel" href="tel:+73517258926"><svg class="ico"><use href="#i-phone"/></svg>+7 (351) 725-89-26</a>
+        <p class="hint">Поможет подобрать исполнение, расшифровать обозначение и&nbsp;подготовить КП.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======== Footer ======== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-brand">
+        <a class="logo logo-footer" href="#top" aria-label="Челябинский завод «Теплоприбор» — на главную">
+      <img class="logo-img" src="img/logo-tp.svg" width="210" height="63" alt="Теплоприбор, ЧТП, Челябинск">
+      <span class="logo-sub">Завод измерительных приборов с&nbsp;1951&nbsp;года</span>
+    </a>
+        <p>Завод КИПиА с&nbsp;1951&nbsp;года. Подобрать и&nbsp;заказать прибор у&nbsp;изготовителя.</p>
+        <a class="f-social" href="#"><svg class="ico sm"><use href="#i-vk"/></svg>ВКонтакте</a>
+      </div>
+      <div>
+        <h3>Каталог</h3>
+        <ul>
+          <li><a href="#catalog">Датчики температуры</a></li>
+          <li><a href="#catalog">Датчики давления</a></li>
+          <li><a href="#catalog">Уровнемеры и&nbsp;сигнализаторы</a></li>
+          <li><a href="#catalog">Вторичная аппаратура</a></li>
+          <li><a href="#catalog">Функциональная аппаратура</a></li>
+          <li><a href="#catalog">«Экспресс-анализ»</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Сервисы</h3>
+        <ul>
+          <li><a href="#picker">Подбор</a></li>
+          <li><a href="#stock">Со&nbsp;склада</a></li>
+          <li><a href="#forms">Опросные листы</a></li>
+          <li><a href="#metrology">Поверка</a></li>
+          <li><a href="#">Ремонт</a></li>
+          <li><a href="#contacts">Консультация</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>О&nbsp;заводе</h3>
+        <ul>
+          <li><a href="#proof">О&nbsp;компании</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#">Статьи</a></li>
+          <li><a href="#clients">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="f-contact">
+        <h3>Контакты</h3>
+        <address>
+          Челябинск, 454047,<br>ул. 2-я Павелецкая, 36
+          <a class="big" href="tel:+73517258978">+7 (351) 725-89-78</a>
+          <a class="mail" href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a>
+        </address>
+        <p class="f-reps"><b>Представительства:</b> Москва, Санкт-Петербург, Пермь, Самара, Костанай</p>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© 2008–2026 ООО «Челябинский завод „Теплоприбор“»</span>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ======== Cookie ======== -->
+<input type="checkbox" id="ck" class="ck-toggle" aria-label="Скрыть сообщение о cookie">
+<div class="cookie" role="status">
+  <p>Используем cookie для работы сайта</p>
+  <label class="btn btn-secondary btn-sm" for="ck">Понятно</label>
+</div>
+
+<script>
+(function(){
+  var head=document.querySelector('.header'), btn=head.querySelector('.search-btn'),
+      form=head.querySelector('.hsearch'), input=form.querySelector('input'), nav=document.getElementById('nav-toggle');
+  function set(open){
+    head.classList.toggle('is-search',open);
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    if(open){nav.checked=false;input.focus();}else{btn.focus();}
+  }
+  btn.addEventListener('click',function(){set(true);});
+  form.querySelector('.hsearch-close').addEventListener('click',function(){set(false);});
+  form.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});
+  nav.addEventListener('change',function(){if(nav.checked&&head.classList.contains('is-search'))set(false);});
+})();
+</script>
+</body>
+</html>

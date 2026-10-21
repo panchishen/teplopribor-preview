@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Теплоприбор — датчики температуры, давления и уровня от завода-изготовителя</title>
+<meta name="description" content="Теплоприбор — завод КИПиА с 1951 года. Подобрать и заказать прибор у изготовителя.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ---------- tokens ---------- */
+  :root{
+    --ink:#15181D; --ink-2:#4B515B; --steel:#646B75; --line:#E3E6EA; --line-2:#CFD4DA;
+    --bg:#F4F5F7; --bg-2:#E9ECF0; --paper:#FFFFFF;
+    --red:#DD2A1B; --red-h:#BF2215; --blue:#004373; --blue-h:#00314F; --blue-bg:#E6EEF4;
+    --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+    --max:1216px; --gutter:24px;
+    --r:8px; --r-lg:12px;
+    --shadow:0 16px 40px rgba(21,24,29,.08);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
+  h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0}
+  ul,ol{padding:0;list-style:none}
+  a{color:inherit;text-decoration:none}
+  a:hover{color:var(--blue)}
+  button,input,textarea{font:inherit;color:inherit}
+  button{background:none;border:0;padding:0;cursor:pointer}
+  img,svg{max-width:100%;display:block}
+  .container{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+  .mono{font-family:var(--mono)}
+  .muted{color:var(--ink-2)}
+  .ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .ic-fill{fill:currentColor;stroke:none}
+  .ic-sm{width:16px;height:16px}
+  .ic-lg{width:28px;height:28px}
+
+  /* ---------- type scale ---------- */
+  h1{font-size:48px;line-height:1.08;font-weight:600;letter-spacing:-.025em}
+  h2{font-size:32px;line-height:1.15;font-weight:600;letter-spacing:-.02em}
+  h3{font-size:18px;line-height:1.3;font-weight:600;letter-spacing:-.01em}
+  .t-sm{font-size:14px;line-height:1.5}
+  .t-xs{font-size:13px;line-height:1.5}
+  .t-label{font-size:12px;line-height:1.4;letter-spacing:.06em;text-transform:uppercase;color:var(--steel);font-weight:500}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:var(--r);font-weight:500;font-size:15px;line-height:1.2;border:1px solid transparent;transition:background-color .15s,border-color .15s,color .15s,box-shadow .15s;white-space:nowrap}
+  .btn-primary{background:var(--red);color:#fff;border-color:var(--red)}
+  .btn-primary:hover{background:var(--red-h);border-color:var(--red-h);color:#fff}
+  .btn-primary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  .btn-dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .btn-dark:hover{background:#2A2F37;border-color:#2A2F37;color:#fff}
+  .btn-outline{background:var(--paper);color:var(--ink);border-color:var(--line-2)}
+  .btn-outline:hover{border-color:var(--ink);color:var(--ink)}
+  .btn-sm{padding:8px 14px;font-size:14px}
+  .btn-block{width:100%}
+  .link{color:var(--blue);font-weight:500;display:inline-flex;align-items:center;gap:6px}
+  .link:hover{color:var(--blue-h)}
+  .link .ic{width:16px;height:16px}
+
+  /* ---------- cards ---------- */
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);transition:border-color .15s,box-shadow .15s,transform .15s}
+  .card-hover:hover{border-color:var(--ink);box-shadow:0 8px 24px rgba(21,24,29,.06)}
+  .badge{display:inline-flex;align-items:center;gap:6px;padding:3px 8px;border-radius:4px;font-size:12px;font-weight:500;line-height:1.3;background:var(--blue-bg);color:var(--blue);white-space:nowrap}
+  .badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+  .chip{display:inline-block;padding:3px 8px;border-radius:4px;font-size:12px;line-height:1.3;color:var(--ink-2);background:var(--bg);border:1px solid var(--line);white-space:nowrap}
+
+  /* ---------- sections ---------- */
+  .section{padding:72px 0}
+  .section-paper{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:32px}
+  .section-head .sub{margin-top:8px;color:var(--ink-2)}
+  .section-links{display:flex;gap:24px;flex-wrap:wrap;flex:none}
+
+  /* ---------- header ---------- */
+  .header{background:var(--paper);border-bottom:1px solid var(--line);position:relative;z-index:20}
+  .topbar{border-bottom:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+  .topbar-in{display:flex;align-items:center;gap:24px;height:40px}
+  .city{display:inline-flex;align-items:center;gap:6px;color:var(--ink);font-weight:500}
+  .city .ic{width:16px;height:16px;color:var(--steel)}
+  .city:hover{color:var(--blue)}
+  .topbar-right{margin-left:auto;display:flex;gap:24px;align-items:center}
+  .topbar .phone{color:var(--ink);font-weight:500;font-family:var(--mono);font-size:13px}
+  .header-main{display:flex;align-items:center;gap:32px;height:80px}
+  .logo{display:flex;align-items:center;gap:12px;flex:none}
+  .logo:hover{color:inherit}
+  .logo-img{display:block;height:46px;width:auto}
+  .logo-sub{max-width:150px;padding-left:12px;border-left:1px solid var(--line);font-size:12px;line-height:1.35;color:var(--ink-2)}
+  .footer .logo-sub{border-left-color:rgba(255,255,255,.18);color:rgba(255,255,255,.6)}
+  @media (max-width:1100px){.header .logo-sub{display:none}}
+  @media (max-width:600px){.logo-img{height:38px}}
+  .search{flex:1;display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border:1px solid var(--line-2);border-radius:var(--r);background:var(--paper);color:var(--steel);max-width:560px;transition:border-color .15s,box-shadow .15s}
+  .search:focus-within{border-color:var(--ink);box-shadow:0 0 0 3px rgba(21,24,29,.06);color:var(--ink)}
+  .search input{flex:1;border:0;background:none;outline:0;min-width:0;color:var(--ink)}
+  .search input::placeholder{color:var(--steel)}
+  .search .hint{font-family:var(--mono);font-size:12px;color:var(--steel);display:none}
+  .header-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .btn-order{position:relative}
+  .btn-order .count{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 6px;border-radius:11px;background:var(--red);color:#fff;font-family:var(--mono);font-size:12px;font-weight:500;line-height:1}
+  .burger{display:none;width:44px;height:44px;border:1px solid var(--line-2);border-radius:var(--r);align-items:center;justify-content:center}
+  .burger .ic-x{display:none}
+  .nav-in{display:flex;align-items:center;gap:4px;height:52px}
+  .nav a{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:6px;font-weight:500;font-size:15px;color:var(--ink)}
+  .nav a:hover{background:var(--bg);color:var(--ink)}
+  .nav a .ic{width:16px;height:16px;color:var(--steel)}
+  .nav .nav-cat{background:var(--ink);color:#fff;margin-right:8px}
+  .nav .nav-cat:hover{background:#2A2F37;color:#fff}
+  .nav .nav-cat .ic{color:#fff}
+  .nav-mobile{display:none}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--paper);position:relative;overflow:hidden;padding:64px 0 56px}
+  .hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:linear-gradient(rgba(21,24,29,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(21,24,29,.045) 1px,transparent 1px);
+    background-size:48px 48px;background-position:center top;
+    -webkit-mask-image:linear-gradient(180deg,#000 0%,rgba(0,0,0,.6) 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,rgba(0,0,0,.6) 55%,transparent 100%)}
+  .hero .container{position:relative}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:start}
+  .hero-copy{padding-top:8px}
+  .hero-copy .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;color:var(--ink-2);margin-bottom:24px}
+  .hero-copy .eyebrow::before{content:"";width:8px;height:8px;background:var(--red);border-radius:2px}
+  .hero-copy h1{max-width:640px}
+  .hero-copy .lead{font-size:18px;line-height:1.5;color:var(--ink-2);max-width:560px;margin-top:20px}
+  .facts{display:flex;flex-wrap:wrap;gap:8px 0;margin-top:32px;font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+  .facts li{display:inline-flex;align-items:center}
+  .facts li+li::before{content:"";width:1px;height:14px;background:var(--line-2);margin:0 16px}
+
+  .picker{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;box-shadow:var(--shadow)}
+  .picker-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:20px}
+  .picker-head h2{font-size:20px;letter-spacing:-.01em}
+  .picker-head .ic{color:var(--steel);width:24px;height:24px;margin-top:2px}
+  .fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .field{border:1px solid var(--line-2);border-radius:var(--r);padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;transition:border-color .15s,box-shadow .15s;background:var(--paper)}
+  .field:hover{border-color:var(--ink)}
+  .field:focus-visible{outline:0;border-color:var(--ink);box-shadow:0 0 0 3px rgba(21,24,29,.06)}
+  .field span{display:block;font-size:12px;color:var(--steel);line-height:1.3;margin-bottom:2px}
+  .field b{display:block;font-weight:500;font-size:14px;line-height:1.3;font-family:var(--mono)}
+  .field .ic{color:var(--steel);width:16px;height:16px}
+  .field-wide{grid-column:1/-1}
+  .picker .btn{margin-top:16px}
+  .picker .note{margin-top:14px;font-size:13px;color:var(--ink-2);display:flex;gap:8px;align-items:flex-start}
+  .picker .note .ic{width:16px;height:16px;color:var(--steel);margin-top:2px}
+  .picker .note a{color:var(--blue);font-weight:500}
+
+  .entries{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:48px}
+  .entry{display:flex;gap:14px;padding:20px;align-items:flex-start}
+  .entry .ic{width:24px;height:24px;color:var(--ink);margin-top:2px}
+  .entry b{display:block;font-size:16px;font-weight:600;letter-spacing:-.01em;line-height:1.3}
+  .entry span{display:block;font-size:14px;color:var(--ink-2);margin-top:4px}
+  .entry .arrow{margin-left:auto;color:var(--steel);transition:transform .15s,color .15s}
+  .entry:hover .arrow{transform:translateX(3px);color:var(--ink)}
+  .entry.is-hot{border-color:var(--blue)}
+  .entry.is-hot .ic:first-child{color:var(--blue)}
+  .entry.is-hot .mono{color:var(--blue)}
+
+  /* ---------- stock ---------- */
+  .stock-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+  .stock-card{padding:20px;display:flex;flex-direction:column;gap:12px;min-height:220px}
+  .stock-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+  .stock-card h3{font-family:var(--mono);font-weight:500;font-size:16px;line-height:1.35;letter-spacing:0;overflow-wrap:anywhere}
+  .stock-card h3 a:hover{color:var(--blue)}
+  .stock-card p{font-size:14px;color:var(--ink-2);flex:1}
+  .stock-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding-top:12px;border-top:1px solid var(--line)}
+  .stock-meta .qty{display:block;font-size:13px;color:var(--ink-2);margin-bottom:2px}
+  .stock-meta .price{display:block;font-family:var(--mono);font-size:18px;font-weight:500;line-height:1.2;white-space:nowrap}
+  .stock-meta .price.is-request{font-size:14px;color:var(--ink-2);font-weight:400;font-family:var(--sans)}
+
+  /* ---------- catalog ---------- */
+  .cat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .cat{overflow:hidden;display:flex;flex-direction:column}
+  .cat-img{aspect-ratio:4/3;background:var(--bg-2) center/cover no-repeat;position:relative;border-bottom:1px solid var(--line)}
+  .cat-img::after{content:attr(data-index);position:absolute;left:12px;top:10px;font-family:var(--mono);font-size:12px;color:var(--steel);background:rgba(255,255,255,.9);padding:2px 6px;border-radius:4px}
+  .cat-body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .cat-body h3{display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .cat-body h3 .ic{width:18px;height:18px;color:var(--steel);transition:transform .15s,color .15s}
+  .cat:hover h3 .ic{transform:translateX(3px);color:var(--ink)}
+  .cat-body p{font-size:14px;color:var(--ink-2)}
+  .cat-foot{display:flex;gap:24px;margin-top:32px;flex-wrap:wrap}
+
+  /* ---------- quick actions ---------- */
+  .actions-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .action{padding:24px;display:flex;flex-direction:column;gap:16px;min-height:168px}
+  .action .ic{width:28px;height:28px}
+  .action b{display:block;font-size:16px;font-weight:600;letter-spacing:-.01em}
+  .action span{display:block;font-size:14px;color:var(--ink-2);margin-top:4px}
+  .action .link{margin-top:auto}
+
+  /* ---------- factory ---------- */
+  .factory{background:var(--ink);color:#fff;padding:72px 0}
+  .factory h2{color:#fff}
+  .factory .section-head .sub{color:rgba(255,255,255,.65)}
+  .num-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-lg);overflow:hidden}
+  .num{background:var(--ink);padding:28px 24px;min-height:200px;display:flex;flex-direction:column;transition:background-color .15s}
+  .num:hover{background:#1C2027}
+  .num .n{font-family:var(--mono);font-size:44px;font-weight:500;line-height:1;letter-spacing:-.02em}
+  .num .n small{font-size:22px;font-weight:400;color:rgba(255,255,255,.7);margin-right:6px;vertical-align:4px}
+  .num .l{font-size:14px;color:rgba(255,255,255,.65);margin-top:10px}
+  .num .d{font-size:14px;color:rgba(255,255,255,.9);margin-top:auto;padding-top:20px;line-height:1.45}
+  .docs{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;align-items:center}
+  .docs .t-label{color:rgba(255,255,255,.55);margin-right:4px}
+  .doc{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(255,255,255,.2);border-radius:6px;font-size:14px;color:#fff;transition:border-color .15s,background-color .15s}
+  .doc:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.06)}
+  .doc .ic{width:16px;height:16px;color:rgba(255,255,255,.7)}
+
+  /* ---------- metrology ---------- */
+  .serv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .serv{padding:28px;display:flex;flex-direction:column;gap:14px}
+  .serv .ic{width:28px;height:28px}
+  .serv p{font-size:15px;color:var(--ink-2)}
+  .serv-cta{display:flex;align-items:center;gap:24px;margin-top:32px;padding:24px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--bg);flex-wrap:wrap}
+  .serv-cta p{flex:1;min-width:240px;color:var(--ink-2)}
+  .serv-cta .mail{font-family:var(--mono);font-size:14px;color:var(--blue);font-weight:500}
+
+  /* ---------- clients ---------- */
+  .logos{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+  .logos li{background:var(--paper);display:flex;align-items:center;justify-content:center;text-align:center;padding:22px 12px;font-size:15px;font-weight:600;letter-spacing:-.01em;color:var(--steel);transition:color .15s,background-color .15s;min-height:72px}
+  .logos li:hover{color:var(--ink);background:#FAFBFC}
+  .reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+  .review{padding:24px;display:flex;flex-direction:column;gap:16px}
+  .review-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+  .review-head b{display:block;font-size:17px;font-weight:600;letter-spacing:-.01em}
+  .review-head span{display:block;font-size:13px;color:var(--steel);margin-top:2px}
+  .review-doc{width:44px;height:56px;border:1px solid var(--line-2);border-radius:4px;background:var(--bg) repeating-linear-gradient(180deg,transparent 0 12px,var(--line) 12px 13px);background-origin:content-box;padding:12px 8px;flex:none;position:relative}
+  .review-doc::after{content:"";position:absolute;right:-1px;top:-1px;width:12px;height:12px;background:var(--paper);border-left:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+  .review dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:14px}
+  .review dt{color:var(--steel)}
+  .review dd{color:var(--ink)}
+  .review .link{margin-top:auto}
+
+  /* ---------- news ---------- */
+  .news-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+  .news{padding:24px;display:flex;flex-direction:column;gap:12px;min-height:236px}
+  .news-meta{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;color:var(--steel)}
+  .news-meta .chip{font-family:var(--sans)}
+  .news h3{font-size:17px}
+  .news h3 a:hover{color:var(--blue)}
+  .news .link{margin-top:auto}
+  .webinar{background:var(--blue-bg);border-color:var(--blue-bg)}
+  .webinar:hover{border-color:var(--blue)}
+  .webinar .news-meta{color:var(--blue)}
+  .webinar .news-meta .chip{background:#fff;border-color:transparent;color:var(--blue)}
+  .play{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+  .play .ic{width:18px;height:18px;margin-left:2px}
+  .webinar .btn{margin-top:auto;align-self:flex-start}
+
+  /* ---------- final cta ---------- */
+  .cta-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:24px;align-items:start}
+  .cta-form{padding:32px}
+  .cta-form h2{font-size:28px}
+  .cta-form .lead{color:var(--ink-2);margin-top:8px;max-width:520px}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+  .input{display:block;width:100%;height:46px;padding:0 14px;border:1px solid var(--line-2);border-radius:var(--r);background:var(--paper);outline:0;transition:border-color .15s,box-shadow .15s;font-size:15px}
+  .input::placeholder{color:var(--steel)}
+  .input:hover{border-color:var(--ink)}
+  .input:focus{border-color:var(--ink);box-shadow:0 0 0 3px rgba(21,24,29,.06)}
+  textarea.input{height:112px;padding:12px 14px;resize:vertical}
+  .form-wide{grid-column:1/-1}
+  .file{display:flex;align-items:center;gap:10px;height:46px;padding:0 14px;border:1px dashed var(--line-2);border-radius:var(--r);color:var(--ink-2);font-size:14px;cursor:pointer;transition:border-color .15s}
+  .file:hover{border-color:var(--ink);color:var(--ink)}
+  .file .ic{width:18px;height:18px;color:var(--steel)}
+  .file span{font-family:var(--mono);font-size:12px;color:var(--steel);margin-left:auto}
+  .form-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:20px;flex-wrap:wrap}
+  .consent{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--ink-2);max-width:360px;cursor:pointer}
+  .consent input{appearance:none;width:18px;height:18px;border:1px solid var(--line-2);border-radius:4px;flex:none;margin:1px 0 0;background:var(--paper);position:relative;cursor:pointer}
+  .consent input:checked{background:var(--ink);border-color:var(--ink)}
+  .consent input:checked::after{content:"";position:absolute;left:5px;top:2px;width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+  .consent a{color:var(--blue)}
+  .staff{padding:28px;display:flex;flex-direction:column;gap:20px}
+  .staff-top{display:flex;align-items:center;gap:16px}
+  .avatar{width:64px;height:64px;border-radius:50%;background:var(--bg-2);color:var(--ink);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:20px;letter-spacing:.02em;flex:none;border:1px solid var(--line)}
+  .staff-top b{display:block;font-size:18px;font-weight:600;letter-spacing:-.01em}
+  .staff-top span{display:block;font-size:14px;color:var(--ink-2);margin-top:2px}
+  .staff-phone{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:18px;font-weight:500;padding:14px 16px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg)}
+  .staff-phone .ic{color:var(--steel)}
+  .staff-phone:hover{border-color:var(--ink);color:var(--ink)}
+  .staff-list{display:grid;gap:8px;font-size:14px;color:var(--ink-2)}
+  .staff-list li{display:flex;gap:10px;align-items:flex-start}
+  .staff-list .ic{width:16px;height:16px;color:var(--steel);margin-top:3px}
+
+  /* ---------- footer ---------- */
+  .footer{background:var(--ink);color:rgba(255,255,255,.8);padding:56px 0 32px;font-size:14px}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.3fr;gap:32px}
+  .footer h3{font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:16px}
+  .footer ul li{margin-bottom:10px}
+  .footer a{color:rgba(255,255,255,.85)}
+  .footer a:hover{color:#fff}
+  .footer .f-about{max-width:280px;color:rgba(255,255,255,.6);margin-top:20px;line-height:1.5}
+  .footer .f-contact{display:grid;gap:10px}
+  .footer .f-contact .mono{color:#fff;font-size:15px}
+  .footer .f-reps{color:rgba(255,255,255,.6);margin-top:8px}
+  .footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;color:rgba(255,255,255,.55)}
+  .footer-bottom nav{display:flex;gap:24px;flex-wrap:wrap}
+
+  /* ---------- cookie ---------- */
+  .cookie{position:fixed;left:24px;bottom:24px;z-index:30;display:flex;align-items:center;gap:16px;padding:14px 16px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);font-size:14px;max-width:calc(100% - 48px)}
+  .cookie.is-hidden{display:none}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:1100px){
+    .stock-grid,.actions-grid,.news-grid,.num-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .logos{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .footer-grid{grid-template-columns:1fr 1fr 1fr;gap:32px 24px}
+    .footer-grid>:first-child{grid-column:1/-1}
+  }
+  @media (max-width:960px){
+    h1{font-size:40px}
+    h2{font-size:28px}
+    .hero{padding:48px 0 48px}
+    .hero-grid{grid-template-columns:1fr;gap:32px}
+    .hero-copy h1{max-width:none}
+    .entries{margin-top:32px}
+    .cat-grid,.serv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .cta-grid{grid-template-columns:1fr}
+    .section,.factory{padding:56px 0}
+    .search{max-width:none}
+    .nav-in{height:auto}
+  }
+  @media (max-width:820px){
+    .topbar-addr,.topbar-right .mail{display:none}
+    .header-main{height:auto;padding:16px 0;flex-wrap:wrap;gap:16px}
+    .search{order:3;flex:1 1 100%}
+    .header-right{margin-left:auto}
+    .burger{display:inline-flex}
+    .nav{display:none;border-top:1px solid var(--line);background:var(--paper)}
+    .nav.is-open{display:block}
+    .nav-in{flex-direction:column;align-items:stretch;padding-top:8px;padding-bottom:16px;gap:2px}
+    .nav a{padding:12px;font-size:16px;border-radius:6px}
+    .nav .nav-cat{margin:0 0 6px}
+    .nav-mobile{display:flex;gap:16px;flex-wrap:wrap;padding:14px 12px 0;margin-top:8px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+    .nav-mobile a{padding:0;font-weight:500}
+    .section-head{flex-direction:column;align-items:flex-start;gap:12px;margin-bottom:24px}
+  }
+  @media (max-width:600px){
+    :root{--gutter:16px}
+    h1{font-size:32px;letter-spacing:-.02em}
+    h2{font-size:24px}
+    .section,.factory{padding:48px 0}
+    .hero{padding:40px 0}
+    .hero-copy .lead{font-size:16px}
+    .fields{grid-template-columns:1fr}
+    .picker{padding:20px}
+    .entries,.stock-grid,.cat-grid,.actions-grid,.serv-grid,.reviews,.news-grid,.num-grid{grid-template-columns:1fr}
+    .logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .logos li{padding:18px 8px;font-size:14px}
+    .form-grid{grid-template-columns:1fr}
+    .cta-form,.staff{padding:24px 20px}
+    .cta-form h2{font-size:24px}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:28px 16px}
+    .footer-grid>:first-child,.footer-grid>:last-child{grid-column:1/-1}
+    .cookie{left:16px;right:16px;bottom:16px;max-width:none}
+    .btn-order .label{display:none}
+    .topbar-in{gap:16px}
+  }
+  .logo-footer{flex-direction:column;align-items:flex-start;gap:10px}.logo-footer .logo-sub{display:block;border-left:0;padding-left:0;max-width:none}
+  .skip{position:absolute;left:16px;top:-80px;z-index:1000;padding:12px 18px;background:#fff;color:#15181D;border:2px solid #15181D;border-radius:8px;font-weight:600;text-decoration:none}.skip:focus{top:12px}
+  @media (max-width:767px){.btn{min-height:44px}.link{min-height:44px}.city,.phone,.mail{min-height:44px;display:inline-flex;align-items:center}}
+  .btn-add{background:var(--paper);color:var(--red);border-color:var(--red)}.btn-add:hover{background:var(--red);color:#fff;border-color:var(--red)}
+  .fld{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:500;color:var(--ink-2)}.fld .input{font-weight:400}.input::placeholder{color:var(--steel)}
+  .search input{align-self:stretch}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}label.file,label.consent{cursor:pointer}
+  @media (max-width:767px){footer li a{display:inline-flex;align-items:center;min-height:40px}}@media (max-width:767px){.stock-card h3 a{display:inline-block;padding:12px 0;margin:-12px 0}}
+  .action{position:relative}.action .arrow{position:absolute;top:24px;right:24px;width:20px;height:20px;color:var(--steel);transition:transform .15s,color .15s}.action:hover .arrow{transform:translateX(3px);color:var(--ink)}
+  @media (max-width:1180px){.hero-grid{grid-template-columns:1fr;gap:32px}}
+  .facts{gap:8px 20px}.facts li::before,.facts li+li::before{margin:0;content:"";width:6px;height:6px;border-radius:1px;background:var(--line-2);margin-right:8px;flex:none}@media (min-width:601px) and (max-width:1100px){.actions-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  .forms-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}.forms-intro .sub{margin-top:12px;color:var(--ink-2);max-width:480px}.forms-steps{display:grid;gap:14px;margin:28px 0 32px}.forms-steps li{display:flex;gap:14px;align-items:baseline;font-size:15px;line-height:1.45}.forms-steps .mono{flex:none;font-size:13px;color:var(--red)}.forms-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.fdoc{display:flex;align-items:center;gap:14px;height:100%;padding:18px 20px}.fdoc>.ic:first-child{color:var(--blue)}.fdoc span{flex:1;min-width:0}.fdoc b{display:block;font-weight:500;font-size:15px;line-height:1.3}.fdoc small{display:block;margin-top:4px;font-size:12px;color:var(--steel)}.fdoc .dl{color:var(--steel);transition:transform .15s,color .15s}.fdoc:hover .dl{color:var(--ink);transform:translateY(2px)}@media (max-width:960px){.forms-grid{grid-template-columns:1fr;gap:32px}}@media (max-width:600px){.forms-list{grid-template-columns:1fr}.forms-intro .btn{width:100%}}
+  .forms-grid{grid-template-areas:'intro list' 'cta list';grid-template-rows:auto 1fr}.forms-intro{grid-area:intro}.forms-list{grid-area:list}.forms-cta{grid-area:cta}.forms-steps{margin-bottom:0}.forms-cta{margin-top:32px}@media (max-width:960px){.forms-grid{grid-template-areas:'intro' 'list' 'cta';grid-template-rows:none}.forms-cta{margin-top:0}}@media (max-width:600px){.forms-cta .btn{width:100%}}
+  .forms-grid{row-gap:0}@media (max-width:960px){.forms-grid{row-gap:32px}}
+  .stock-img{aspect-ratio:16/10;margin:-20px -20px 4px;border-bottom:1px solid var(--line);border-radius:var(--r-lg) var(--r-lg) 0 0;background:#EEF0F2 center/cover no-repeat}.news-img{position:relative;aspect-ratio:16/10;margin:-24px -24px 4px;border-bottom:1px solid var(--line);border-radius:var(--r-lg) var(--r-lg) 0 0;background:#EEF0F2 center/cover no-repeat}.news-img .play{position:absolute;left:50%;top:50%;width:52px;height:52px;transform:translate(-50%,-50%);box-shadow:0 8px 24px rgba(0,0,0,.3)}img.avatar{object-fit:cover}
+  .logos img{display:block;width:auto;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.72;transition:filter .2s,opacity .2s}.logos li:hover img{filter:none;opacity:1}.logos li img{height:var(--h)}
+</style>
+</head>
+<!-- Icons: Lucide v0.469.0 (https://lucide.dev), ISC License -->
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-catalog" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+  <symbol id="i-picker" viewBox="0 0 24 24"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></symbol>
+  <symbol id="i-stock" viewBox="0 0 24 24"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M13 8H7"/><path d="M17 12H7"/></symbol>
+  <symbol id="i-verify" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-repair" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="i-test" viewBox="0 0 24 24"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"/><path d="M6.453 15h11.094"/><path d="M8.5 2h7"/></symbol>
+  <symbol id="i-setup" viewBox="0 0 24 24"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M14 6a6 6 0 0 1 6 6v3"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><rect x="2" y="15" width="20" height="4" rx="1"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><path d="M13.234 20.252 21 12.3"/><path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+</svg>
+
+<!-- ============ Блок 0. Шапка ============ -->
+<header class="header" id="top">
+  <div class="topbar">
+    <div class="container topbar-in">
+      <button class="city" type="button" aria-label="Выбрать город: Челябинск">
+        <svg class="ic"><use href="#i-pin"/></svg>Челябинск<svg class="ic"><use href="#i-chev"/></svg>
+      </button>
+      <span class="topbar-addr">ул. 2-я Павелецкая, 36</span>
+      <div class="topbar-right">
+        <a class="mail" href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a>
+        <a class="phone" href="tel:+73517258978">+7&nbsp;(351)&nbsp;725-89-78</a>
+      </div>
+    </div>
+  </div>
+  <div class="container header-main">
+    <a class="logo" href="#top" aria-label="Челябинский завод «Теплоприбор» — на главную">
+      <img class="logo-img" src="img/logo-tp.svg" width="210" height="63" alt="Теплоприбор, ЧТП, Челябинск">
+      <span class="logo-sub">Завод измерительных приборов с&nbsp;1951&nbsp;года</span>
+    </a>
+    <form class="search" role="search" onsubmit="return false">
+      <svg class="ic"><use href="#i-search"/></svg>
+      <input type="search" placeholder="Поиск по каталогу: ТСМ-0193, КРОКУС" aria-label="Поиск по каталогу">
+    </form>
+    <div class="header-right">
+      <a class="btn btn-outline btn-order" href="#order"><svg class="ic"><use href="#i-cart"/></svg><span class="label">Ваш заказ</span><span class="count">3</span></a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <svg class="ic ic-m"><use href="#i-menu"/></svg><svg class="ic ic-x"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="nav" id="nav" aria-label="Основное меню">
+    <div class="container nav-in">
+      <a class="nav-cat" href="#catalog"><svg class="ic"><use href="#i-catalog"/></svg>Каталог<svg class="ic"><use href="#i-chev"/></svg></a>
+      <a href="#picker">Подбор</a>
+      <a href="#stock">Со&nbsp;склада</a>
+      <a href="#metrology">Метрология и&nbsp;поверка</a>
+      <a href="#metrology">Сервис</a>
+      <a href="#factory">О&nbsp;заводе</a>
+      <a href="#contacts">Контакты</a>
+      <div class="nav-mobile">
+        <a href="#contacts">Челябинск</a>
+        <a class="mono" href="tel:+73517258978">+7&nbsp;(351)&nbsp;725-89-78</a>
+        <a href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ Блок 1 (+4). Первый экран с подбором ============ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>Подобрать и&nbsp;заказать датчик у&nbsp;завода-изготовителя</h1>
+        <p class="lead">Подбор по&nbsp;параметрам, готовая продукция со&nbsp;склада, собственная аккредитованная поверка.</p>
+        <ul class="facts">
+          <li>с&nbsp;1951&nbsp;года</li>
+          <li>аккредитованная метрология</li>
+          <li>ISO&nbsp;9001</li>
+          <li>отгрузка по&nbsp;России и&nbsp;в&nbsp;Казахстан</li>
+        </ul>
+      </div>
+
+      <aside class="picker" id="picker" aria-labelledby="picker-title">
+        <div class="picker-head">
+          <h2 id="picker-title">Подобрать датчик температуры по&nbsp;параметрам</h2>
+          <svg class="ic"><use href="#i-picker"/></svg>
+        </div>
+        <div class="fields">
+          <div class="field" tabindex="0" role="button"><div><span>Тип</span><b>Термометр сопротивления</b></div><svg class="ic"><use href="#i-chev"/></svg></div>
+          <div class="field" tabindex="0" role="button"><div><span>Диапазон температур</span><b>−50…+600&nbsp;°C</b></div><svg class="ic"><use href="#i-chev"/></svg></div>
+          <div class="field" tabindex="0" role="button"><div><span>Выходной сигнал</span><b>4–20&nbsp;мА + HART</b></div><svg class="ic"><use href="#i-chev"/></svg></div>
+          <div class="field" tabindex="0" role="button"><div><span>Взрывозащита</span><b>Да</b></div><svg class="ic"><use href="#i-chev"/></svg></div>
+          <div class="field field-wide" tabindex="0" role="button"><div><span>Монтаж</span><b>Погружной</b></div><svg class="ic"><use href="#i-chev"/></svg></div>
+        </div>
+        <a class="btn btn-primary btn-block" href="#catalog">Показать подходящие</a>
+        <p class="note"><svg class="ic"><use href="#i-doc"/></svg><span>Не&nbsp;нашли&nbsp;&mdash; <a href="#forms">заполните опросный лист</a>, подберём за&nbsp;вас</span></p>
+      </aside>
+    </div>
+
+    <div class="entries">
+      <a class="card card-hover entry is-hot" href="#stock">
+        <svg class="ic"><use href="#i-stock"/></svg>
+        <div><b>Со&nbsp;склада</b><span>~50&nbsp;позиций с&nbsp;ценами, отгрузка без&nbsp;очереди</span></div>
+        <svg class="ic arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="card card-hover entry" href="#catalog">
+        <svg class="ic"><use href="#i-catalog"/></svg>
+        <div><b>Каталог продукции</b><span>6&nbsp;категорий, 150+&nbsp;серий</span></div>
+        <svg class="ic arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="card card-hover entry" href="#forms">
+        <svg class="ic"><use href="#i-doc"/></svg>
+        <div><b>Опросные листы</b><span>Скачать и&nbsp;отправить</span></div>
+        <svg class="ic arrow"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Блок 5. На складе сейчас ============ -->
+<section class="section" id="stock">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>На&nbsp;складе сейчас</h2>
+        <p class="sub">Цены без НДС, обновлено 18.09.2025</p>
+      </div>
+      <div class="section-links">
+        <a class="link" href="#stock">Все позиции (~50)<svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a class="link" href="#stock"><svg class="ic"><use href="#i-download"/></svg>Скачать список XLS</a>
+      </div>
+    </div>
+
+    <div class="stock-grid">
+      <article class="card card-hover stock-card">
+        <div class="stock-img" style="background-image:url(img/stock-01.jpg)"></div>
+        <div class="stock-top"><span class="chip">Термометры сопротивления</span></div>
+        <h3><a href="#stock">ТСМ-0193-01-80 50М</a></h3>
+        <p>Термометр сопротивления медный, НСХ 50М</p>
+        <div class="stock-bottom">
+          <div class="stock-meta"><span class="qty">4&nbsp;шт.</span><span class="price">800&nbsp;₽</span></div>
+          <button class="btn btn-add btn-sm" type="button">В&nbsp;заказ</button>
+        </div>
+      </article>
+
+      <article class="card card-hover stock-card">
+        <div class="stock-img" style="background-image:url(img/stock-02.jpg)"></div>
+        <div class="stock-top"><span class="chip">Преобразователи ТТ</span></div>
+        <h3><a href="#stock">TT-0-3-0-1-A4-5</a></h3>
+        <p>Преобразователь ТТ, выход 4–20&nbsp;мА</p>
+        <div class="stock-bottom">
+          <div class="stock-meta"><span class="qty">6&nbsp;шт.</span><span class="price">6&nbsp;461&nbsp;₽</span></div>
+          <button class="btn btn-add btn-sm" type="button">В&nbsp;заказ</button>
+        </div>
+      </article>
+
+      <article class="card card-hover stock-card">
+        <div class="stock-img" style="background-image:url(img/stock-03.jpg)"></div>
+        <div class="stock-top"><span class="chip">Гильзы и&nbsp;бобышки</span></div>
+        <h3><a href="#stock">Бобышка Б1-12X18H10T-M20x1,5-60</a></h3>
+        <p>Бобышка под защитную гильзу, сталь 12Х18Н10Т, резьба М20×1,5</p>
+        <div class="stock-bottom">
+          <div class="stock-meta"><span class="qty">21&nbsp;шт.</span><span class="price">250&nbsp;₽</span></div>
+          <button class="btn btn-add btn-sm" type="button">В&nbsp;заказ</button>
+        </div>
+      </article>
+
+      <article class="card card-hover stock-card">
+        <div class="stock-img" style="background-image:url(img/stock-04.jpg)"></div>
+        <div class="stock-top"><span class="chip">Термопары</span></div>
+        <h3><a href="#stock">КТХА-0299-03-80/440</a></h3>
+        <p>Комплект термопар хромель-алюмель ТХА</p>
+        <div class="stock-bottom">
+          <div class="stock-meta"><span class="qty">100&nbsp;шт.</span><span class="price">2&nbsp;056&nbsp;₽</span></div>
+          <button class="btn btn-add btn-sm" type="button">В&nbsp;заказ</button>
+        </div>
+      </article>
+
+      <article class="card card-hover stock-card">
+        <div class="stock-img" style="background-image:url(img/stock-05.jpg)"></div>
+        <div class="stock-top"><span class="chip">Уровнемеры</span></div>
+        <h3><a href="#stock">Левелтач-M L=3200&nbsp;мм</a></h3>
+        <p>Микроволновый уровнемер, длина 3200&nbsp;мм</p>
+        <div class="stock-bottom">
+          <div class="stock-meta"><span class="qty">1&nbsp;шт.</span><span class="price">150&nbsp;577&nbsp;₽</span></div>
+          <button class="btn btn-add btn-sm" type="button">В&nbsp;заказ</button>
+        </div>
+      </article>
+
+      <article class="card card-hover stock-card">
+        <div class="stock-img" style="background-image:url(img/stock-06.jpg)"></div>
+        <div class="stock-top"><span class="chip">Термометры сопротивления</span></div>
+        <h3><a href="#stock">ТСП-0193</a></h3>
+        <p>Термометр сопротивления платиновый</p>
+        <div class="stock-bottom">
+          <div class="stock-meta"><span class="qty">В&nbsp;наличии</span><span class="price is-request">Цена по&nbsp;запросу</span></div>
+          <button class="btn btn-add btn-sm" type="button">В&nbsp;заказ</button>
+        </div>
+      </article>
+
+      <article class="card card-hover stock-card">
+        <div class="stock-img" style="background-image:url(img/stock-07.jpg)"></div>
+        <div class="stock-top"><span class="chip">Сигнализаторы уровня</span></div>
+        <h3><a href="#stock">Вибротач L</a></h3>
+        <p>Вибрационный сигнализатор уровня для жидкостей</p>
+        <div class="stock-bottom">
+          <div class="stock-meta"><span class="qty">В&nbsp;наличии</span><span class="price is-request">Цена по&nbsp;запросу</span></div>
+          <button class="btn btn-add btn-sm" type="button">В&nbsp;заказ</button>
+        </div>
+      </article>
+
+      <article class="card card-hover stock-card">
+        <div class="stock-img" style="background-image:url(img/news-02.jpg)"></div>
+        <div class="stock-top"><span class="chip">Калибраторы</span></div>
+        <h3><a href="#stock">КИСС-03</a></h3>
+        <p>Калибратор, вторичная аппаратура</p>
+        <div class="stock-bottom">
+          <div class="stock-meta"><span class="qty">В&nbsp;наличии</span><span class="price is-request">Цена по&nbsp;запросу</span></div>
+          <button class="btn btn-add btn-sm" type="button">В&nbsp;заказ</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Блок 3. Каталог ============ -->
+<section class="section section-paper" id="catalog">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Каталог продукции</h2>
+        <p class="sub">6&nbsp;категорий, 150+&nbsp;серий</p>
+      </div>
+      <div class="section-links">
+        <a class="link" href="#catalog"><svg class="ic"><use href="#i-download"/></svg>Скачать каталог в&nbsp;PDF</a>
+        <a class="link" href="#forms"><svg class="ic"><use href="#i-doc"/></svg>Все опросные листы</a>
+      </div>
+    </div>
+
+    <div class="cat-grid">
+      <a class="card card-hover cat" href="#catalog">
+        <div class="cat-img" data-index="01 / 06" style="background-image:url(img/cat-temp.jpg)"></div>
+        <div class="cat-body">
+          <h3>Датчики температуры<svg class="ic"><use href="#i-arrow"/></svg></h3>
+          <p>Термометры сопротивления ТСМ/ТСП, термопары ТХА/ТХК/ТПП, серия «Эволюшн» 4–20&nbsp;мА + HART, преобразователи ТТ, защитные гильзы</p>
+        </div>
+      </a>
+      <a class="card card-hover cat" href="#catalog">
+        <div class="cat-img" data-index="02 / 06" style="background-image:url(img/cat-pressure.jpg)"></div>
+        <div class="cat-body">
+          <h3>Датчики давления<svg class="ic"><use href="#i-arrow"/></svg></h3>
+          <p>КРОКУС: избыточное, абсолютное, дифференциальное, 0,1&nbsp;кПа…60&nbsp;МПа, взрывозащита, кислородное исполнение, поверка раз в&nbsp;5&nbsp;лет</p>
+        </div>
+      </a>
+      <a class="card card-hover cat" href="#catalog">
+        <div class="cat-img" data-index="03 / 06" style="background-image:url(img/cat-level.jpg)"></div>
+        <div class="cat-body">
+          <h3>Уровнемеры и&nbsp;сигнализаторы<svg class="ic"><use href="#i-arrow"/></svg></h3>
+          <p>Левелтач&nbsp;М (микроволновые), Вибротач&nbsp;L (жидкости), Вибротач&nbsp;S (сыпучие)</p>
+        </div>
+      </a>
+      <a class="card card-hover cat" href="#catalog">
+        <div class="cat-img" data-index="04 / 06" style="background-image:url(img/cat-secondary.jpg)"></div>
+        <div class="cat-body">
+          <h3>Вторичная аппаратура<svg class="ic"><use href="#i-arrow"/></svg></h3>
+          <p>Регистраторы, калибраторы (КИСС-03), показывающие и&nbsp;регулирующие приборы, многоканальная сигнализация</p>
+        </div>
+      </a>
+      <a class="card card-hover cat" href="#catalog">
+        <div class="cat-img" data-index="05 / 06" style="background-image:url(img/cat-functional.jpg)"></div>
+        <div class="cat-body">
+          <h3>Функциональная аппаратура<svg class="ic"><use href="#i-arrow"/></svg></h3>
+          <p>Барьеры искрозащиты, размножители сигналов, нормирующие преобразователи, блоки питания</p>
+        </div>
+      </a>
+      <a class="card card-hover cat" href="#catalog">
+        <div class="cat-img" data-index="06 / 06" style="background-image:url(img/cat-express.jpg)"></div>
+        <div class="cat-body">
+          <h3>«Экспресс-анализ»<svg class="ic"><use href="#i-arrow"/></svg></h3>
+          <p>Измерение температуры и&nbsp;окисленности расплава: жезлы, преобразователи ПТП, зонды</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Блок 2. Быстрые действия ============ -->
+<section class="section" id="actions">
+  <div class="container">
+    <div class="actions-grid">
+      <a class="card card-hover action" href="#order">
+        <svg class="ic"><use href="#i-chat"/></svg>
+        <div><b>Консультация специалиста</b><span>Ответим в&nbsp;рабочий день</span></div>
+        <svg class="ic arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="card card-hover action" href="#metrology">
+        <svg class="ic"><use href="#i-verify"/></svg>
+        <div><b>Поверка и&nbsp;калибровка</b><span>Своя аккредитованная служба</span></div>
+        <svg class="ic arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="card card-hover action" href="#metrology">
+        <svg class="ic"><use href="#i-repair"/></svg>
+        <div><b>Отправка в&nbsp;ремонт</b><span>Гарантийный и&nbsp;послегарантийный</span></div>
+        <svg class="ic arrow"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Блок 3а. Опросные листы ============ -->
+<section class="section section-paper" id="forms">
+  <div class="container forms-grid">
+    <div class="forms-intro">
+      <h2>Опросные листы</h2>
+      <p class="sub">Не&nbsp;нашли нужное исполнение&nbsp;— опишите задачу в&nbsp;опросном листе. Инженер завода подберёт прибор и&nbsp;подготовит коммерческое предложение.</p>
+      <ol class="forms-steps">
+        <li><span class="mono">01</span>Скачайте лист для&nbsp;своего типа прибора</li>
+        <li><span class="mono">02</span>Заполните параметры и&nbsp;условия эксплуатации</li>
+        <li><span class="mono">03</span>Отправьте нам&nbsp;— ответим в&nbsp;течение рабочего дня</li>
+      </ol>
+    </div>
+    <ul class="forms-list">
+      <li><a class="card card-hover fdoc" href="#"><svg class="ic"><use href="#i-doc"/></svg><span><b>Датчики температуры</b><small class="mono">DOCX</small></span><svg class="ic dl"><use href="#i-download"/></svg></a></li>
+      <li><a class="card card-hover fdoc" href="#"><svg class="ic"><use href="#i-doc"/></svg><span><b>Датчики давления</b><small class="mono">DOCX</small></span><svg class="ic dl"><use href="#i-download"/></svg></a></li>
+      <li><a class="card card-hover fdoc" href="#"><svg class="ic"><use href="#i-doc"/></svg><span><b>Уровнемеры и&nbsp;сигнализаторы</b><small class="mono">DOCX</small></span><svg class="ic dl"><use href="#i-download"/></svg></a></li>
+      <li><a class="card card-hover fdoc" href="#"><svg class="ic"><use href="#i-doc"/></svg><span><b>Вторичная аппаратура</b><small class="mono">DOCX</small></span><svg class="ic dl"><use href="#i-download"/></svg></a></li>
+      <li><a class="card card-hover fdoc" href="#"><svg class="ic"><use href="#i-doc"/></svg><span><b>Функциональная аппаратура</b><small class="mono">DOCX</small></span><svg class="ic dl"><use href="#i-download"/></svg></a></li>
+      <li><a class="card card-hover fdoc" href="#"><svg class="ic"><use href="#i-doc"/></svg><span><b>«Экспресс-анализ»</b><small class="mono">DOCX</small></span><svg class="ic dl"><use href="#i-download"/></svg></a></li>
+    </ul>
+    <div class="forms-cta"><a class="btn btn-primary" href="#order">Отправить заполненный лист<svg class="ic"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ============ Блок 6. Завод, а не поставщик ============ -->
+<section class="factory" id="factory">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Завод, а&nbsp;не&nbsp;поставщик</h2>
+        <p class="sub">Разработка, производство, испытания и&nbsp;поверка на&nbsp;одной площадке в&nbsp;Челябинске</p>
+      </div>
+    </div>
+    <div class="num-grid">
+      <div class="num">
+        <div class="n">1951</div>
+        <div class="l">год основания</div>
+        <p class="d">75&nbsp;лет разработки и&nbsp;производства КИПиА в&nbsp;Челябинске</p>
+      </div>
+      <div class="num">
+        <div class="n">5&nbsp;<small>лет</small></div>
+        <div class="l">аккредитация на&nbsp;поверку</div>
+        <p class="d">Подтверждена в&nbsp;октябре 2025</p>
+      </div>
+      <div class="num">
+        <div class="n"><small>до</small>5&nbsp;<small>лет</small></div>
+        <div class="l">межповерочный интервал</div>
+        <p class="d">Серии «Эволюшн» и&nbsp;КРОКУС</p>
+      </div>
+      <div class="num">
+        <div class="n">9&nbsp;<small>баллов</small></div>
+        <div class="l">сейсмостойкость</div>
+        <p class="d">Датчики температуры по&nbsp;MSK-64, сертификат 2026</p>
+      </div>
+    </div>
+    <div class="docs">
+      <span class="t-label">Документы</span>
+      <a class="doc" href="#factory"><svg class="ic"><use href="#i-doc"/></svg>ISO&nbsp;9001:2015</a>
+      <a class="doc" href="#factory"><svg class="ic"><use href="#i-doc"/></svg>Реестр Минпромторга</a>
+      <a class="doc" href="#factory"><svg class="ic"><use href="#i-doc"/></svg>Взрывозащита Exd</a>
+      <a class="doc" href="#factory"><svg class="ic"><use href="#i-doc"/></svg>ФГИС «Аршин»</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Блок 7. Метрология и сервис ============ -->
+<section class="section section-paper" id="metrology">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Поверка, испытания и&nbsp;сервис на&nbsp;заводе</h2>
+        <p class="sub">Аккредитованная метрологическая служба и&nbsp;испытательная лаборатория</p>
+      </div>
+    </div>
+    <div class="serv-grid">
+      <article class="card card-hover serv">
+        <svg class="ic"><use href="#i-verify"/></svg>
+        <h3>Поверка и&nbsp;калибровка</h3>
+        <p>Температура, давление, электрические, геометрические величины; свидетельство и&nbsp;запись в&nbsp;«Аршине».</p>
+      </article>
+      <article class="card card-hover serv">
+        <svg class="ic"><use href="#i-test"/></svg>
+        <h3>Испытания</h3>
+        <p>Климат −60…+100&nbsp;°C, вибрация до&nbsp;2,7&nbsp;кН, удар, электропрочность до&nbsp;2500&nbsp;В.</p>
+      </article>
+      <article class="card card-hover serv">
+        <svg class="ic"><use href="#i-setup"/></svg>
+        <h3>Шеф-монтаж и&nbsp;аудит объекта</h3>
+        <p>Настройка под техпроцесс, интеграция с&nbsp;АСУ&nbsp;ТП, обучение персонала, увеличенная гарантия.</p>
+      </article>
+    </div>
+    <div class="serv-cta">
+      <p>Заявка на&nbsp;поверку&nbsp;&mdash; письмом на&nbsp;<a class="mail" href="mailto:eastenus@tpchel.ru">eastenus@tpchel.ru</a> или через форму</p>
+      <a class="btn btn-dark" href="#order">Заявка на&nbsp;поверку</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Блок 9. Клиенты и отзывы ============ -->
+<section class="section" id="clients">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Нам доверяют 70+&nbsp;предприятий</h2>
+      </div>
+      <div class="section-links">
+        <a class="link" href="#clients">Все отзывы<svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <ul class="logos" aria-label="Клиенты">
+      <li><img src="img/clients/gazprom-neft.svg" width="87" height="44" style="--h:44px" alt="Газпром нефть" loading="lazy"></li>
+      <li><img src="img/clients/rosenergoatom.svg" width="124" height="50" style="--h:50px" alt="Росэнергоатом" loading="lazy"></li>
+      <li><img src="img/clients/nlmk.svg" width="71" height="38" style="--h:38px" alt="НЛМК" loading="lazy"></li>
+      <li><img src="img/clients/mechel.png" width="137" height="36" style="--h:36px" alt="Мечел" loading="lazy"></li>
+      <li><img src="img/clients/severstal.svg" width="109" height="34" style="--h:34px" alt="Северсталь" loading="lazy"></li>
+      <li><img src="img/clients/surgutneftegas.png" width="71" height="40" style="--h:40px" alt="Сургутнефтегаз" loading="lazy"></li>
+      <li><img src="img/clients/lukoil.svg" width="118" height="30" style="--h:30px" alt="ЛУКОЙЛ" loading="lazy"></li>
+      <li><img src="img/clients/phosagro.svg" width="165" height="26" style="--h:26px" alt="ФосАгро" loading="lazy"></li>
+      <li><img src="img/clients/uralkali.png" width="144" height="26" style="--h:26px" alt="Уралкалий" loading="lazy"></li>
+      <li><img src="img/clients/power-machines.svg" width="54" height="52" style="--h:52px" alt="Силовые машины" loading="lazy"></li>
+      <li><img src="img/clients/t-plus.png" width="109" height="44" style="--h:44px" alt="Т Плюс" loading="lazy"></li>
+      <li class="more">и&nbsp;ещё 50+ предприятий</li>
+    </ul>
+    <div class="reviews">
+      <article class="card card-hover review">
+        <div class="review-head">
+          <div><b>Росэнергоатом</b><span>Энергетика</span></div>
+          <div class="review-doc" aria-hidden="true"></div>
+        </div>
+        <dl>
+          <dt>Прибор</dt><dd>Датчики температуры</dd>
+          <dt>Документ</dt><dd>Отзыв заказчика, скан письма</dd>
+        </dl>
+        <a class="link" href="#clients">Открыть письмо<svg class="ic"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card card-hover review">
+        <div class="review-head">
+          <div><b>Газпром нефть</b><span>Нефтегаз и&nbsp;нефтехимия</span></div>
+          <div class="review-doc" aria-hidden="true"></div>
+        </div>
+        <dl>
+          <dt>Прибор</dt><dd>Датчики давления КРОКУС</dd>
+          <dt>Документ</dt><dd>Отзыв заказчика, скан письма</dd>
+        </dl>
+        <a class="link" href="#clients">Открыть письмо<svg class="ic"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Блок 10. Новое на заводе ============ -->
+<section class="section section-paper" id="news">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Новое на&nbsp;заводе</h2>
+      </div>
+      <div class="section-links">
+        <a class="link" href="#news">Все новости<svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="news-grid">
+      <article class="card card-hover news">
+        <div class="news-img" style="background-image:url(img/news-01.jpg)"></div>
+        <div class="news-meta"><span class="chip">Продукция</span>07.2026</div>
+        <h3><a href="#news">Датчики давления в&nbsp;кислородном исполнении</a></h3>
+        <a class="link" href="#news">Подробнее<svg class="ic"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card card-hover news">
+        <div class="news-img" style="background-image:url(img/news-02.jpg)"></div>
+        <div class="news-meta"><span class="chip">Продукция</span>05.2026</div>
+        <h3><a href="#news">КИСС-03 в&nbsp;эталонном исполнении</a></h3>
+        <a class="link" href="#news">Подробнее<svg class="ic"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card card-hover news">
+        <div class="news-img" style="background-image:url(img/news-03.jpg)"></div>
+        <div class="news-meta"><span class="chip">Сертификаты</span>05.2026</div>
+        <h3><a href="#news">Датчики температуры&nbsp;&mdash; сертификат сейсмостойкости</a></h3>
+        <a class="link" href="#news">Подробнее<svg class="ic"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card news webinar">
+        <div class="news-img" style="background-image:url(img/webinar.jpg)"><div class="play" aria-hidden="true"><svg class="ic ic-fill"><use href="#i-play"/></svg></div></div>
+        <div class="news-meta"><span class="chip">Вебинар</span>запись</div>
+        <h3>Датчики температуры серии «Эволюшн», многозонные датчики и&nbsp;преобразователи ТТ</h3>
+        <a class="btn btn-dark btn-sm" href="#news">Смотреть запись</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Блок 11. Финальный CTA ============ -->
+<section class="section" id="order">
+  <div class="container">
+    <div class="cta-grid">
+      <form class="card cta-form" onsubmit="return false">
+        <h2>Не&nbsp;нашли нужный прибор?</h2>
+        <p class="lead">Инженеры отдела поддержки подберут исполнение под ваш техпроцесс и&nbsp;подготовят КП</p>
+        <div class="form-grid">
+          <label class="fld"><span>Имя</span><input class="input" type="text" name="name" autocomplete="name"></label>
+          <label class="fld"><span>Компания</span><input class="input" type="text" name="company" autocomplete="organization"></label>
+          <label class="fld form-wide"><span>Телефон или e-mail</span><input class="input" type="text" name="contact" autocomplete="tel" placeholder="+7 (___) ___-__-__ или mail@company.ru"></label>
+          <label class="fld form-wide"><span>Вопрос</span><textarea class="input" name="question" placeholder="Прибор, параметры, условия эксплуатации"></textarea></label>
+          <label class="file form-wide"><svg class="ic"><use href="#i-clip"/></svg>Прикрепить опросный лист<span>DOCX, PDF</span><input type="file" hidden></label>
+        </div>
+        <div class="form-foot">
+          <label class="consent"><input type="checkbox" checked><span>Согласие на&nbsp;обработку персональных данных, <a href="#contacts">политика конфиденциальности</a></span></label>
+          <button class="btn btn-primary" type="submit">Отправить запрос</button>
+        </div>
+      </form>
+
+      <aside class="card staff">
+        <div class="staff-top">
+          <img class="avatar" src="img/staff-01.jpg" width="64" height="64" alt="">
+          <div><b>Николай Воронин</b><span>Руководитель отдела поддержки клиентов</span></div>
+        </div>
+        <a class="staff-phone" href="tel:+73517258926"><svg class="ic"><use href="#i-phone"/></svg>+7&nbsp;(351)&nbsp;725-89-26</a>
+        <ul class="staff-list">
+          <li><svg class="ic"><use href="#i-picker"/></svg><span>Подбор исполнения под ваш техпроцесс</span></li>
+          <li><svg class="ic"><use href="#i-doc"/></svg><span>Расшифровка обозначения и&nbsp;подготовка КП</span></li>
+          <li><svg class="ic"><use href="#i-clock"/></svg><span>Ответим в&nbsp;рабочий день</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Блок 12. Футер ============ -->
+<footer class="footer" id="contacts">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo logo-footer" href="#top" aria-label="Челябинский завод «Теплоприбор» — на главную">
+      <img class="logo-img" src="img/logo-tp-dark.svg" width="210" height="63" alt="Теплоприбор, ЧТП, Челябинск">
+      <span class="logo-sub">Завод измерительных приборов с&nbsp;1951&nbsp;года</span>
+    </a>
+        <p class="f-about">Датчики температуры, давления и&nbsp;уровня от&nbsp;завода-изготовителя. Подбор по&nbsp;параметрам, готовая продукция со&nbsp;склада, собственная аккредитованная поверка.</p>
+      </div>
+      <div>
+        <h3>Каталог</h3>
+        <ul>
+          <li><a href="#catalog">Датчики температуры</a></li>
+          <li><a href="#catalog">Датчики давления</a></li>
+          <li><a href="#catalog">Уровнемеры и&nbsp;сигнализаторы</a></li>
+          <li><a href="#catalog">Вторичная аппаратура</a></li>
+          <li><a href="#catalog">Функциональная аппаратура</a></li>
+          <li><a href="#catalog">«Экспресс-анализ»</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Сервисы</h3>
+        <ul>
+          <li><a href="#picker">Подбор</a></li>
+          <li><a href="#stock">Со&nbsp;склада</a></li>
+          <li><a href="#forms">Опросные листы</a></li>
+          <li><a href="#metrology">Поверка</a></li>
+          <li><a href="#metrology">Ремонт</a></li>
+          <li><a href="#order">Консультация</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>О&nbsp;заводе</h3>
+        <ul>
+          <li><a href="#factory">О&nbsp;компании</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#news">Статьи</a></li>
+          <li><a href="#clients">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <div class="f-contact">
+          <span>Челябинск, 454047, ул. 2-я Павелецкая, 36</span>
+          <a class="mono" href="tel:+73517258978">+7&nbsp;(351)&nbsp;725-89-78</a>
+          <a class="mono" href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a>
+          <p class="f-reps">Представительства: Москва, Санкт-Петербург, Пермь, Самара, Костанай</p>
+          <a href="#contacts">ВКонтакте</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy;&nbsp;2008–2026 ООО «Челябинский завод „Теплоприбор“»</span>
+      <nav aria-label="Служебные ссылки">
+        <a href="#contacts">Политика конфиденциальности</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookie">
+  <span>Используем cookie для работы сайта</span>
+  <button class="btn btn-outline btn-sm" type="button" id="cookie-ok">Понятно</button>
+</div>
+
+<script>
+  (function(){
+    var burger=document.querySelector('.burger'),nav=document.getElementById('nav');
+    if(burger&&nav){
+      burger.addEventListener('click',function(){
+        var open=nav.classList.toggle('is-open');
+        burger.setAttribute('aria-expanded',open?'true':'false');
+        burger.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');
+        burger.querySelector('.ic-m').style.display=open?'none':'';
+        burger.querySelector('.ic-x').style.display=open?'block':'';
+      });
+    }
+    var ok=document.getElementById('cookie-ok');
+    if(ok){ok.addEventListener('click',function(){document.getElementById('cookie').classList.add('is-hidden');});}
+  })();
+</script>
+</body>
+</html>
