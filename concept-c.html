@@ -264,11 +264,11 @@
 
   /* ---------- industries ---------- */
   .inds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-  .ind{position:relative;display:block;aspect-ratio:3/2;border-radius:var(--r-md);overflow:hidden;background:var(--bg);border:1px solid var(--line);transition:transform var(--t),box-shadow var(--t)}
-  .ind .bg{position:absolute;inset:0;background:var(--img) center/cover no-repeat;transition:transform .5s ease}
+  .ind{position:relative;display:flex;flex-direction:column;border-radius:var(--r-md);overflow:hidden;background:var(--bg);border:1px solid var(--line);transition:transform var(--t),box-shadow var(--t)}
+  .ind .bg{display:block;aspect-ratio:16/10;background:var(--img) center/cover no-repeat;transition:transform .5s ease}.ind{isolation:isolate}.ind .bg-wrap{display:block;overflow:hidden}
   .ind:hover{transform:translateY(-4px);box-shadow:var(--sh-2)}
   .ind:hover .bg{transform:scale(1.04)}
-  .ind .txt{position:absolute;left:0;right:0;bottom:0;padding:88px 28px 28px;background:linear-gradient(180deg,rgba(242,244,247,0) 0%,rgba(242,244,247,.92) 55%,rgba(242,244,247,1) 100%)}
+  .ind .txt{padding:22px 28px 26px;background:#fff;border-top:1px solid var(--line)}
   .ind h3{font-size:22px;display:flex;justify-content:space-between;align-items:center;gap:12px}
   .ind h3 .ico{color:var(--mid);transition:color var(--t),transform var(--t)}
   .ind:hover h3 .ico{color:var(--blue);transform:translateX(4px)}
@@ -445,6 +445,9 @@
   .forms{row-gap:0}@media (max-width:1180px){.forms{row-gap:40px}}
   .sku-img{aspect-ratio:16/10;margin:-28px -28px 0;border-bottom:1px solid var(--line);border-radius:var(--r-md) var(--r-md) 0 0;background:var(--bg) var(--img) center/cover no-repeat}.webinar{background:linear-gradient(180deg,rgba(0,49,79,.78),rgba(0,49,79,.94)),url(img/webinar.jpg) center/cover}img.ava{object-fit:cover}.wide-photo{aspect-ratio:21/8;margin-bottom:64px;border-radius:var(--r-lg);background:var(--bg) var(--img) center/cover no-repeat}@media (max-width:980px){.wide-photo{aspect-ratio:16/9;margin-bottom:40px}}@media (max-width:640px){.wide-photo{border-radius:var(--r-md)}}
   .logos img{display:block;width:auto;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.72;transition:filter .2s,opacity .2s}.logos div:hover img{filter:none;opacity:1}.logos div img{height:var(--h)}
+  .cta-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px}.cta-grid .form-card{margin-top:0}.cta-side .staff{position:static;margin-top:40px}@media (max-width:1180px){.cta-grid{grid-template-columns:1fr;gap:40px}.cta-side{display:contents}.cta-intro{order:1}.cta-grid .form-card{order:2}.cta-side .staff{order:3;margin-top:0}}
+  .footer{padding-top:64px}.f-top{display:flex;justify-content:space-between;align-items:flex-start;gap:32px 48px;flex-wrap:wrap}.f-brand{grid-column:auto}.f-contact{text-align:right}.f-contact a.big{margin-top:0;font-size:24px}.f-contact p{margin-top:8px;color:var(--mid)}.f-contact .mail{display:inline;margin:0}.f-mid{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}.f-nav{display:flex;flex-wrap:wrap;gap:12px 28px;font-weight:500}.f-nav a:hover{color:var(--blue)}.f-social{margin-top:0}.f-bot{margin-top:28px}.f-bot a{color:var(--ink)}.f-bot a:hover{color:var(--blue)}.f-dev{font-weight:500}@media (max-width:860px){.f-contact{text-align:left}}@media (max-width:767px){.f-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px}.f-nav a{display:inline-flex;align-items:center;min-height:44px}.f-mid{align-items:flex-start}}
+  @media (max-width:640px){.f-contact .sep{display:none}.f-contact .addr{display:block;margin-top:4px}}
 </style>
 </head>
 <!-- Icons: Lucide v0.469.0 (https://lucide.dev), ISC License -->
@@ -997,32 +1000,32 @@
 
     <div class="inds">
       <a class="ind" href="#" style="--img:url(img/ind-energy.jpg)">
-        <span class="bg"></span>
+        <span class="bg-wrap"><span class="bg"></span></span>
         <span class="ic"><svg class="ico"><use href="#i-bolt"/></svg></span>
         <div class="txt"><h3>Энергетика<svg class="ico"><use href="#i-arrow"/></svg></h3><p>ТЭЦ, ГРЭС, АЭС</p></div>
       </a>
       <a class="ind" href="#" style="--img:url(img/ind-metal.jpg)">
-        <span class="bg"></span>
+        <span class="bg-wrap"><span class="bg"></span></span>
         <span class="ic"><svg class="ico"><use href="#i-flame"/></svg></span>
         <div class="txt"><h3>Металлургия<svg class="ico"><use href="#i-arrow"/></svg></h3><p>Расплавы, печи, прокат</p></div>
       </a>
       <a class="ind" href="#" style="--img:url(img/ind-oil.jpg)">
-        <span class="bg"></span>
+        <span class="bg-wrap"><span class="bg"></span></span>
         <span class="ic"><svg class="ico"><use href="#i-drop"/></svg></span>
         <div class="txt"><h3>Нефтегаз и&nbsp;нефтехимия<svg class="ico"><use href="#i-arrow"/></svg></h3><p>Взрывозащита, HART</p></div>
       </a>
       <a class="ind" href="#" style="--img:url(img/ind-chem.jpg)">
-        <span class="bg"></span>
+        <span class="bg-wrap"><span class="bg"></span></span>
         <span class="ic"><svg class="ico"><use href="#i-flask"/></svg></span>
         <div class="txt"><h3>Химия<svg class="ico"><use href="#i-arrow"/></svg></h3><p>Агрессивные среды, кислородное исполнение</p></div>
       </a>
       <a class="ind" href="#" style="--img:url(img/ind-machine.jpg)">
-        <span class="bg"></span>
+        <span class="bg-wrap"><span class="bg"></span></span>
         <span class="ic"><svg class="ico"><use href="#i-gear"/></svg></span>
         <div class="txt"><h3>Машиностроение<svg class="ico"><use href="#i-arrow"/></svg></h3><p>Термопластавтоматы, пресс-формы</p></div>
       </a>
       <a class="ind" href="#" style="--img:url(img/ind-food.jpg)">
-        <span class="bg"></span>
+        <span class="bg-wrap"><span class="bg"></span></span>
         <span class="ic"><svg class="ico"><use href="#i-leaf"/></svg></span>
         <div class="txt"><h3>Пищевая<svg class="ico"><use href="#i-arrow"/></svg></h3><p>ТСМ-0395, пастеризация</p></div>
       </a>
@@ -1124,54 +1127,55 @@
 <section class="sec" id="contacts">
   <div class="wrap">
     <div class="cta-grid">
-      <div>
-        <p class="eyebrow">Поддержка клиентов</p>
-        <h2>Не&nbsp;нашли нужный прибор?</h2>
-        <p class="lead">Инженеры отдела поддержки подберут исполнение под ваш техпроцесс и&nbsp;подготовят КП.</p>
-
-        <form class="form-card" action="#">
-          <div class="fgrid">
-            <div class="field">
-              <label for="c-name">Имя</label>
-              <div class="control"><input id="c-name" type="text"></div>
-            </div>
-            <div class="field">
-              <label for="c-company">Компания</label>
-              <div class="control"><input id="c-company" type="text"></div>
-            </div>
-            <div class="field full">
-              <label for="c-contact">Телефон или e-mail</label>
-              <div class="control"><input id="c-contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru"></div>
-            </div>
-            <div class="field full">
-              <label for="c-q">Вопрос</label>
-              <div class="control"><textarea id="c-q"></textarea></div>
-            </div>
-            <div class="field full">
-              <label for="c-file">Файл</label>
-              <label class="file" for="c-file"><svg class="ico sm"><use href="#i-clip"/></svg>Прикрепить опросный лист<input id="c-file" type="file"></label>
-            </div>
-            <div class="field full">
-              <label class="consent"><input type="checkbox" checked><span>Согласен на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="#">политикой конфиденциальности</a></span></label>
+      <div class="cta-side">
+        <div class="cta-intro">
+          <p class="eyebrow">Поддержка клиентов</p>
+          <h2>Не&nbsp;нашли нужный прибор?</h2>
+          <p class="lead">Инженеры отдела поддержки подберут исполнение под&nbsp;ваш техпроцесс и&nbsp;подготовят КП.</p>
+        </div>
+        <aside class="card staff">
+          <div class="who">
+            <img class="ava" src="img/staff-01.jpg" width="64" height="64" alt="">
+            <div>
+              <h3>Николай Воронин</h3>
+              <p class="role">Руководитель отдела поддержки клиентов</p>
             </div>
           </div>
-          <div class="form-foot">
-            <button class="btn btn-primary" type="submit">Отправить запрос<svg class="ico sm"><use href="#i-arrow"/></svg></button>
-          </div>
-        </form>
+          <a class="tel" href="tel:+73517258926"><svg class="ico"><use href="#i-phone"/></svg>+7 (351) 725-89-26</a>
+          <p class="hint">Поможет подобрать исполнение, расшифровать обозначение и&nbsp;подготовить КП.</p>
+        </aside>
       </div>
 
-      <aside class="card staff">
-        <div class="who">
-          <img class="ava" src="img/staff-01.jpg" width="64" height="64" alt="">
-          <div>
-            <h3>Николай Воронин</h3>
-            <p class="role">Руководитель отдела поддержки клиентов</p>
+      <form class="form-card" action="#">
+        <div class="fgrid">
+          <div class="field">
+            <label for="c-name">Имя</label>
+            <div class="control"><input id="c-name" type="text"></div>
+          </div>
+          <div class="field">
+            <label for="c-company">Компания</label>
+            <div class="control"><input id="c-company" type="text"></div>
+          </div>
+          <div class="field full">
+            <label for="c-contact">Телефон или e-mail</label>
+            <div class="control"><input id="c-contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru"></div>
+          </div>
+          <div class="field full">
+            <label for="c-q">Вопрос</label>
+            <div class="control"><textarea id="c-q"></textarea></div>
+          </div>
+          <div class="field full">
+            <label for="c-file">Файл</label>
+            <label class="file" for="c-file"><svg class="ico sm"><use href="#i-clip"/></svg>Прикрепить опросный лист<input id="c-file" type="file"></label>
+          </div>
+          <div class="field full">
+            <label class="consent"><input type="checkbox" checked><span>Согласен на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="#">политикой конфиденциальности</a></span></label>
           </div>
         </div>
-        <a class="tel" href="tel:+73517258926"><svg class="ico"><use href="#i-phone"/></svg>+7 (351) 725-89-26</a>
-        <p class="hint">Поможет подобрать исполнение, расшифровать обозначение и&nbsp;подготовить КП.</p>
-      </aside>
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit">Отправить запрос<svg class="ico sm"><use href="#i-arrow"/></svg></button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
@@ -1182,59 +1186,30 @@
 <footer class="footer">
   <div class="wrap">
     <div class="f-top">
-      <div class="f-brand">
         <a class="logo logo-footer" href="#top" aria-label="Челябинский завод «Теплоприбор» — на главную">
       <img class="logo-img" src="img/logo-tp.svg" width="210" height="63" alt="Теплоприбор, ЧТП, Челябинск">
       <span class="logo-sub">Завод измерительных приборов с&nbsp;1951&nbsp;года</span>
     </a>
-        <p>Завод КИПиА с&nbsp;1951&nbsp;года. Подобрать и&nbsp;заказать прибор у&nbsp;изготовителя.</p>
-        <a class="f-social" href="#"><svg class="ico sm"><use href="#i-vk"/></svg>ВКонтакте</a>
-      </div>
-      <div>
-        <h3>Каталог</h3>
-        <ul>
-          <li><a href="#catalog">Датчики температуры</a></li>
-          <li><a href="#catalog">Датчики давления</a></li>
-          <li><a href="#catalog">Уровнемеры и&nbsp;сигнализаторы</a></li>
-          <li><a href="#catalog">Вторичная аппаратура</a></li>
-          <li><a href="#catalog">Функциональная аппаратура</a></li>
-          <li><a href="#catalog">«Экспресс-анализ»</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Сервисы</h3>
-        <ul>
-          <li><a href="#picker">Подбор</a></li>
-          <li><a href="#stock">Со&nbsp;склада</a></li>
-          <li><a href="#forms">Опросные листы</a></li>
-          <li><a href="#metrology">Поверка</a></li>
-          <li><a href="#">Ремонт</a></li>
-          <li><a href="#contacts">Консультация</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>О&nbsp;заводе</h3>
-        <ul>
-          <li><a href="#proof">О&nbsp;компании</a></li>
-          <li><a href="#news">Новости</a></li>
-          <li><a href="#">Статьи</a></li>
-          <li><a href="#clients">Отзывы</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-      </div>
       <div class="f-contact">
-        <h3>Контакты</h3>
-        <address>
-          Челябинск, 454047,<br>ул. 2-я Павелецкая, 36
-          <a class="big" href="tel:+73517258978">+7 (351) 725-89-78</a>
-          <a class="mail" href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a>
-        </address>
-        <p class="f-reps"><b>Представительства:</b> Москва, Санкт-Петербург, Пермь, Самара, Костанай</p>
+        <a class="big" href="tel:+73517258978">+7 (351) 725-89-78</a>
+        <p><a class="mail" href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a><span class="sep"> · </span><span class="addr">Челябинск, ул.&nbsp;2‑я&nbsp;Павелецкая,&nbsp;36</span></p>
       </div>
     </div>
+    <div class="f-mid">
+      <nav class="f-nav" aria-label="Меню в футере">
+        <a href="#catalog">Каталог</a>
+        <a href="#picker">Подбор</a>
+        <a href="#stock">Со&nbsp;склада</a>
+        <a href="#forms">Опросные листы</a>
+        <a href="#metrology">Метрология и&nbsp;поверка</a>
+        <a href="#proof">О&nbsp;заводе</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="f-social" href="#" aria-label="Теплоприбор во ВКонтакте"><svg class="ico sm"><use href="#i-vk"/></svg>ВКонтакте</a>
+    </div>
     <div class="f-bot">
-      <span>© 2008–2026 ООО «Челябинский завод „Теплоприбор“»</span>
-      <a href="#">Политика конфиденциальности</a>
+      <span>© 2008–2026 ООО «Челябинский завод „Теплоприбор“» · <a href="#">Политика конфиденциальности</a></span>
+      <span>Дизайн и&nbsp;разработка&nbsp;— <a class="f-dev" href="https://alkon.pro" target="_blank" rel="noopener">alkon.pro</a></span>
     </div>
   </div>
 </footer>
