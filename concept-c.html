@@ -300,7 +300,6 @@
   .review p{font-size:15px;color:var(--mid);margin-top:8px}
   .review .scan{width:88px;height:116px;border-radius:8px;background:var(--bg);border:1px solid var(--line);display:grid;place-items:center;color:var(--line-strong);position:relative}
   .review .scan::before{content:"";position:absolute;left:14px;right:14px;top:18px;height:1px;background:var(--line-strong);box-shadow:0 10px 0 var(--line-strong),0 20px 0 var(--line-strong),0 30px 0 var(--line-strong)}
-  .review .scan .ico{position:absolute;right:10px;bottom:10px;width:20px;height:20px;color:var(--blue)}
   .reviews-more{margin-top:32px}
 
   /* ---------- final cta ---------- */
@@ -1111,7 +1110,7 @@
           <p>Датчики температуры</p>
           <span class="link" style="margin-top:16px">Открыть письмо<svg class="ico"><use href="#i-arrow"/></svg></span>
         </div>
-        <span class="scan"><svg class="ico"><use href="#i-doc"/></svg></span>
+        <span class="scan" aria-hidden="true"></span>
       </a>
       <a class="card review" href="#">
         <div>
@@ -1120,7 +1119,7 @@
           <p>«Экспресс-анализ»&nbsp;&mdash; измерение температуры расплава</p>
           <span class="link" style="margin-top:16px">Открыть письмо<svg class="ico"><use href="#i-arrow"/></svg></span>
         </div>
-        <span class="scan"><svg class="ico"><use href="#i-doc"/></svg></span>
+        <span class="scan" aria-hidden="true"></span>
       </a>
     </div>
   </div>
