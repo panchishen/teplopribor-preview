@@ -448,6 +448,7 @@
   .cta-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px}.cta-grid .form-card{margin-top:0}.cta-side .staff{position:static;margin-top:40px}@media (max-width:1180px){.cta-grid{grid-template-columns:1fr;gap:40px}.cta-side{display:contents}.cta-intro{order:1}.cta-grid .form-card{order:2}.cta-side .staff{order:3;margin-top:0}}
   .footer{padding-top:64px}.f-top{display:flex;justify-content:space-between;align-items:flex-start;gap:32px 48px;flex-wrap:wrap}.f-brand{grid-column:auto}.f-contact{text-align:right}.f-contact a.big{margin-top:0;font-size:24px}.f-contact p{margin-top:8px;color:var(--mid)}.f-contact .mail{display:inline;margin:0}.f-mid{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}.f-nav{display:flex;flex-wrap:wrap;gap:12px 28px;font-weight:500}.f-nav a:hover{color:var(--blue)}.f-social{margin-top:0}.f-bot{margin-top:28px}.f-bot a{color:var(--ink)}.f-bot a:hover{color:var(--blue)}.f-dev{font-weight:500}@media (max-width:860px){.f-contact{text-align:left}}@media (max-width:767px){.f-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px}.f-nav a{display:inline-flex;align-items:center;min-height:44px}.f-mid{align-items:flex-start}}
   @media (max-width:640px){.f-contact .sep{display:none}.f-contact .addr{display:block;margin-top:4px}}
+  .pd-note{margin-top:16px;font-size:13.5px;color:var(--mid)}.pd-note a,.cookie a{color:var(--blue)}.cookie{max-width:520px;flex-wrap:wrap;gap:12px 16px}.cookie p{flex:1 1 260px}.cookie-btns{display:flex;gap:8px;flex-wrap:wrap}.legal{display:flex;flex-wrap:wrap;gap:8px 24px}.f-bot{align-items:baseline}@media (max-width:640px){.cookie p{flex:none}.cookie-btns .btn{flex:1}}
 </style>
 </head>
 <!-- Icons: Lucide v0.469.0 (https://lucide.dev), ISC License -->
@@ -491,7 +492,6 @@
     <symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></symbol>
     <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
-    <symbol id="i-vk" viewBox="0 0 24 24"><path d="M3 7c.3 6.5 3.8 10.5 9.5 10.5h.5v-3.7c2 .2 3.5 1.7 4.2 3.7H20c-.8-2.8-2.7-4.3-3.9-4.9 1.2-.7 2.9-2.5 3.3-5.6h-2.6c-.5 2.5-2.1 4.4-3.8 4.6V7H10v8.2C8.3 14.8 6.1 12.7 6 7H3Z"/></symbol>
   </defs>
 </svg>
 
@@ -1158,7 +1158,7 @@
           </div>
           <div class="field full">
             <label for="c-contact">Телефон или e-mail</label>
-            <div class="control"><input id="c-contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru"></div>
+            <div class="control"><input id="c-contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru" required></div>
           </div>
           <div class="field full">
             <label for="c-q">Вопрос</label>
@@ -1169,12 +1169,13 @@
             <label class="file" for="c-file"><svg class="ico sm"><use href="#i-clip"/></svg>Прикрепить опросный лист<input id="c-file" type="file"></label>
           </div>
           <div class="field full">
-            <label class="consent"><input type="checkbox" checked><span>Согласен на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="#">политикой конфиденциальности</a></span></label>
+            <label class="consent"><input type="checkbox" name="consent" required><span>Даю <a href="#">согласие на&nbsp;обработку персональных данных</a></span></label>
           </div>
         </div>
         <div class="form-foot">
           <button class="btn btn-primary" type="submit">Отправить запрос<svg class="ico sm"><use href="#i-arrow"/></svg></button>
         </div>
+        <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="#">политике обработки персональных данных</a>.</p>
       </form>
     </div>
   </div>
@@ -1205,10 +1206,11 @@
         <a href="#proof">О&nbsp;заводе</a>
         <a href="#contacts">Контакты</a>
       </nav>
-      <a class="f-social" href="#" aria-label="Теплоприбор во ВКонтакте"><svg class="ico sm"><use href="#i-vk"/></svg>ВКонтакте</a>
+      <a class="f-social" href="#" aria-label="Теплоприбор во ВКонтакте"><svg class="vk-logo" width="24" height="24" viewBox="0 0 48 48" aria-hidden="true"><path d="M0 23.04C0 12.179 0 6.748 3.374 3.374S12.18 0 23.04 0h1.92c10.861 0 16.292 0 19.666 3.374C48 6.748 48 12.18 48 23.04v1.92c0 10.861 0 16.292-3.374 19.666C41.252 48 35.82 48 24.96 48h-1.92c-10.861 0-16.292 0-19.666-3.374C0 41.252 0 35.82 0 24.96z" fill="#0077FF"/><path d="M25.54 34.58c-10.94 0-17.18-7.5-17.44-19.98h5.48c.18 9.16 4.22 13.04 7.42 13.84V14.6h5.16v7.9c3.16-.34 6.48-3.94 7.6-7.9h5.16c-.86 4.88-4.46 8.48-7.02 9.96 2.56 1.2 6.66 4.34 8.22 10.02h-5.68c-1.22-3.8-4.26-6.74-8.28-7.14v7.14z" fill="#FFFFFF"/></svg>ВКонтакте</a>
     </div>
     <div class="f-bot">
-      <span>© 2008–2026 ООО «Челябинский завод „Теплоприбор“» · <a href="#">Политика конфиденциальности</a></span>
+      <span>© 2008–2026 ООО «Челябинский завод „Теплоприбор“», ИНН&nbsp;7450031562</span>
+      <nav class="legal" aria-label="Документы"><a href="#">Политика обработки персональных данных</a><a href="#">Согласие на&nbsp;обработку персональных данных</a><a href="#">Политика cookie</a></nav>
       <span>Дизайн и&nbsp;разработка&nbsp;— <a class="f-dev" href="https://alkon.pro" target="_blank" rel="noopener">alkon.pro</a></span>
     </div>
   </div>
@@ -1217,8 +1219,8 @@
 <!-- ======== Cookie ======== -->
 <input type="checkbox" id="ck" class="ck-toggle" aria-label="Скрыть сообщение о cookie">
 <div class="cookie" role="status">
-  <p>Используем cookie для работы сайта</p>
-  <label class="btn btn-secondary btn-sm" for="ck">Понятно</label>
+  <p>Используем cookie. Необходимые&nbsp;— для работы сайта, аналитические&nbsp;— только с&nbsp;вашего согласия. <a href="#">Политика cookie</a></p>
+  <div class="cookie-btns"><label class="btn btn-secondary btn-sm" for="ck">Только необходимые</label><label class="btn btn-secondary btn-sm" for="ck">Принять все</label></div>
 </div>
 
 <script>

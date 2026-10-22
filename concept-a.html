@@ -370,6 +370,7 @@
   .forms-grid{row-gap:0}@media (max-width:960px){.forms-grid{row-gap:32px}}
   .stock-img{aspect-ratio:16/10;margin:-20px -20px 4px;border-bottom:1px solid var(--line);border-radius:var(--r-lg) var(--r-lg) 0 0;background:#EEF0F2 center/cover no-repeat}.news-img{position:relative;aspect-ratio:16/10;margin:-24px -24px 4px;border-bottom:1px solid var(--line);border-radius:var(--r-lg) var(--r-lg) 0 0;background:#EEF0F2 center/cover no-repeat}.news-img .play{position:absolute;left:50%;top:50%;width:52px;height:52px;transform:translate(-50%,-50%);box-shadow:0 8px 24px rgba(0,0,0,.3)}img.avatar{object-fit:cover}
   .logos img{display:block;width:auto;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.72;transition:filter .2s,opacity .2s}.logos li:hover img{filter:none;opacity:1}.logos li img{height:var(--h)}
+  .pd-note{margin-top:14px;font-size:13px;color:var(--ink-2)}.pd-note a,.cookie a{color:var(--blue)}.cookie{max-width:560px;flex-wrap:wrap;gap:12px 16px}.cookie>span{flex:1 1 260px}.cookie-btns{display:flex;gap:8px;flex-wrap:wrap}.vk{display:inline-flex;align-items:center;gap:10px}.vk-logo{flex:none}
 </style>
 </head>
 <!-- Icons: Lucide v0.469.0 (https://lucide.dev), ISC License -->
@@ -410,7 +411,7 @@
       <button class="city" type="button" aria-label="Выбрать город: Челябинск">
         <svg class="ic"><use href="#i-pin"/></svg>Челябинск<svg class="ic"><use href="#i-chev"/></svg>
       </button>
-      <span class="topbar-addr">ул. 2-я Павелецкая, 36</span>
+      <span class="topbar-addr">ул.&nbsp;2‑я Павелецкая, 36</span>
       <div class="topbar-right">
         <a class="mail" href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a>
         <a class="phone" href="tel:+73517258978">+7&nbsp;(351)&nbsp;725-89-78</a>
@@ -895,14 +896,15 @@
         <div class="form-grid">
           <label class="fld"><span>Имя</span><input class="input" type="text" name="name" autocomplete="name"></label>
           <label class="fld"><span>Компания</span><input class="input" type="text" name="company" autocomplete="organization"></label>
-          <label class="fld form-wide"><span>Телефон или e-mail</span><input class="input" type="text" name="contact" autocomplete="tel" placeholder="+7 (___) ___-__-__ или mail@company.ru"></label>
+          <label class="fld form-wide"><span>Телефон или e-mail</span><input class="input" type="text" name="contact" autocomplete="tel" placeholder="+7 (___) ___-__-__ или mail@company.ru" required></label>
           <label class="fld form-wide"><span>Вопрос</span><textarea class="input" name="question" placeholder="Прибор, параметры, условия эксплуатации"></textarea></label>
           <label class="file form-wide"><svg class="ic"><use href="#i-clip"/></svg>Прикрепить опросный лист<span>DOCX, PDF</span><input type="file" hidden></label>
         </div>
         <div class="form-foot">
-          <label class="consent"><input type="checkbox" checked><span>Согласие на&nbsp;обработку персональных данных, <a href="#contacts">политика конфиденциальности</a></span></label>
+          <label class="consent"><input type="checkbox" name="consent" required><span>Даю <a href="#">согласие на&nbsp;обработку персональных данных</a></span></label>
           <button class="btn btn-primary" type="submit">Отправить запрос</button>
         </div>
+              <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="#">политике обработки персональных данных</a>.</p>
       </form>
 
       <aside class="card staff">
@@ -969,26 +971,28 @@
       <div>
         <h3>Контакты</h3>
         <div class="f-contact">
-          <span>Челябинск, 454047, ул. 2-я Павелецкая, 36</span>
+          <span>Челябинск, 454047, ул.&nbsp;2‑я Павелецкая, 36</span>
           <a class="mono" href="tel:+73517258978">+7&nbsp;(351)&nbsp;725-89-78</a>
           <a class="mono" href="mailto:sales1@tpchel.ru">sales1@tpchel.ru</a>
           <p class="f-reps">Представительства: Москва, Санкт-Петербург, Пермь, Самара, Костанай</p>
-          <a href="#contacts">ВКонтакте</a>
+          <a class="vk" href="#" aria-label="Теплоприбор во ВКонтакте"><svg class="vk-logo" width="24" height="24" viewBox="0 0 48 48" aria-hidden="true"><path d="M0 23.04C0 12.179 0 6.748 3.374 3.374S12.18 0 23.04 0h1.92c10.861 0 16.292 0 19.666 3.374C48 6.748 48 12.18 48 23.04v1.92c0 10.861 0 16.292-3.374 19.666C41.252 48 35.82 48 24.96 48h-1.92c-10.861 0-16.292 0-19.666-3.374C0 41.252 0 35.82 0 24.96z" fill="#0077FF"/><path d="M25.54 34.58c-10.94 0-17.18-7.5-17.44-19.98h5.48c.18 9.16 4.22 13.04 7.42 13.84V14.6h5.16v7.9c3.16-.34 6.48-3.94 7.6-7.9h5.16c-.86 4.88-4.46 8.48-7.02 9.96 2.56 1.2 6.66 4.34 8.22 10.02h-5.68c-1.22-3.8-4.26-6.74-8.28-7.14v7.14z" fill="#FFFFFF"/></svg>ВКонтакте</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy;&nbsp;2008–2026 ООО «Челябинский завод „Теплоприбор“»</span>
-      <nav aria-label="Служебные ссылки">
-        <a href="#contacts">Политика конфиденциальности</a>
+      <span>&copy;&nbsp;2008–2026 ООО «Челябинский завод „Теплоприбор“», ИНН&nbsp;7450031562</span>
+      <nav aria-label="Документы">
+        <a href="#">Политика обработки персональных данных</a>
+        <a href="#">Согласие на&nbsp;обработку персональных данных</a>
+        <a href="#">Политика cookie</a>
       </nav>
     </div>
   </div>
 </footer>
 
 <div class="cookie" id="cookie" role="dialog" aria-label="Cookie">
-  <span>Используем cookie для работы сайта</span>
-  <button class="btn btn-outline btn-sm" type="button" id="cookie-ok">Понятно</button>
+  <span>Используем cookie. Необходимые&nbsp;— для работы сайта, аналитические&nbsp;— только с&nbsp;вашего согласия. <a href="#">Политика cookie</a></span>
+  <div class="cookie-btns"><button class="btn btn-outline btn-sm" type="button" data-ck="necessary">Только необходимые</button><button class="btn btn-outline btn-sm" type="button" data-ck="all">Принять все</button></div>
 </div>
 
 <script>
@@ -1003,8 +1007,8 @@
         burger.querySelector('.ic-x').style.display=open?'block':'';
       });
     }
-    var ok=document.getElementById('cookie-ok');
-    if(ok){ok.addEventListener('click',function(){document.getElementById('cookie').classList.add('is-hidden');});}
+    
+    document.querySelectorAll('[data-ck]').forEach(function(b){b.addEventListener('click',function(){document.getElementById('cookie').classList.add('is-hidden');});});
   })();
 </script>
 </body>
