@@ -350,7 +350,7 @@
   .cookie{position:fixed;left:24px;bottom:24px;z-index:60;display:flex;align-items:center;gap:20px;max-width:420px;padding:16px 16px 16px 20px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh-2);font-size:14px}
   .cookie p{color:var(--mid)}
   .cookie label{flex:none}
-  .ck-toggle:checked ~ .cookie{display:none}
+  .cookie.is-hidden{display:none}
 
   /* ---------- responsive ---------- */
   @media (max-width:1280px){
@@ -1215,10 +1215,9 @@
 </footer>
 
 <!-- ======== Cookie ======== -->
-<input type="checkbox" id="ck" class="ck-toggle" aria-label="Скрыть сообщение о cookie">
-<div class="cookie" role="status">
+<div class="cookie" id="cookie" role="status">
   <p>Используем cookie. Необходимые&nbsp;— для работы сайта, аналитические&nbsp;— только с&nbsp;вашего согласия. <a href="#">Политика cookie</a></p>
-  <div class="cookie-btns"><label class="btn btn-secondary btn-sm" for="ck">Только необходимые</label><label class="btn btn-secondary btn-sm" for="ck">Принять все</label></div>
+  <div class="cookie-btns"><button class="btn btn-secondary btn-sm" type="button" data-ck="necessary">Только необходимые</button><button class="btn btn-secondary btn-sm" type="button" data-ck="all">Принять все</button></div>
 </div>
 
 <script>
@@ -1236,7 +1235,7 @@
   nav.addEventListener('change',function(){if(nav.checked&&head.classList.contains('is-search'))set(false);});
 })();
 </script>
-<script>document.addEventListener('click',function(e){var a=e.target.closest('a[href="#"]');if(a)e.preventDefault();});document.querySelectorAll('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();});});</script>
+<script>document.addEventListener('click',function(e){var a=e.target.closest('a[href="#"]');if(a)e.preventDefault();});document.querySelectorAll('[data-ck]').forEach(function(b){b.addEventListener('click',function(){document.getElementById('cookie').classList.add('is-hidden');});});document.querySelectorAll('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();});});</script>
 <script>
 (function(){
   var root=document.documentElement; window.__reveal=1;
