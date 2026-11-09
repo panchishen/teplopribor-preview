@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta name="robots" content="noindex"><title>Формы</title></head>
+<body>
+<section id="form-consultation-page">
+  <form class="form-card js-form" action="#" method="post" enctype="multipart/form-data" data-form="consultation-page" data-endpoint="" novalidate>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid">
+      <div class="field">
+        <label for="cp-name">Имя</label>
+        <div class="control"><input id="cp-name" name="name" type="text" autocomplete="name"></div>
+      </div>
+      <div class="field">
+        <label for="cp-company">Компания</label>
+        <div class="control"><input id="cp-company" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="field full">
+        <label for="cp-contact">Телефон или e-mail</label>
+        <div class="control"><input id="cp-contact" name="contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru" required data-validate="contact" aria-describedby="cp-contact-err"></div>
+        <p class="field-error" id="cp-contact-err" hidden>Укажите телефон или&nbsp;e-mail</p>
+      </div>
+      <div class="field full">
+        <label for="cp-topic">Тема</label>
+        <div class="control sel">
+          <select id="cp-topic" name="topic">
+            <option>Подбор исполнения</option>
+            <option>Расшифровка обозначения и подготовка КП</option>
+            <option>Сервис и ремонт</option>
+            <option>Метрология</option>
+          </select>
+        </div>
+      </div>
+      <div class="field full">
+        <label for="cp-q">Вопрос</label>
+        <div class="control"><textarea id="cp-q" name="question"></textarea></div>
+      </div>
+      <div class="field full">
+        <label for="cp-file">Файл</label>
+        <label class="file" for="cp-file"><svg class="ico sm"><use href="#i-clip"></use></svg><span data-file-label>Прикрепить файл</span><input id="cp-file" name="file" type="file"></label>
+      </div>
+      <div class="field full">
+        <label class="consent"><input type="checkbox" name="consent" value="1" required aria-describedby="cp-consent-err"><span>Даю <a href="/teplopribor-preview/site/privacy.html#consent" target="_blank">согласие на&nbsp;обработку персональных данных</a></span></label>
+        <p class="field-error" id="cp-consent-err" hidden>Нужно согласие на&nbsp;обработку персональных данных</p>
+      </div>
+    </div>
+    <div class="form-foot">
+      <button class="btn btn-primary" type="submit">Отправить запрос</button>
+    </div>
+    <p class="form-msg is-error" role="status" data-form-error hidden>Заявка не&nbsp;отправлена. Проверьте соединение и&nbsp;попробуйте ещё раз или&nbsp;позвоните +7&nbsp;(351)&nbsp;725-89-78.</p>
+    <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="/teplopribor-preview/site/privacy.html" target="_blank">политике обработки персональных данных</a>.</p>
+  </form>
+  <div class="form-card form-done" data-form-done role="status" hidden>
+    <span class="form-done-ic"><svg class="ico"><use href="#i-check"></use></svg></span>
+    <h3>Заявка принята</h3>
+    <p>Номер заявки <b class="mono" data-request-id></b>. Ответим в&nbsp;рабочий день.</p>
+  </div>
+</section><section id="form-consultation">
+  <form class="form-card js-form" action="#" method="post" enctype="multipart/form-data" data-form="consultation" data-endpoint="" novalidate>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid">
+      <div class="field">
+        <label for="c-name">Имя</label>
+        <div class="control"><input id="c-name" name="name" type="text" autocomplete="name"></div>
+      </div>
+      <div class="field">
+        <label for="c-company">Компания</label>
+        <div class="control"><input id="c-company" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="field full">
+        <label for="c-contact">Телефон или e-mail</label>
+        <div class="control"><input id="c-contact" name="contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru" required data-validate="contact" aria-describedby="c-contact-err"></div>
+        <p class="field-error" id="c-contact-err" hidden>Укажите телефон или&nbsp;e-mail</p>
+      </div>
+      <div class="field full">
+        <label for="c-q">Вопрос</label>
+        <div class="control"><textarea id="c-q" name="question"></textarea></div>
+      </div>
+      <div class="field full">
+        <label for="c-file">Файл</label>
+        <label class="file" for="c-file"><svg class="ico sm"><use href="#i-clip"></use></svg><span data-file-label>Прикрепить опросный лист</span><input id="c-file" name="file" type="file"></label>
+      </div>
+      <div class="field full">
+        <label class="consent"><input type="checkbox" name="consent" value="1" required aria-describedby="c-consent-err"><span>Даю <a href="/teplopribor-preview/site/privacy.html#consent" target="_blank">согласие на&nbsp;обработку персональных данных</a></span></label>
+        <p class="field-error" id="c-consent-err" hidden>Нужно согласие на&nbsp;обработку персональных данных</p>
+      </div>
+    </div>
+    <div class="form-foot">
+      <button class="btn btn-primary" type="submit">Отправить запрос<svg class="ico sm"><use href="#i-arrow"></use></svg></button>
+    </div>
+    <p class="form-msg is-error" role="status" data-form-error hidden>Заявка не&nbsp;отправлена. Проверьте соединение и&nbsp;попробуйте ещё раз или&nbsp;позвоните +7&nbsp;(351)&nbsp;725-89-78.</p>
+    <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="/teplopribor-preview/site/privacy.html" target="_blank">политике обработки персональных данных</a>.</p>
+  </form>
+  <div class="form-card form-done" data-form-done role="status" hidden>
+    <span class="form-done-ic"><svg class="ico"><use href="#i-check"></use></svg></span>
+    <h3>Заявка принята</h3>
+    <p>Номер заявки <b class="mono" data-request-id></b>. Ответим в&nbsp;рабочий день.</p>
+  </div>
+</section><section id="form-contact">
+  <form class="form-card js-form" action="#" method="post" enctype="multipart/form-data" data-form="contact" data-endpoint="" novalidate>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid">
+      <div class="field">
+        <label for="ct-name">Имя</label>
+        <div class="control"><input id="ct-name" name="name" type="text" autocomplete="name"></div>
+      </div>
+      <div class="field">
+        <label for="ct-company">Компания</label>
+        <div class="control"><input id="ct-company" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="field full">
+        <label for="ct-contact">Телефон или e-mail</label>
+        <div class="control"><input id="ct-contact" name="contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru" required data-validate="contact" aria-describedby="ct-contact-err"></div>
+        <p class="field-error" id="ct-contact-err" hidden>Укажите телефон или&nbsp;e-mail</p>
+      </div>
+      <div class="field full">
+        <label for="ct-q">Вопрос</label>
+        <div class="control"><textarea id="ct-q" name="question"></textarea></div>
+      </div>
+      <div class="field full">
+        <label for="ct-file">Файл</label>
+        <label class="file" for="ct-file"><svg class="ico sm"><use href="#i-clip"></use></svg><span data-file-label>Прикрепить файл</span><input id="ct-file" name="file" type="file"></label>
+      </div>
+      <div class="field full">
+        <label class="consent"><input type="checkbox" name="consent" value="1" required aria-describedby="ct-consent-err"><span>Даю <a href="/teplopribor-preview/site/privacy.html#consent" target="_blank">согласие на&nbsp;обработку персональных данных</a></span></label>
+        <p class="field-error" id="ct-consent-err" hidden>Нужно согласие на&nbsp;обработку персональных данных</p>
+      </div>
+    </div>
+    <div class="form-foot">
+      <button class="btn btn-primary" type="submit">Отправить</button>
+    </div>
+    <p class="form-msg is-error" role="status" data-form-error hidden>Заявка не&nbsp;отправлена. Проверьте соединение и&nbsp;попробуйте ещё раз или&nbsp;позвоните +7&nbsp;(351)&nbsp;725-89-78.</p>
+    <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="/teplopribor-preview/site/privacy.html" target="_blank">политике обработки персональных данных</a>.</p>
+  </form>
+  <div class="form-card form-done" data-form-done role="status" hidden>
+    <span class="form-done-ic"><svg class="ico"><use href="#i-check"></use></svg></span>
+    <h3>Заявка принята</h3>
+    <p>Номер заявки <b class="mono" data-request-id></b>. Ответим в&nbsp;рабочий день.</p>
+  </div>
+</section><section id="form-invoice">
+  <form class="form-card js-form" action="#" method="post" data-form="invoice" data-endpoint="" novalidate>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid">
+      <div class="field">
+        <label for="inv-name">Контактное лицо</label>
+        <div class="control"><input id="inv-name" name="name" type="text" autocomplete="name"></div>
+      </div>
+      <div class="field">
+        <label for="inv-company">Компания</label>
+        <div class="control"><input id="inv-company" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="field full">
+        <label for="inv-contact">Телефон или e-mail</label>
+        <div class="control"><input id="inv-contact" name="contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru" required data-validate="contact" aria-describedby="inv-contact-err"></div>
+        <p class="field-error" id="inv-contact-err" hidden>Укажите телефон или&nbsp;e-mail</p>
+      </div>
+      <div class="field full">
+        <label for="inv-comment">Комментарий (необязательно)</label>
+        <div class="control"><textarea id="inv-comment" name="comment"></textarea></div>
+      </div>
+      <div class="field full">
+        <label class="consent"><input type="checkbox" name="consent" value="1" required aria-describedby="inv-consent-err"><span>Даю <a href="/teplopribor-preview/site/privacy.html#consent" target="_blank">согласие на&nbsp;обработку персональных данных</a></span></label>
+        <p class="field-error" id="inv-consent-err" hidden>Нужно согласие на&nbsp;обработку персональных данных</p>
+      </div>
+    </div>
+    <div class="form-foot">
+      <button class="btn btn-primary" type="submit">Запросить счёт</button>
+    </div>
+    <p class="form-msg is-error" role="status" data-form-error hidden>Заявка не&nbsp;отправлена. Проверьте соединение и&nbsp;попробуйте ещё раз или&nbsp;позвоните +7&nbsp;(351)&nbsp;725-89-78.</p>
+    <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="/teplopribor-preview/site/privacy.html" target="_blank">политике обработки персональных данных</a>.</p>
+  </form>
+  <div class="form-card form-done" data-form-done role="status" hidden>
+    <span class="form-done-ic"><svg class="ico"><use href="#i-check"></use></svg></span>
+    <h3>Заявка принята</h3>
+    <p>Номер заявки <b class="mono" data-request-id></b>. Ответим в&nbsp;рабочий день.</p>
+  </div>
+</section><section id="form-order">
+  <form class="js-form order-form" action="#" method="post" enctype="multipart/form-data" data-form="order" data-endpoint="" novalidate>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="order-step" id="order-contacts">
+      <h2 class="order-step-title">Контакты</h2>
+      <div class="fgrid order-fgrid">
+        <div class="field">
+          <label for="o-company">Компания</label>
+          <div class="control"><input id="o-company" name="company" type="text" autocomplete="organization"></div>
+        </div>
+        <div class="field">
+          <label for="o-inn">ИНН (необязательно)</label>
+          <div class="control"><input id="o-inn" name="inn" type="text" inputmode="numeric" autocomplete="off"></div>
+        </div>
+        <div class="field">
+          <label for="o-name">Контактное лицо</label>
+          <div class="control"><input id="o-name" name="name" type="text" autocomplete="name"></div>
+        </div>
+        <div class="field">
+          <label for="o-phone">Телефон</label>
+          <div class="control"><input id="o-phone" name="phone" type="tel" autocomplete="tel" required data-validate="contact-pair" data-pair="o-email" aria-describedby="o-phone-err"></div>
+          <p class="field-error" id="o-phone-err" hidden>Укажите телефон или&nbsp;e-mail</p>
+        </div>
+        <div class="field">
+          <label for="o-email">E-mail</label>
+          <div class="control"><input id="o-email" name="email" type="email" autocomplete="email"></div>
+        </div>
+        <div class="field">
+          <label for="o-city">Город доставки</label>
+          <div class="control"><input id="o-city" name="city" type="text" autocomplete="address-level2"></div>
+        </div>
+        <div class="field full">
+          <label for="o-comment">Комментарий</label>
+          <div class="control"><textarea id="o-comment" name="comment"></textarea></div>
+        </div>
+        <div class="field full">
+          <label for="o-file">Файл</label>
+          <label class="file" for="o-file"><svg class="ico sm"><use href="#i-clip"></use></svg><span data-file-label>Прикрепить файл</span><input id="o-file" name="file" type="file"></label>
+        </div>
+      </div>
+    </div>
+    <div class="order-step order-send">
+      <div class="field">
+        <label class="consent"><input type="checkbox" name="consent" value="1" required aria-describedby="o-consent-err"><span>Даю <a href="/teplopribor-preview/site/privacy.html#consent" target="_blank">согласие на&nbsp;обработку персональных данных</a></span></label>
+        <p class="field-error" id="o-consent-err" hidden>Нужно согласие на&nbsp;обработку персональных данных</p>
+      </div>
+      <div class="order-send-row">
+        <button class="btn btn-primary" type="submit">Отправить заявку<svg class="ico sm"><use href="#i-arrow"></use></svg></button>
+        <p>Ответим КП в&nbsp;течение рабочего дня. Данные&nbsp;— только для&nbsp;обработки заявки</p>
+      </div>
+      <p class="form-msg is-error" role="status" data-form-error hidden>Заявка не&nbsp;отправлена. Проверьте соединение и&nbsp;попробуйте ещё раз или&nbsp;позвоните +7&nbsp;(351)&nbsp;725-89-78.</p>
+      <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="/teplopribor-preview/site/privacy.html" target="_blank">политике обработки персональных данных</a>.</p>
+    </div>
+  </form>
+  <div class="order-done" data-form-done role="status" hidden>
+    <div class="order-done-box">
+      <h2>Заявка №&nbsp;<span class="mono" data-request-id></span> принята</h2>
+      <p>Копия ушла на&nbsp;ваш e-mail</p>
+    </div>
+    <a class="btn btn-secondary" href="/teplopribor-preview/site/#catalog">Вернуться в&nbsp;каталог</a>
+  </div>
+</section><section id="form-questionnaire">
+  <form class="form-card js-form" action="#" method="post" enctype="multipart/form-data" data-form="questionnaire" data-endpoint="" novalidate>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid">
+      <div class="field">
+        <label for="qs-company">Компания</label>
+        <div class="control"><input id="qs-company" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="field">
+        <label for="qs-name">Контактное лицо</label>
+        <div class="control"><input id="qs-name" name="name" type="text" autocomplete="name"></div>
+      </div>
+      <div class="field full">
+        <label for="qs-contact">Телефон или e-mail</label>
+        <div class="control"><input id="qs-contact" name="contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru" required data-validate="contact" aria-describedby="qs-contact-err"></div>
+        <p class="field-error" id="qs-contact-err" hidden>Укажите телефон или&nbsp;e-mail</p>
+      </div>
+      <div class="field full">
+        <label for="qs-file">Файл</label>
+        <label class="file" for="qs-file"><svg class="ico sm"><use href="#i-clip"></use></svg><span data-file-label>Прикрепить опросный лист (DOCX)</span><input id="qs-file" name="file" type="file" accept=".doc,.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword"></label>
+      </div>
+      <div class="field full">
+        <label class="consent"><input type="checkbox" name="consent" value="1" required aria-describedby="qs-consent-err"><span>Даю <a href="/teplopribor-preview/site/privacy.html#consent" target="_blank">согласие на&nbsp;обработку персональных данных</a></span></label>
+        <p class="field-error" id="qs-consent-err" hidden>Нужно согласие на&nbsp;обработку персональных данных</p>
+      </div>
+    </div>
+    <div class="form-foot">
+      <button class="btn btn-primary" type="submit">Отправить заполненный лист</button>
+    </div>
+    <p class="form-msg is-error" role="status" data-form-error hidden>Заявка не&nbsp;отправлена. Проверьте соединение и&nbsp;попробуйте ещё раз или&nbsp;позвоните +7&nbsp;(351)&nbsp;725-89-78.</p>
+    <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="/teplopribor-preview/site/privacy.html" target="_blank">политике обработки персональных данных</a>.</p>
+  </form>
+  <div class="form-card form-done" data-form-done role="status" hidden>
+    <span class="form-done-ic"><svg class="ico"><use href="#i-check"></use></svg></span>
+    <h3>Заявка принята</h3>
+    <p>Номер заявки <b class="mono" data-request-id></b>. Ответим в&nbsp;рабочий день.</p>
+  </div>
+</section><section id="form-repair">
+  <form class="form-card js-form co-form" action="#" method="post" enctype="multipart/form-data" data-form="repair" data-endpoint="" novalidate>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid">
+      <div class="field">
+        <label for="rep-company">Компания</label>
+        <div class="control"><input id="rep-company" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="field">
+        <label for="rep-contact">Телефон или e-mail</label>
+        <div class="control"><input id="rep-contact" name="contact" type="text" placeholder="+7 (___) ___-__-__ или mail@company.ru" required data-validate="contact" aria-describedby="rep-contact-err"></div>
+        <p class="field-error" id="rep-contact-err" hidden>Укажите телефон или&nbsp;e-mail</p>
+      </div>
+      <div class="field">
+        <label for="rep-device">Прибор</label>
+        <div class="control"><input id="rep-device" name="device" type="text"></div>
+      </div>
+      <div class="field">
+        <label for="rep-serial">Заводской номер</label>
+        <div class="control"><input id="rep-serial" name="serial" type="text"></div>
+      </div>
+      <div class="field full">
+        <label for="rep-problem">Неисправность</label>
+        <div class="control"><textarea id="rep-problem" name="problem"></textarea></div>
+      </div>
+      <div class="field full">
+        <label for="rep-file">Файл</label>
+        <label class="file" for="rep-file"><svg class="ico sm"><use href="#i-clip"></use></svg><span data-file-label>Прикрепить файл</span><input id="rep-file" name="file" type="file"></label>
+      </div>
+      <div class="field full">
+        <label class="consent"><input type="checkbox" name="consent" value="1" required aria-describedby="rep-consent-err"><span>Даю <a href="/teplopribor-preview/site/privacy.html#consent" target="_blank">согласие на&nbsp;обработку персональных данных</a></span></label>
+        <p class="field-error" id="rep-consent-err" hidden>Нужно согласие на&nbsp;обработку персональных данных</p>
+      </div>
+    </div>
+    <div class="form-foot">
+      <button class="btn btn-primary" type="submit">Отправить заявку</button>
+    </div>
+    <p class="form-msg is-error" role="status" data-form-error hidden>Заявка не&nbsp;отправлена. Проверьте соединение и&nbsp;попробуйте ещё раз или&nbsp;позвоните +7&nbsp;(351)&nbsp;725-89-78.</p>
+    <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="/teplopribor-preview/site/privacy.html" target="_blank">политике обработки персональных данных</a>.</p>
+  </form>
+  <div class="form-card form-done" data-form-done role="status" hidden>
+    <span class="form-done-ic"><svg class="ico"><use href="#i-check"></use></svg></span>
+    <h3>Заявка принята</h3>
+    <p>Номер заявки <b class="mono" data-request-id></b>. Ответим в&nbsp;рабочий день.</p>
+  </div>
+</section><section id="form-service">
+  <form class="form-card js-form co-form" action="#" method="post" enctype="multipart/form-data" data-form="service" data-endpoint="" novalidate>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid">
+      <div class="field full">
+        <label for="svc-type">Услуга</label>
+        <div class="control sel">
+          <select id="svc-type" name="service">
+            <option>Аудит объекта</option>
+            <option>Шеф-монтаж</option>
+            <option>Поверка на&nbsp;месте эксплуатации</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="svc-company">Компания</label>
+        <div class="control"><input id="svc-company" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="field">
+        <label for="svc-contact">Телефон или e-mail</label>
+        <div class="control"><input id="svc-contact" name="contact" type="text" required data-validate="contact" aria-describedby="svc-contact-err"></div>
+        <p class="field-error" id="svc-contact-err" hidden>Укажите телефон или&nbsp;e-mail</p>
+      </div>
+      <div class="field full">
+        <label for="svc-q">Вопрос</label>
+        <div class="control"><textarea id="svc-q" name="question"></textarea></div>
+      </div>
+      <div class="field full">
+        <label for="svc-file">Файл</label>
+        <label class="file" for="svc-file"><svg class="ico sm"><use href="#i-clip"></use></svg><span data-file-label>Прикрепить файл</span><input id="svc-file" name="file" type="file"></label>
+      </div>
+      <div class="field full">
+        <label class="consent"><input type="checkbox" name="consent" value="1" required aria-describedby="svc-consent-err"><span>Даю <a href="/teplopribor-preview/site/privacy.html#consent" target="_blank">согласие на&nbsp;обработку персональных данных</a></span></label>
+        <p class="field-error" id="svc-consent-err" hidden>Нужно согласие на&nbsp;обработку персональных данных</p>
+      </div>
+    </div>
+    <div class="form-foot">
+      <button class="btn btn-primary" type="submit">Отправить запрос</button>
+    </div>
+    <p class="form-msg is-error" role="status" data-form-error hidden>Заявка не&nbsp;отправлена. Проверьте соединение и&nbsp;попробуйте ещё раз или&nbsp;позвоните +7&nbsp;(351)&nbsp;725-89-78.</p>
+    <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="/teplopribor-preview/site/privacy.html" target="_blank">политике обработки персональных данных</a>.</p>
+  </form>
+  <div class="form-card form-done" data-form-done role="status" hidden>
+    <span class="form-done-ic"><svg class="ico"><use href="#i-check"></use></svg></span>
+    <h3>Заявка принята</h3>
+    <p>Номер заявки <b class="mono" data-request-id></b>. Ответим в&nbsp;рабочий день.</p>
+  </div>
+</section><section id="form-verification">
+  <form class="form-card js-form co-form" action="#" method="post" enctype="multipart/form-data" data-form="verification" data-endpoint="" novalidate>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid">
+      <div class="field">
+        <label for="ver-company">Компания</label>
+        <div class="control"><input id="ver-company" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="field">
+        <label for="ver-contact">Контакт</label>
+        <div class="control"><input id="ver-contact" name="contact" type="text" placeholder="Телефон или e-mail" required data-validate="contact" aria-describedby="ver-contact-err"></div>
+        <p class="field-error" id="ver-contact-err" hidden>Укажите телефон или&nbsp;e-mail</p>
+      </div>
+      <div class="field full">
+        <label for="ver-list">Список СИ</label>
+        <div class="control"><textarea id="ver-list" name="instruments"></textarea></div>
+      </div>
+      <div class="field full">
+        <label for="ver-file">Файл</label>
+        <label class="file" for="ver-file"><svg class="ico sm"><use href="#i-clip"></use></svg><span data-file-label>Прикрепить список СИ</span><input id="ver-file" name="file" type="file"></label>
+      </div>
+      <div class="field full">
+        <label class="consent"><input type="checkbox" name="consent" value="1" required aria-describedby="ver-consent-err"><span>Даю <a href="/teplopribor-preview/site/privacy.html#consent" target="_blank">согласие на&nbsp;обработку персональных данных</a></span></label>
+        <p class="field-error" id="ver-consent-err" hidden>Нужно согласие на&nbsp;обработку персональных данных</p>
+      </div>
+    </div>
+    <div class="form-foot">
+      <button class="btn btn-primary" type="submit">Отправить заявку</button>
+    </div>
+    <p class="form-msg is-error" role="status" data-form-error hidden>Заявка не&nbsp;отправлена. Проверьте соединение и&nbsp;попробуйте ещё раз или&nbsp;позвоните +7&nbsp;(351)&nbsp;725-89-78.</p>
+    <p class="pd-note">Как мы используем и&nbsp;храним данные&nbsp;— в&nbsp;<a href="/teplopribor-preview/site/privacy.html" target="_blank">политике обработки персональных данных</a>.</p>
+  </form>
+  <div class="form-card form-done" data-form-done role="status" hidden>
+    <span class="form-done-ic"><svg class="ico"><use href="#i-check"></use></svg></span>
+    <h3>Заявка принята</h3>
+    <p>Номер заявки <b class="mono" data-request-id></b>. Ответим в&nbsp;рабочий день.</p>
+  </div>
+</section>
+</body></html>
