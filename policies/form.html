@@ -1,0 +1,67 @@
+<template id="consent-template">
+<div class="consent-block">
+<label class="consent-label">
+<input class="consent-input" type="checkbox" name="personal_data_consent" required>
+<span class="consent-copy">Даю <a href="documents/consent.html" target="_blank" rel="noopener" aria-label="Согласие на обработку моих персональных данных (в новой вкладке)">согласие на обработку моих персональных данных</a>. Условия обработки описаны в <a href="documents/privacy.html" target="_blank" rel="noopener" aria-label="Политика конфиденциальности (в новой вкладке)">Политике конфиденциальности</a> и <a href="documents/personal-data.html" target="_blank" rel="noopener" aria-label="Политика в отношении обработки персональных данных (в новой вкладке)">Политике в отношении обработки персональных данных</a>.</span>
+</label>
+<p class="field-error consent-error" hidden></p>
+</div>
+</template>
+<dialog id="quote-dialog" class="form-dialog order-dialog" aria-labelledby="quote-title" aria-describedby="quote-intro">
+<button class="close-button" type="button" data-close aria-label="Закрыть форму"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+<div class="dialog-content order-content">
+<header class="order-header"><h1 id="quote-title" tabindex="-1">Заказ</h1></header>
+<form data-form="quote" novalidate>
+<div class="order-products" aria-label="Товары в заказе">
+<div class="order-item" data-order-item>
+<svg class="product-image" viewBox="0 0 52 68" aria-hidden="true"><path d="M26 25v38" stroke="#505b60" stroke-width="3"/><path d="M26 29v31" stroke="#b5bec1" stroke-width="1"/><path d="M17 13c2-8 18-8 19 4l-5 5-14-2z" fill="#f04422"/><rect x="12" y="16" width="21" height="12" rx="5" fill="#263b38"/><ellipse cx="16" cy="21" rx="5" ry="5" fill="#50634c"/><circle cx="16" cy="21" r="2" fill="#101b15"/><path d="M25 24v9h6v-9" fill="#1d2c2a"/></svg>
+<p class="product-name">ТХА/ТХК/ТНН/ТЖК-0193К/1393К, -0193/1393-01К, -02К, -04К, -04СК; ТХА/ТХК-0193-03К <span class="product-example">Пример товара для демонстрации</span></p>
+<div class="quantity-control"><label class="visually-hidden" for="quote-quantity">Количество товара</label><input id="quote-quantity" name="quantity" type="number" min="1" step="1" value="1" required inputmode="numeric"></div>
+<button class="remove-product" type="button" data-remove-product aria-label="Удалить товар из заказа"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14M10 10v8M14 10v8"/></svg><span>Удалить</span></button>
+</div>
+<p class="empty-cart" hidden>В заказе нет товаров. Закройте форму и откройте её снова, чтобы восстановить пример.</p>
+</div>
+<div class="order-body">
+<div class="order-layout">
+<div id="quote-intro" class="order-description"><p>Для запроса стоимости заполните форму.</p><p>Чем больше информации мы получим, тем точнее и быстрее будет наш ответ.</p><p>Поля, отмеченные *, обязательны для заполнения. Обратите на это внимание.</p></div>
+<div class="order-contact">
+<div class="fields">
+<div class="field"><label for="quote-email">Эл. почта *</label><input id="quote-email" name="email" required autocomplete="email" type="email"></div>
+<div class="field"><label for="quote-phone">Телефон</label><input id="quote-phone" name="phone" autocomplete="tel" type="tel" placeholder="+7 (000) 000-00-00"></div>
+<div class="field"><label for="quote-organization">Организация *</label><input id="quote-organization" name="organization" required autocomplete="organization" type="text"></div>
+<div class="field"><label for="quote-city">Город *</label><input id="quote-city" name="city" required autocomplete="address-level2" type="text"></div>
+<div class="field"><label for="quote-comment">Комментарий</label><textarea id="quote-comment" name="comment" rows="7"></textarea></div>
+</div>
+<div data-consent></div>
+</div>
+</div>
+<div class="order-actions"><button class="button" type="button" data-add-products>Добавить ещё товары</button><button class="button submit-button" type="submit">Отправить запрос</button></div>
+<p class="demo-note">Демонстрация: данные никуда не отправляются.</p>
+<p class="form-result" role="status" hidden></p>
+</div>
+</form>
+</div></dialog>
+<dialog id="message-dialog" class="form-dialog" aria-labelledby="message-title" aria-describedby="message-intro">
+<button class="close-button" type="button" data-close aria-label="Закрыть форму"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+<div class="dialog-content">
+<header><h1 id="message-title" tabindex="-1">Написать специалисту</h1><p id="message-intro" class="form-intro">Задайте вопрос о продукции или её применении. Поля со звёздочкой обязательны.</p></header>
+<form data-form="message" novalidate>
+<div class="fields"><div class="field"><label for="message-organization">Организация</label><input id="message-organization" name="organization" autocomplete="organization" type="text"></div><div class="field"><label for="message-city">Город</label><input id="message-city" name="city" autocomplete="address-level2" type="text"></div><div class="field"><label for="message-email">Эл. почта *</label><input id="message-email" name="email" required autocomplete="email" type="email"></div><div class="field"><label for="message-phone">Телефон</label><input id="message-phone" name="phone" autocomplete="tel" type="tel"></div><div class="field"><label for="message-message">Сообщение *</label><textarea id="message-message" name="message" required rows="4"></textarea></div></div>
+<div data-consent></div>
+<button class="button submit-button" type="submit">Отправить</button>
+<p class="demo-note">Демонстрация: данные никуда не отправляются.</p>
+<p class="form-result" role="status" hidden></p>
+</form>
+</div></dialog>
+<dialog id="career-dialog" class="form-dialog" aria-labelledby="career-title" aria-describedby="career-intro">
+<button class="close-button" type="button" data-close aria-label="Закрыть форму"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+<div class="dialog-content">
+<header><h1 id="career-title" tabindex="-1">Откликнуться на вакансию</h1><p id="career-intro" class="form-intro">Оставьте контакты и прикрепите резюме. Поля со звёздочкой обязательны.</p></header>
+<form data-form="career" novalidate>
+<div class="fields"><div class="field"><label for="career-name">Ваше имя *</label><input id="career-name" name="name" required autocomplete="name" type="text"></div><div class="field"><label for="career-email">Эл. почта *</label><input id="career-email" name="email" required autocomplete="email" type="email"></div><div class="field"><label for="career-phone">Телефон</label><input id="career-phone" name="phone" autocomplete="tel" type="tel"></div><div class="field"><label for="career-resume">Резюме</label><input id="career-resume" name="resume" type="file"></div><div class="field"><label for="career-comment">Комментарий</label><textarea id="career-comment" name="comment" rows="4"></textarea></div></div>
+<div data-consent></div>
+<button class="button submit-button" type="submit">Отправить отклик</button>
+<p class="demo-note">Демонстрация: данные никуда не отправляются.</p>
+<p class="form-result" role="status" hidden></p>
+</form>
+</div></dialog>
